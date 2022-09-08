@@ -6,15 +6,15 @@ globalStyles();
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
   backgrounds: {
-    default: 'color-neutral-white-500',
+    default: 'neutral-white-500',
     values: [
       {
-        name: 'color-neutral-white-500',
-        value: tokens.color.neutral['color-neutral-white-500']
+        name: 'neutral-white-500',
+        value: tokens.color.neutral['neutral-white-500']
       },
       {
-        name: '$color-neutral-black-500',
-        value: tokens.color.neutral['color-neutral-black-500']
+        name: '$neutral-black-500',
+        value: tokens.color.neutral['neutral-black-500']
       }
     ]
   },

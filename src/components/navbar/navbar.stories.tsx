@@ -1,16 +1,16 @@
 import { Story, Meta } from '@storybook/react/types-6-0';
 
-import { Example, ExampleProps } from './Example';
+import { Navbar, NavbarProps } from './Navbar';
 
 export default {
-  title: 'Examples/Example',
-  component: Example,
+  title: 'Examples/Navbar',
+  component: Navbar,
   args: {
-    children: 'Example children'
+    children: 'click me'
   },
   argTypes: {
     children: {
-      description: 'Example label',
+      description: 'Navbar label',
       table: {
         defaultValue: {
           summary: 'click me'
@@ -21,7 +21,7 @@ export default {
   parameters: {}
 } as Meta;
 
-export const ButtonExample: Story<ExampleProps> = args => {
+export const ButtonNavbar: Story<NavbarProps> = args => {
   const { children } = args;
-  return <Example {...args}>{children}</Example>;
+  return <Navbar {...args}>{children}</Navbar>;
 };
