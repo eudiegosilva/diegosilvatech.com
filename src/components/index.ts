@@ -1,1 +1,2 @@
-export { Example } from './example/Example';
+export { Button } from './button/Button';
+export { Typography } from './typography/Typography';
