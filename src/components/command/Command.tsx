@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 
 import { useRouter } from 'next/router';
 
+import { Toast } from 'components';
 import { KBarProvider, KBarPortal } from 'kbar';
 import Lottie from 'lottie-react';
 
@@ -245,17 +246,26 @@ const Command = ({ children }: CommandProps) => {
     }
   ];
   return (
-    <KBarProvider actions={actions}>
-      <KBarPortal>
-        <s.Positioner>
-          <s.Animator>
-            <s.Search />
-            <RenderResults />
-          </s.Animator>
-        </s.Positioner>
-      </KBarPortal>
-      {children}
-    </KBarProvider>
+    <>
+      <KBarProvider actions={actions}>
+        <KBarPortal>
+          <s.Positioner>
+            <s.Animator>
+              <s.Search />
+              <RenderResults />
+            </s.Animator>
+          </s.Positioner>
+        </KBarPortal>
+        {children}
+      </KBarProvider>
+      <Toast
+        title="Link copiado :)"
+        description="Compartilhe com todo mundo!"
+        isSuccess
+        showToast={showToast}
+        setShowToast={setShowToast}
+      />
+    </>
   );
 };
 
