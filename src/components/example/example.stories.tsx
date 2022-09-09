@@ -21,7 +21,7 @@ export default {
   parameters: {}
 } as Meta;
 
-export const ButtonExample: Story<ExampleProps> = args => {
+export const CommandExample: Story<ExampleProps> = args => {
   const { children } = args;
   return <Example {...args}>{children}</Example>;
 };

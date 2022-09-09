@@ -10,6 +10,6 @@ export default {
   parameters: {}
 } as Meta;
 
-export const ButtonExample: Story<CommandProps> = args => {
+export const CommandExample: Story<CommandProps> = args => {
   return <Command {...args} />;
 };
