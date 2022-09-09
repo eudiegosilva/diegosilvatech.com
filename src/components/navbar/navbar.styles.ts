@@ -41,7 +41,7 @@ export const ButtonHeader = styled('div', {
 
 export const ButtonLogo = styled('div', {
   fontSize: '$md',
-  fontFamily: '$body',
+  fontFamily: '$epilogue',
   textDecoration: 'none',
   height: '100%',
   display: 'flex',

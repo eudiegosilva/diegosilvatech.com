@@ -2,7 +2,7 @@ import { styled } from 'styles/stitches.config';
 
 export const ButtonWrapper = styled('button', {
   padding: '$sm $md',
-  fontFamily: '$body',
+  fontFamily: '$epilogue',
   fontSize: '$md',
   border: '1px solid',
   fontWeight: '$300',

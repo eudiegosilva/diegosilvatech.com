@@ -1,6 +1,6 @@
 const family = {
-  heading: '"Josefin Sans", serif',
-  body: 'Epilogue, sans-serif'
+  epilogue: 'Epilogue, sans-serif',
+  code: '"Source Code Pro", monospace'
 };
 
 const size = {

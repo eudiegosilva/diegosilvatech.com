@@ -25,7 +25,8 @@ export const Search = styled(KBarSearch, {
   border: 'none',
   margin: 0,
   background: '$background-primary',
-  color: '$text-primary'
+  color: '$text-primary',
+  fontFamily: '$code'
 });
 
 export const Animator = styled(KBarAnimator, {

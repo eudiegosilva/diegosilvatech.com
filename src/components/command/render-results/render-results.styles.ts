@@ -5,5 +5,6 @@ export const GroupName = styled('div', {
   fontSize: '$ss',
   textTransform: 'uppercase',
   letterSpacing: '$body-small',
-  background: '$transparent'
+  background: '$transparent',
+  fontFamily: '$epilogue'
 });

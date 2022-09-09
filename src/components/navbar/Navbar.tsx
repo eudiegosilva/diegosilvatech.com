@@ -13,16 +13,7 @@ import * as s from './navbar.styles';
 
 const Navbar = () => {
   const [hoveredItem, setHoveredItem] = useState('');
-  const pages = [
-    'About',
-    'Articles',
-    'Projects',
-    'Talks',
-    'Podcasts',
-    'Investing',
-    'Uses',
-    'Reminder'
-  ];
+  const pages = ['Sobre', 'Artigos', 'Projetos', 'Talks', 'Podcasts', 'Setup'];
   const router = useRouter();
   const { query } = useKBar();
   return (

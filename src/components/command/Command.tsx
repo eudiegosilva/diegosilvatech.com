@@ -25,13 +25,11 @@ const Command = ({ children }: CommandProps) => {
   const projectsRef = useRef();
   const talksRef = useRef();
   const podcastsRef = useRef();
-  const investingRef = useRef();
-  const usesRef = useRef();
-  const reminderRef = useRef();
+  const setupRef = useRef();
   const router = useRouter();
   const [showToast, setShowToast] = useState(false);
 
-  const iconSize = { width: 24, height: 24 };
+  const iconSize = { width: 20, height: 20 };
 
   const copyLink = () => {
     navigator.clipboard.writeText(window.location.href);
@@ -41,7 +39,7 @@ const Command = ({ children }: CommandProps) => {
   const actions = [
     {
       id: 'copy',
-      name: 'Copy Link',
+      name: 'Copiar Link',
       shortcut: ['l'],
       keywords: 'copy-link',
       section: 'General',
@@ -58,7 +56,7 @@ const Command = ({ children }: CommandProps) => {
     },
     {
       id: 'email',
-      name: 'Send Email',
+      name: 'Enviar E-mail',
       shortcut: ['e'],
       keywords: 'send-email',
       section: 'General',
@@ -75,9 +73,9 @@ const Command = ({ children }: CommandProps) => {
     },
     {
       id: 'source',
-      name: 'View Source',
-      shortcut: ['s'],
-      keywords: 'view-source',
+      name: 'Ver Código',
+      shortcut: ['c'],
+      keywords: 'view-code',
       section: 'General',
       perform: () =>
         window.open('https://github.com/zenorocha/zenorocha.com', '_blank'),
@@ -93,7 +91,7 @@ const Command = ({ children }: CommandProps) => {
     },
     {
       id: 'home',
-      name: 'Home',
+      name: 'Início',
       shortcut: ['g', 'h'],
       keywords: 'go-home',
       section: 'Go To',
@@ -110,7 +108,7 @@ const Command = ({ children }: CommandProps) => {
     },
     {
       id: 'about',
-      name: 'About',
+      name: 'Sobre',
       shortcut: ['g', 'a'],
       keywords: 'go-about',
       section: 'Go To',
@@ -127,7 +125,7 @@ const Command = ({ children }: CommandProps) => {
     },
     {
       id: 'articles',
-      name: 'Articles',
+      name: 'Artigos',
       shortcut: ['g', 'b'],
       keywords: 'go-articles',
       section: 'Go To',
@@ -144,7 +142,7 @@ const Command = ({ children }: CommandProps) => {
     },
     {
       id: 'projects',
-      name: 'Projects',
+      name: 'Projetos',
       shortcut: ['g', 'p'],
       keywords: 'go-projects',
       section: 'Go To',
@@ -194,51 +192,17 @@ const Command = ({ children }: CommandProps) => {
       )
     },
     {
-      id: 'investing',
-      name: 'Investing',
-      shortcut: ['g', 'i'],
-      keywords: 'go-investing',
+      id: 'setup',
+      name: 'Setup',
+      shortcut: ['g', 's'],
+      keywords: 'go-setup',
       section: 'Go To',
-      perform: () => router.push('/investing'),
+      perform: () => router.push('/setup'),
       icon: (
         <Lottie
-          lottieRef={investingRef}
-          style={iconSize}
-          animationData={icon.investingIcon}
-          loop={false}
-          autoplay={false}
-        />
-      )
-    },
-    {
-      id: 'uses',
-      name: 'Uses',
-      shortcut: ['g', 'u'],
-      keywords: 'go-uses',
-      section: 'Go To',
-      perform: () => router.push('/uses'),
-      icon: (
-        <Lottie
-          lottieRef={usesRef}
+          lottieRef={setupRef}
           style={iconSize}
           animationData={icon.usesIcon}
-          loop={false}
-          autoplay={false}
-        />
-      )
-    },
-    {
-      id: 'reminder',
-      name: 'Reminder',
-      shortcut: ['g', 'r'],
-      keywords: 'go-reminder',
-      section: 'Go To',
-      perform: () => router.push('/reminder'),
-      icon: (
-        <Lottie
-          lottieRef={reminderRef}
-          style={iconSize}
-          animationData={icon.reminderIcon}
           loop={false}
           autoplay={false}
         />
@@ -251,7 +215,7 @@ const Command = ({ children }: CommandProps) => {
         <KBarPortal>
           <s.Positioner>
             <s.Animator>
-              <s.Search />
+              <s.Search placeholder="Digite um comando ou pequise..." />
               <RenderResults />
             </s.Animator>
           </s.Positioner>

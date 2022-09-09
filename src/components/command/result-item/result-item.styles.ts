@@ -8,13 +8,14 @@ export const Action = styled('div', {
   alignItems: 'center',
   fontWeight: '300',
   fontSize: '$md',
-  fontFamily: '$body',
+  fontFamily: '$epilogue',
   letterSpacing: '$body-small'
 });
 
 export const ActionRow = styled('div', {
   display: 'flex',
-  flexDirection: 'column'
+  flexDirection: 'column',
+  fontSize: '$sm'
 });
 
 export const Shortcut = styled('div', {
