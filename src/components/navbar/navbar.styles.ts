@@ -101,7 +101,7 @@ export const ItemHovered = styled(motion.span, {
   left: '0',
   right: '0',
   background: '$hover-highlight',
-  padding: 20,
+  padding: '$lg',
   borderRadius: '$md',
   zIndex: -1
 });
@@ -109,7 +109,7 @@ export const ItemHovered = styled(motion.span, {
 export const CommandButtonWrapper = styled('div', {
   display: 'flex',
   alignItems: 'center',
-  paddingRight: '$md',
+  paddingRight: '$sm',
   marginLeft: 'auto'
 });
 
