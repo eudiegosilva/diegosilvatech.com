@@ -13,7 +13,11 @@ export const defaultTheme = {
     borderStyles: {},
     borderWidths: {},
     colors: {
-      ...color.palette
+      ...color.base,
+      ...color.brand,
+      ...color.neutral,
+      ...color.transparent,
+      ...color.text
     },
     fonts: { ...font.family },
     fontSizes: { ...font.size },

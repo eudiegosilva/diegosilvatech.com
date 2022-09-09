@@ -4,16 +4,14 @@ import * as s from './result-item.styles';
 
 const getResultStyle = active => {
   return {
-    padding: '12px 16px',
-    background: active
-      ? 'rgba(255, 255, 255, 0.1)'
-      : 'rgba(255, 255, 255, 0.05)',
+    padding: '$sm $md',
+    background: active ? '$transparent-white-03' : '$transparent-white-01',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
     margin: 0,
     cursor: 'pointer',
-    color: active ? '#f2f2f2' : '#8f9ba8'
+    color: active ? '$text-primary' : '$text-secondary'
   };
 };
 

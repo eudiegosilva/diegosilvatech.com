@@ -31,17 +31,16 @@ export const ButtonHeader = styled('div', {
   background: 'transparent',
   border: 'none',
   borderRadius: '$md',
-  color: '$primary',
+  color: '$text-primary',
   cursor: 'pointer',
   height: '34px',
   padding: '0 $sm',
   transition: '$default',
-  '&:hover': { i: { color: '$text-high' }, backgroundColor: '$hover-highlight' }
+  '&:hover': { backgroundColor: '$brand-primary-03' }
 });
 
 export const ButtonLogo = styled('div', {
   fontSize: '$md',
-  // paddingLeft: '$sm',
   fontFamily: '$body',
   textDecoration: 'none',
   height: '100%',
@@ -69,7 +68,7 @@ export const ItemLink = styled('a', {
 });
 
 export const ItemContainer = styled(motion.span, {
-  color: '$text-low',
+  color: '$text-secondary',
   cursor: 'pointer',
   display: 'inline-block',
   fontSize: '$xs',
@@ -79,7 +78,7 @@ export const ItemContainer = styled(motion.span, {
   textDecoration: 'none',
   textTransform: 'uppercase',
   transition: 'color $default',
-  '&:hover': { color: '$text-high' },
+  '&:hover': { color: '$text-primary' },
 
   '&::after': {
     content: '""',
@@ -90,7 +89,7 @@ export const ItemContainer = styled(motion.span, {
     right: '0px',
     height: '1px',
     width: '20px',
-    background: 'rgb(255, 255, 255)',
+    background: '$base-white',
     opacity: 0,
     transition: 'opacity $default'
   }
@@ -101,7 +100,7 @@ export const ItemHovered = styled(motion.span, {
   top: '-12px',
   left: '0',
   right: '0',
-  background: '$hover-highlight',
+  background: '$brand-primary-03',
   padding: '$lg',
   borderRadius: '$md',
   zIndex: -1
@@ -110,7 +109,5 @@ export const ItemHovered = styled(motion.span, {
 export const CommandButtonWrapper = styled('div', {
   display: 'flex',
   alignItems: 'center',
-  paddingRight: '$sm',
-  // marginLeft: 'auto',
-  color: '$text-high'
+  color: '$text-primary'
 });

@@ -7,11 +7,11 @@ export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
   layout: 'fullscreen',
   backgrounds: {
-    default: '$background',
+    default: '$background-primary',
     values: [
       {
-        name: '$background',
-        value: tokens.color.palette.background
+        name: '$background-primary',
+        value: tokens.color.palette['background-primary']
       },
     ]
   },

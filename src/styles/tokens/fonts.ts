@@ -31,7 +31,8 @@ const weight = {
 };
 
 const letterSpacing = {
-  heading: '-0.01rem'
+  heading: '-0.01rem',
+  'body-small': '0.05rem'
 };
 
 const lineHeight = {

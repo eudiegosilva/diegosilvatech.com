@@ -10,43 +10,42 @@ export const Positioner = styled(KBarPositioner, {
   alignItems: 'flex-start',
   justifyContent: 'center',
   width: '100%',
-  inset: '0px',
-  padding: '14vh 16px 16px',
-  background: 'rgba(0, 0, 0, .8)',
+  inset: 0,
+  padding: '14vh $md $md',
+  background: '$transparent-black-02',
   boxSizing: 'border-box'
 });
 
 export const Search = styled(KBarSearch, {
-  padding: '12px 16px',
-  fontSize: '16px',
+  padding: '$lg',
+  fontSize: '$md',
   width: '100%',
   boxSizing: 'border-box',
   outline: 'none',
   border: 'none',
   margin: 0,
-  background: 'rgba(255, 255, 255, 0.05)',
-  color: '#f2f2f2'
+  background: '$background-primary',
+  color: '$text-primary'
 });
 
 export const Animator = styled(KBarAnimator, {
-  backgroundColor: '#1a1c1e',
-  maxWidth: '600px',
+  maxWidth: '800px',
   width: '100%',
-  color: '#f2f2f2',
-  borderRadius: '8px',
+  color: '$text-primary',
+  borderRadius: '$md',
   overflow: 'hidden',
   '@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none))': {
-    backgroundColor: 'rgba(255, 255, 255, 0.05)',
+    backgroundColor: '$transparent-white-03',
     WebkitBackdropFilter: 'saturate(300%) blur(25px)',
     backdropFilter: 'saturate(300%) blur(25px)'
   },
 
-  /* Hide scrollbar for Chrome, Safari and Opera */
+  /* hide scrollbar for chrome, safari and opera */
   '& > div > div::-webkit-scrollbar': {
     display: 'none'
   },
 
-  /* Hide scrollbar for IE, Edge and Firefox */
+  /* hide scrollbar for ie, edge and firefox */
   '& > div > div': {
     '-ms-overflow-style': 'none',
     'scrollbar-width': 'none'

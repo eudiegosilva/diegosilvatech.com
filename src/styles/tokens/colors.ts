@@ -16,6 +16,34 @@ const base = {
   'base-gray-12': '#ededed'
 };
 
+const transparent = {
+  'transparent-black-01': 'hsla(0, 0%, 0%, 0.910)',
+  'transparent-black-02': 'hsla(0, 0%, 0%, 0.565)',
+  'transparent-black-03': 'hsla(0, 0%, 0%, 0.478)',
+  'transparent-black-04': 'hsla(0, 0%, 0%, 0.439)',
+  'transparent-black-05': 'hsla(0, 0%, 0%, 0.220)',
+  'transparent-black-06': 'hsla(0, 0%, 0%, 0.141)',
+  'transparent-black-07': 'hsla(0, 0%, 0%, 0.114)',
+  'transparent-black-08': 'hsla(0, 0%, 0%, 0.090)',
+  'transparent-black-09': 'hsla(0, 0%, 0%, 0.071)',
+  'transparent-black-10': 'hsla(0, 0%, 0%, 0.047)',
+  'transparent-black-11': 'hsla(0, 0%, 0%, 0.027)',
+  'transparent-black-12': 'hsla(0, 0%, 0%, 0.012)',
+
+  'transparent-white-01': 'hsla(0, 0%, 100%, 0)',
+  'transparent-white-02': 'hsla(0, 0%, 100%, 0.013)',
+  'transparent-white-03': 'hsla(0, 0%, 100%, 0.034)',
+  'transparent-white-04': 'hsla(0, 0%, 100%, 0.056)',
+  'transparent-white-05': 'hsla(0, 0%, 100%, 0.086)',
+  'transparent-white-06': 'hsla(0, 0%, 100%, 0.124)',
+  'transparent-white-07': 'hsla(0, 0%, 100%, 0.176)',
+  'transparent-white-08': 'hsla(0, 0%, 100%, 0.249)',
+  'transparent-white-09': 'hsla(0, 0%, 100%, 0.386)',
+  'transparent-white-10': 'hsla(0, 0%, 100%, 0.446)',
+  'transparent-white-11': 'hsla(0, 0%, 100%, 0.592)',
+  'transparent-white-12': 'hsla(0, 0%, 100%, 0.923)'
+};
+
 const neutral = {
   'neutral-white': '#ededef',
   'neutral-black': '#161618',
@@ -48,35 +76,42 @@ const brand = {
   'brand-primary-11': '#f76190',
   'brand-primary-12': '#feecf4',
 
-  'brand-secondary-violet-01': '#17151f',
-  'brand-secondary-violet-02': '#1c172b',
-  'brand-secondary-violet-03': '#251e40',
-  'brand-secondary-violet-04': '#2c2250',
-  'brand-secondary-violet-05': '#32275f',
-  'brand-secondary-violet-06': '#392c72',
-  'brand-secondary-violet-07': '#443592',
-  'brand-secondary-violet-08': '#5842c3',
-  'brand-secondary-violet-09': '#6e56cf',
-  'brand-secondary-violet-10': '#7c66dc',
-  'brand-secondary-violet-11': '#9e8cfc',
-  'brand-secondary-violet-12': '#f1eefe'
+  'brand-secondary-01': '#17151f',
+  'brand-secondary-02': '#1c172b',
+  'brand-secondary-03': '#251e40',
+  'brand-secondary-04': '#2c2250',
+  'brand-secondary-05': '#32275f',
+  'brand-secondary-06': '#392c72',
+  'brand-secondary-07': '#443592',
+  'brand-secondary-08': '#5842c3',
+  'brand-secondary-09': '#6e56cf',
+  'brand-secondary-10': '#7c66dc',
+  'brand-secondary-11': '#9e8cfc',
+  'brand-secondary-12': '#f1eefe'
 };
 
 // SEMANTIC
+const background = {
+  'background-primary': brand['brand-primary-01'],
+  'background-secondary': brand['brand-secondary-01'],
+  'background-transparent-dark-primary': transparent['transparent-black-03'],
+  'background-transparent-dark-secondary': transparent['transparent-black-07'],
+  'background-transparent-light-primary': transparent['transparent-white-01'],
+  'background-transparent-light-secondary': transparent['transparent-white-05']
+};
+
+const border = {
+  'border-primary': brand['brand-primary-07']
+};
+
 const text = {
-  'text-high': '#ffffff',
-  'text-low': '#a09fa6',
-  'text-highlight': brand['brand-primary-09']
+  'text-primary': base['base-white'],
+  'text-secondary': neutral['neutral-gray-11'],
+  'text-highlight': brand['brand-primary-11']
 };
 
 const hover = {
-  'hover-highlight': brand['brand-primary-03']
+  'hover-primary': brand['brand-primary-03']
 };
 
-const palette = {
-  background: neutral['neutral-black'],
-  ...hover,
-  ...text
-};
-
-export { palette };
+export { base, transparent, neutral, brand, text };
