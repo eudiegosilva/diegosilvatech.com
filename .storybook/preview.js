@@ -5,6 +5,7 @@ globalStyles();
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
+  layout: 'fullscreen',
   backgrounds: {
     default: '$background',
     values: [

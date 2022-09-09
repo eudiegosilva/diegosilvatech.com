@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 import logo from 'assets/images/diegosilvatech.png';
+import { Icon } from 'components';
 import { AnimateSharedLayout } from 'framer-motion';
 // import { useKBar } from 'kbar';
 
@@ -88,7 +89,7 @@ const Navbar = ({}: NavbarProps) => {
             aria-label="Command"
             // onClick={query.toggle}
           >
-            <s.CommandIcon className="ri-command-line" />
+            <Icon.CommandIcon />
           </s.ButtonHeader>
         </s.CommandButtonWrapper>
       </s.Header>

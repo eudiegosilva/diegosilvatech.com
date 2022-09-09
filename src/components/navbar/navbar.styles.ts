@@ -13,6 +13,7 @@ export const Header = styled('header', {
   top: 0,
   zIndex: '$menu',
   marginTop: '$sm',
+  padding: '0 $sm',
   '@bp2': { marginTop: '0' }
 });
 
@@ -40,7 +41,7 @@ export const ButtonHeader = styled('div', {
 
 export const ButtonLogo = styled('div', {
   fontSize: '$md',
-  marginLeft: '$sm',
+  // paddingLeft: '$sm',
   fontFamily: '$body',
   textDecoration: 'none',
   height: '100%',
@@ -110,12 +111,6 @@ export const CommandButtonWrapper = styled('div', {
   display: 'flex',
   alignItems: 'center',
   paddingRight: '$sm',
-  marginLeft: 'auto'
-});
-
-export const CommandIcon = styled('i', {
-  fontSize: '$xl',
-  lineHeight: '$133',
-  color: '$text-high',
-  transition: '$default'
+  // marginLeft: 'auto',
+  color: '$text-high'
 });
