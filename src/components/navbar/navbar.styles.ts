@@ -71,7 +71,7 @@ export const ItemContainer = styled(motion.span, {
   cursor: 'pointer',
   display: 'inline-block',
   fontSize: '$xs',
-  fontWeight: '$500',
+  fontWeight: '$300',
   letterSpacing: '1.2px',
   padding: '$lg',
   textDecoration: 'none',

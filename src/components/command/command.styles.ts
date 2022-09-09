@@ -26,7 +26,12 @@ export const Search = styled(KBarSearch, {
   margin: 0,
   background: '$background-primary',
   color: '$text-primary',
-  fontFamily: '$code'
+  fontFamily: '$epilogue',
+  fontWeight: '$300',
+  '&::placeholder': {
+    textTransform: 'lowercase',
+    color: '$text-secondary'
+  }
 });
 
 export const Animator = styled(KBarAnimator, {
