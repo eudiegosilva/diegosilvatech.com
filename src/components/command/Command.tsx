@@ -261,7 +261,7 @@ const Command = ({ children }: CommandProps) => {
       <Toast
         title="Link copiado :)"
         description="Compartilhe com todo mundo!"
-        isSuccess
+        variant="success"
         showToast={showToast}
         setShowToast={setShowToast}
       />

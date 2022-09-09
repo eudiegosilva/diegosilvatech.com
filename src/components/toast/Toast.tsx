@@ -6,7 +6,7 @@ import * as s from './toast.styles';
 export type ToastProps = {
   title: string;
   description: string;
-  isSuccess: boolean;
+  variant: 'success' | 'error';
   showToast: boolean;
   setShowToast: (showToast: boolean) => void;
 };
@@ -14,14 +14,14 @@ export type ToastProps = {
 const Toast = ({
   title,
   description,
-  isSuccess,
+  variant,
   showToast,
   setShowToast
 }: ToastProps) => {
   return (
     <ToastPrimitive.Provider>
       <s.ToastWrapper open={showToast} onOpenChange={setShowToast}>
-        <s.IconWrapper variant={isSuccess ? 'success' : 'error'}>
+        <s.IconWrapper variant={variant}>
           <Icon.MessageCheckIcon />
         </s.IconWrapper>
         <div>
