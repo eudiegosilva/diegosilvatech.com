@@ -116,6 +116,6 @@ export const CommandButtonWrapper = styled('div', {
 export const CommandIcon = styled('i', {
   fontSize: '$xl',
   lineHeight: '$133',
-  color: '$text-low',
+  color: '$text-high',
   transition: '$default'
 });
