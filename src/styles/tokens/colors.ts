@@ -90,28 +90,10 @@ const brand = {
   'brand-secondary-12': '#f1eefe'
 };
 
-// SEMANTIC
-const background = {
-  'background-primary': brand['brand-primary-01'],
-  'background-secondary': brand['brand-secondary-01'],
-  'background-transparent-dark-primary': transparent['transparent-black-03'],
-  'background-transparent-dark-secondary': transparent['transparent-black-07'],
-  'background-transparent-light-primary': transparent['transparent-white-01'],
-  'background-transparent-light-secondary': transparent['transparent-white-05']
-};
-
-const border = {
-  'border-primary': brand['brand-primary-07']
-};
-
 const text = {
   'text-primary': base['base-white'],
   'text-secondary': neutral['neutral-gray-11'],
   'text-highlight': brand['brand-primary-11']
-};
-
-const hover = {
-  'hover-primary': brand['brand-primary-03']
 };
 
 export { base, transparent, neutral, brand, text };
