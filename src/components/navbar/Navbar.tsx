@@ -11,9 +11,7 @@ import { AnimateSharedLayout } from 'framer-motion';
 
 import * as s from './navbar.styles';
 
-export type NavbarProps = {};
-
-const Navbar = ({}: NavbarProps) => {
+const Navbar = () => {
   const [hoveredItem, setHoveredItem] = useState('');
   const pages = [
     'About',
