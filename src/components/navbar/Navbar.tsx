@@ -11,7 +11,9 @@ import { useKBar } from 'kbar';
 
 import * as s from './navbar.styles';
 
-const Navbar = () => {
+type NavbarProps = { disableCommand?: boolean };
+
+const Navbar = ({ disableCommand = false }: NavbarProps) => {
   const [hoveredItem, setHoveredItem] = useState('');
   const pages = ['Sobre', 'Artigos', 'Projetos', 'Talks', 'Podcasts', 'Setup'];
   const router = useRouter();
@@ -76,7 +78,7 @@ const Navbar = () => {
             as="button"
             type="button"
             aria-label="Command"
-            onClick={query.toggle}
+            onClick={disableCommand ? () => null : query.toggle}
           >
             <Icon.CommandIcon />
           </s.ButtonHeader>

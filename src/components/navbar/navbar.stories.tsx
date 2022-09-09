@@ -11,5 +11,5 @@ export default {
 } as Meta;
 
 export const NavbarExample = () => {
-  return <Navbar />;
+  return <Navbar disableCommand />;
 };
