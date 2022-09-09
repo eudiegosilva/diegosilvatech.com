@@ -55,7 +55,6 @@ export const List = styled('ul', {
   listStyle: 'none',
   display: 'inline-flex',
   position: 'relative',
-  top: '$xs',
   '@bp1': { justifyContent: 'space-around' }
 });
 
