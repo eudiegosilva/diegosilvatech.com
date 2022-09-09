@@ -1,6 +1,6 @@
 const family = {
-  heading: '"Josefin Sans", serif',
-  body: 'Epilogue, sans-serif'
+  epilogue: 'Epilogue, sans-serif',
+  code: '"Source Code Pro", monospace'
 };
 
 const size = {
@@ -31,7 +31,8 @@ const weight = {
 };
 
 const letterSpacing = {
-  heading: '-0.01rem'
+  heading: '-0.01rem',
+  'body-small': '0.05rem'
 };
 
 const lineHeight = {

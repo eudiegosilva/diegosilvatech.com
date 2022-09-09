@@ -18,6 +18,6 @@ export const globalStyles = globalCss({
   },
   body: {
     height: '100vh',
-    fontFamily: '$body'
+    fontFamily: '$epilogue'
   }
 });

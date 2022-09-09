@@ -1,12 +1,15 @@
 import { Navbar } from 'components';
+import { Command } from 'components';
 
 import * as s from './home.template.styles';
 
 const HomeTemplate = () => {
   return (
-    <s.Wrapper>
-      <Navbar />
-    </s.Wrapper>
+    <Command>
+      <s.Wrapper>
+        <Navbar />
+      </s.Wrapper>
+    </Command>
   );
 };
 

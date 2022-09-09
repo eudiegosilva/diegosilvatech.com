@@ -14,21 +14,11 @@ export default {
   argTypes: {
     children: {
       description: 'Button label',
-      table: {
-        defaultValue: {
-          summary: 'click me'
-        }
-      }
+      table: { defaultValue: { summary: 'click me' } }
     },
-    type: {
-      description: 'specifies the type of component'
-    },
-    isFullWidth: {
-      description: 'defines if the component is full width'
-    },
-    variant: {
-      description: 'main visual variations of the component'
-    },
+    type: { description: 'specifies the type of component' },
+    isFullWidth: { description: 'defines if the component is full width' },
+    variant: { description: 'main visual variations of the component' },
     handleClick: {
       description: 'event executed when the component is clicked',
       action: 'button-clicked'

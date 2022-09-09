@@ -7,24 +7,17 @@ import { useRouter } from 'next/router';
 import logo from 'assets/images/diegosilvatech.png';
 import { Icon } from 'components';
 import { AnimateSharedLayout } from 'framer-motion';
-// import { useKBar } from 'kbar';
+import { useKBar } from 'kbar';
 
 import * as s from './navbar.styles';
 
-const Navbar = () => {
+type NavbarProps = { disableCommand?: boolean };
+
+const Navbar = ({ disableCommand = false }: NavbarProps) => {
   const [hoveredItem, setHoveredItem] = useState('');
-  const pages = [
-    'About',
-    'Articles',
-    'Projects',
-    'Talks',
-    'Podcasts',
-    'Investing',
-    'Uses',
-    'Reminder'
-  ];
+  const pages = ['Sobre', 'Artigos', 'Projetos', 'Talks', 'Podcasts', 'Setup'];
   const router = useRouter();
-  // const { query } = useKBar();
+  const { query } = useKBar();
   return (
     <AnimateSharedLayout>
       <s.Header>
@@ -85,7 +78,7 @@ const Navbar = () => {
             as="button"
             type="button"
             aria-label="Command"
-            // onClick={query.toggle}
+            onClick={disableCommand ? () => null : query.toggle}
           >
             <Icon.CommandIcon />
           </s.ButtonHeader>
