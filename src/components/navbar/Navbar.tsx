@@ -7,7 +7,7 @@ import { useRouter } from 'next/router';
 import logo from 'assets/images/diegosilvatech.png';
 import { Icon } from 'components';
 import { AnimateSharedLayout } from 'framer-motion';
-// import { useKBar } from 'kbar';
+import { useKBar } from 'kbar';
 
 import * as s from './navbar.styles';
 
@@ -24,7 +24,7 @@ const Navbar = () => {
     'Reminder'
   ];
   const router = useRouter();
-  // const { query } = useKBar();
+  const { query } = useKBar();
   return (
     <AnimateSharedLayout>
       <s.Header>
@@ -85,7 +85,7 @@ const Navbar = () => {
             as="button"
             type="button"
             aria-label="Command"
-            // onClick={query.toggle}
+            onClick={query.toggle}
           >
             <Icon.CommandIcon />
           </s.ButtonHeader>

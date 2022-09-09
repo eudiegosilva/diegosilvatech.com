@@ -6,7 +6,7 @@ export const Header = styled('header', {
   display: 'flex',
   alignItems: 'center',
   fontSize: '$md',
-  minHeight: '59px',
+  minHeight: '60px',
   width: '100%',
   flexWrap: 'wrap',
   position: 'absolute',
@@ -109,5 +109,6 @@ export const ItemHovered = styled(motion.span, {
 export const CommandButtonWrapper = styled('div', {
   display: 'flex',
   alignItems: 'center',
-  color: '$text-primary'
+  color: '$text-primary',
+  marginLeft: 'auto'
 });
