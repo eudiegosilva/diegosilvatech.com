@@ -21,7 +21,6 @@ export default {
   parameters: {}
 } as Meta;
 
-export const ButtonNavbar: Story<NavbarProps> = args => {
-  const { children } = args;
-  return <Navbar {...args}>{children}</Navbar>;
+export const NavbarExample: Story<NavbarProps> = () => {
+  return <Navbar />;
 };
