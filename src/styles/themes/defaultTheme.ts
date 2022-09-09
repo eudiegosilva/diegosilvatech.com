@@ -13,13 +13,7 @@ export const defaultTheme = {
     borderStyles: {},
     borderWidths: {},
     colors: {
-      ...color.base,
-      ...color.brand,
-      ...color.hightlight,
-      ...color.neutral,
-      ...color.semantic,
-      ...color.text,
-      ...color.transparent
+      ...color.palette
     },
     fonts: { ...font.family },
     fontSizes: { ...font.size },
@@ -34,5 +28,10 @@ export const defaultTheme = {
     zIndices: { ...zIndex }
   },
   utils: { ...util },
-  media: {}
+  media: {
+    bp1: '(min-width: 425px)',
+    bp2: '(min-width: 760px)',
+    bp3: '(max-width: 780px)',
+    bp4: '(max-width: 1024px)'
+  }
 };
