@@ -29,9 +29,9 @@ const HomePage = ({ description, image, title }: HomePageProps) => {
               <h1>Diego Silva</h1>
               <p>
                 <strong>
-                  Frontend Developer Sênior no{' '}
+                  Senior Frontend Developer at{' '}
                   <a href="https://neon.com.br/" target="blank">
-                    Banco Neon
+                    Neon Bank
                   </a>
                   .<br />
                 </strong>

@@ -5,7 +5,7 @@ export async function getStaticProps() {
     props: {
       title: 'Diego Silva | Tech',
       description:
-        'Ajudando a melhorar a experiência de desenvolvimento para desenvolvedores do Brasil e do mundo.',
+        'Helping to improve the development experience for developers in Brazil and around the world.',
       image: '/static/images/home-cover.jpg'
     }
   };
