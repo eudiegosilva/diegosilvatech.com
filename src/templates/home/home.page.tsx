@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import { Navbar } from 'components';
+import { Navbar, PageWrapper } from 'components';
 
 import * as s from './home.page.styles';
 
@@ -12,7 +12,7 @@ export type HomePageProps = {
 
 const HomeTemplate = ({ description, image, title }: HomePageProps) => {
   return (
-    <s.PageWrapper>
+    <PageWrapper>
       <Head>
         <title>{title}</title>
         <meta content={title} property="og:title" />
@@ -41,7 +41,7 @@ const HomeTemplate = ({ description, image, title }: HomePageProps) => {
           </s.PostContent>
         </s.PostWrapper>
       </s.PageContent>
-    </s.PageWrapper>
+    </PageWrapper>
   );
 };
 
