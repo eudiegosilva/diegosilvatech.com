@@ -45,12 +45,12 @@ export const globalStyles = globalCss({
     }
   },
   kbd: {
+    fontFamily: '$body',
     color: '$brand-primary-01',
     background: '$text-secondary',
     padding: '1px 5px',
     borderRadius: '$sm',
     transition: 'background $default ease-in-out',
-    fontFamily: '$code',
     fontSize: '$sm'
   }
 });
