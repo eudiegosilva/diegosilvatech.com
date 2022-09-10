@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { KBarResults, useDeepMatches } from 'kbar';
 
 import { ResultItem } from '../result-item/ResultItem';

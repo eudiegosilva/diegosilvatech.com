@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useRef, useState } from 'react';
 
 import { useRouter } from 'next/router';
@@ -209,6 +210,7 @@ const Command = ({ children }: CommandProps) => {
       )
     }
   ];
+
   return (
     <>
       <KBarProvider actions={actions}>

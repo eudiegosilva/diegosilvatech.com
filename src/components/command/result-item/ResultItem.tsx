@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { forwardRef } from 'react';
 
 import * as s from './result-item.styles';
