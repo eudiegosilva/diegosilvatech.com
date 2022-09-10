@@ -1,1 +1,2 @@
-export { default as HomePage, type HomePageProps } from './home/home.page';
+export { HomePage, type HomePageProps } from './home/home.page';
+export { AboutPage, type AboutPageProps } from './about/about.page';

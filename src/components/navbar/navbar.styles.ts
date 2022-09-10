@@ -63,6 +63,7 @@ export const ListItem = styled('li', {});
 export const ItemLink = styled('a', {
   border: 0,
   position: 'relative',
+  textDecoration: 'none',
   '&:hover, &:focus': { opacity: 1 }
 });
 
@@ -83,12 +84,12 @@ export const ItemContainer = styled(motion.span, {
     content: '""',
     position: 'absolute',
     margin: '0px auto',
-    top: '18px',
+    top: '24px',
     left: '0px',
     right: '0px',
     height: '1px',
-    width: '20px',
-    background: '$base-white',
+    width: '32px',
+    background: '$brand-primary-high',
     opacity: 0,
     transition: 'opacity $default'
   }

@@ -10,7 +10,7 @@ export type HomePageProps = {
   image: string;
 };
 
-const HomeTemplate = ({ description, image, title }: HomePageProps) => {
+const HomePage = ({ description, image, title }: HomePageProps) => {
   return (
     <PageWrapper>
       <Head>
@@ -46,4 +46,4 @@ const HomeTemplate = ({ description, image, title }: HomePageProps) => {
   );
 };
 
-export default HomeTemplate;
+export { HomePage };

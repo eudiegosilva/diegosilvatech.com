@@ -15,7 +15,7 @@ type NavbarProps = { disableCommand?: boolean };
 
 const Navbar = ({ disableCommand = false }: NavbarProps) => {
   const [hoveredItem, setHoveredItem] = useState('');
-  const pages = ['Sobre', 'Artigos', 'Projetos', 'Talks', 'Podcasts', 'Setup'];
+  const pages = ['About', 'Posts', 'Projects', 'Talks', 'Podcasts', 'Setup'];
   const router = useRouter();
   const { query } = useKBar();
   return (
@@ -49,7 +49,7 @@ const Navbar = ({ disableCommand = false }: NavbarProps) => {
                         css={
                           router.pathname == pagePath
                             ? {
-                                color: 'blue',
+                                color: '$text-primary',
                                 '&::after': { opacity: 1 }
                               }
                             : {}

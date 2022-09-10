@@ -40,7 +40,7 @@ const Command = ({ children }: CommandProps) => {
   const actions = [
     {
       id: 'copy',
-      name: 'Copiar Link',
+      name: 'Copy Link',
       shortcut: ['l'],
       keywords: 'copy-link',
       section: 'General',
@@ -57,7 +57,7 @@ const Command = ({ children }: CommandProps) => {
     },
     {
       id: 'email',
-      name: 'Enviar E-mail',
+      name: 'Send Email',
       shortcut: ['e'],
       keywords: 'send-email',
       section: 'General',
@@ -74,7 +74,7 @@ const Command = ({ children }: CommandProps) => {
     },
     {
       id: 'source',
-      name: 'Ver Código',
+      name: 'View Code',
       shortcut: ['c'],
       keywords: 'view-code',
       section: 'General',
@@ -92,7 +92,7 @@ const Command = ({ children }: CommandProps) => {
     },
     {
       id: 'home',
-      name: 'Início',
+      name: 'Home',
       shortcut: ['g', 'h'],
       keywords: 'go-home',
       section: 'Go To',
@@ -109,7 +109,7 @@ const Command = ({ children }: CommandProps) => {
     },
     {
       id: 'about',
-      name: 'Sobre',
+      name: 'About',
       shortcut: ['g', 'a'],
       keywords: 'go-about',
       section: 'Go To',
@@ -125,12 +125,12 @@ const Command = ({ children }: CommandProps) => {
       )
     },
     {
-      id: 'articles',
-      name: 'Artigos',
-      shortcut: ['g', 'b'],
-      keywords: 'go-articles',
+      id: 'posts',
+      name: 'Posts',
+      shortcut: ['g', 'p'],
+      keywords: 'go-posts',
       section: 'Go To',
-      perform: () => router.push('/articles'),
+      perform: () => router.push('/posts'),
       icon: (
         <Lottie
           lottieRef={articlesRef}
@@ -143,7 +143,7 @@ const Command = ({ children }: CommandProps) => {
     },
     {
       id: 'projects',
-      name: 'Projetos',
+      name: 'Projects',
       shortcut: ['g', 'p'],
       keywords: 'go-projects',
       section: 'Go To',
