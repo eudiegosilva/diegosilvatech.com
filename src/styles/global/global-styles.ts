@@ -7,7 +7,7 @@ export const globalStyles = globalCss({
     boxSizing: 'border-box'
   },
   'html, body': {
-    backgroundColor: '$brand-primary-01',
+    backgroundColor: '$brand-primary-low',
     fontFamily: '$body',
     WebkitFontSmoothing: 'antialiased'
   },
@@ -46,11 +46,11 @@ export const globalStyles = globalCss({
   },
   kbd: {
     fontFamily: '$body',
-    color: '$brand-primary-01',
+    color: '$base-black',
     background: '$text-secondary',
     padding: '1px 5px',
     borderRadius: '$sm',
-    transition: 'background $default ease-in-out',
+    transition: 'background $default',
     fontSize: '$sm'
   }
 });

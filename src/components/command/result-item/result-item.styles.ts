@@ -25,7 +25,7 @@ export const Shortcut = styled('div', {
 });
 
 export const Kbd = styled('kbd', {
-  background: '$transparent-white-03',
+  background: '$transparent-white-high',
   color: '$text-primary',
   padding: '$xs $sm',
   borderRadius: '$sm',

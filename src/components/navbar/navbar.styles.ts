@@ -36,7 +36,7 @@ export const ButtonHeader = styled('div', {
   height: '34px',
   padding: '0 $sm',
   transition: '$default',
-  '&:hover': { backgroundColor: '$brand-primary-03' }
+  '&:hover': { backgroundColor: '$brand-primary-mid' }
 });
 
 export const ButtonLogo = styled('div', {
@@ -99,7 +99,7 @@ export const ItemHovered = styled(motion.span, {
   top: '-9px',
   left: '0',
   right: '0',
-  background: '$brand-primary-03',
+  background: '$brand-primary-mid',
   padding: '$lg',
   borderRadius: '$md',
   zIndex: -1

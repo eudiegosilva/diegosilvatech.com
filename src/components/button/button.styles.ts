@@ -17,7 +17,7 @@ export const ButtonWrapper = styled('button', {
   textDecoration: 'none',
   transition: '$default',
   '&:hover': {
-    background: '$brand-primary-03',
+    background: '$brand-primary-mid',
     color: '$text-primary',
     opacity: 1
   },

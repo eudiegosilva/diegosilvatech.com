@@ -96,4 +96,17 @@ const text = {
   'text-highlight': brand['brand-primary-11']
 };
 
-export { base, transparent, neutral, brand, text };
+const palette = {
+  'base-white': '#ffffff',
+  'base-black': '#000000',
+  'brand-primary-low': brand['brand-primary-01'],
+  'brand-primary-mid': brand['brand-primary-03'],
+  'brand-primary-high': brand['brand-primary-11'],
+  'transparent-black-low': transparent['transparent-black-02'],
+  'transparent-black-high': transparent['transparent-black-03'],
+  'transparent-white-low': transparent['transparent-white-01'],
+  'transparent-white-high': transparent['transparent-white-03'],
+  ...text
+};
+
+export { palette };

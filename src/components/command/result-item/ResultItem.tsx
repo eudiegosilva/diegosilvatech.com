@@ -6,7 +6,7 @@ import * as s from './result-item.styles';
 const getResultStyle = active => {
   return {
     padding: '$sm $md',
-    background: active ? '$transparent-white-03' : '$transparent-white-01',
+    background: active ? '$transparent-white-high' : '$transparent-white-low',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',

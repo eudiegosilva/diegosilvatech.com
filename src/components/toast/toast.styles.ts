@@ -13,9 +13,9 @@ const slideDownAndFade = keyframes({
 });
 
 export const ToastWrapper = styled(ToastPrimitive.Root, {
-  background: '$brand-primary-03',
+  background: '$brand-primary-mid',
   borderRadius: '$md',
-  border: '1px solid $brand-primary-11',
+  border: '1px solid $brand-primary-high',
   boxShadow: 'rgb(0 0 0 / 8%) 0px 4px 13px',
   color: '$text-primary',
   fontSize: '$xs',
@@ -40,7 +40,7 @@ export const IconWrapper = styled('div', {
   variants: {
     variant: {
       success: {
-        color: '$brand-primary-11'
+        color: '$brand-primary-high'
       },
       error: {
         color: '$brand-secondary-11'

@@ -12,13 +12,7 @@ export const defaultTheme = {
   theme: {
     borderStyles: {},
     borderWidths: {},
-    colors: {
-      ...color.base,
-      ...color.brand,
-      ...color.neutral,
-      ...color.transparent,
-      ...color.text
-    },
+    colors: { ...color.palette },
     fonts: { ...font.family },
     fontSizes: { ...font.size },
     fontWeights: { ...font.weight },
