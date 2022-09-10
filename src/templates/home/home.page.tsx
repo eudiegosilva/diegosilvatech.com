@@ -5,17 +5,17 @@ import { Navbar, PageWrapper, ShortcutHome } from 'components';
 import * as s from './home.page.styles';
 
 export type HomePageProps = {
-  title: string;
+  tabTitle: string;
   description: string;
   image: string;
 };
 
-const HomePage = ({ description, image, title }: HomePageProps) => {
+const HomePage = ({ description, image, tabTitle }: HomePageProps) => {
   return (
     <PageWrapper>
       <Head>
-        <title>{title}</title>
-        <meta content={title} property="og:title" />
+        <title>{tabTitle}</title>
+        <meta content={tabTitle} property="og:title" />
         <meta content={description} name="description" />
         <meta content={description} property="og:description" />
         <meta content="https://diegosilva.tech" property="og:url" />

@@ -5,17 +5,23 @@ import { Navbar, PageWrapper } from 'components';
 import * as s from './about.page.styles';
 
 export type AboutPageProps = {
-  title: string;
+  tabTitle: string;
+  pageTitle: string;
   description: string;
   image: string;
 };
 
-const AboutPage = ({ description, image, title }: AboutPageProps) => {
+const AboutPage = ({
+  description,
+  image,
+  tabTitle,
+  pageTitle
+}: AboutPageProps) => {
   return (
     <PageWrapper>
       <Head>
-        <title>{title}</title>
-        <meta content={title} property="og:title" />
+        <title>{tabTitle}</title>
+        <meta content={tabTitle} property="og:title" />
         <meta content={description} name="description" />
         <meta content={description} property="og:description" />
         <meta content="https://diegosilva.tech" property="og:url" />

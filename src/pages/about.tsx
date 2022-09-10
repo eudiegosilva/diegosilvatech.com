@@ -3,7 +3,8 @@ import { AboutPage, AboutPageProps } from 'templates';
 export async function getStaticProps() {
   return {
     props: {
-      title: 'Sobre // @diegosilvatech',
+      tabTitle: 'sobre | diegosilvatech',
+      pageTitle: 'Code & UI',
       description:
         'Diego Silva é Brasileiro, desenvolvedor web com foco em criação de interfaces.',
       image: '/static/images/about-cover.jpg'
@@ -11,6 +12,18 @@ export async function getStaticProps() {
   };
 }
 
-export default function Home({ title, description, image }: AboutPageProps) {
-  return <AboutPage title={title} description={description} image={image} />;
+export default function Home({
+  tabTitle,
+  pageTitle,
+  description,
+  image
+}: AboutPageProps) {
+  return (
+    <AboutPage
+      tabTitle={tabTitle}
+      pageTitle={pageTitle}
+      description={description}
+      image={image}
+    />
+  );
 }
