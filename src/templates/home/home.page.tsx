@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import { Navbar, PageWrapper } from 'components';
+import { Navbar, PageWrapper, ShortcutHome } from 'components';
 
 import * as s from './home.page.styles';
 
@@ -37,6 +37,7 @@ const HomeTemplate = ({ description, image, title }: HomePageProps) => {
                 </strong>
                 {description}
               </p>
+              <ShortcutHome />
             </div>
           </s.PostContent>
         </s.PostWrapper>

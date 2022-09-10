@@ -27,7 +27,7 @@ export const Search = styled(KBarSearch, {
   background: '$background-primary',
   color: '$text-primary',
   fontFamily: '$body',
-  fontWeight: '$300',
+  fontWeight: '$400',
   '&::placeholder': {
     color: '$text-secondary'
   }

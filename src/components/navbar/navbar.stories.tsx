@@ -7,7 +7,7 @@ export default {
   component: Navbar,
   args: {},
   argTypes: {},
-  parameters: {}
+  parameters: { layout: 'fullscreen' }
 } as Meta;
 
 export const NavbarExample = () => {

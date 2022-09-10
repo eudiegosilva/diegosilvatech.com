@@ -1,40 +1,26 @@
 import { styled } from 'styles/stitches.config';
 
 export const ButtonWrapper = styled('button', {
-  padding: '$sm $md',
-  fontFamily: '$body',
+  appearance: 'none',
+  background: 'transparent',
+  border: 0,
+  borderRadius: '$md',
+  color: '$text-primary',
+  cursor: 'pointer',
+  display: 'inline-block',
   fontSize: '$md',
-  border: '1px solid',
-  fontWeight: '$300',
+  fontWeight: 600,
+  lineHeight: '$150',
+  margin: '0 0 0 -10px',
+  outline: '0',
+  padding: '$sm',
+  textDecoration: 'none',
   transition: '$default',
   '&:hover': {
-    cursor: 'pointer'
+    background: '$brand-primary-03',
+    color: '$text-primary',
+    opacity: 1
   },
-  variants: {
-    variant: {
-      primary: {
-        backgroundColor: '$brand-primary-300',
-        color: '$base-white-500',
-        borderColor: '$brand-primary-300',
-        '&:hover': {
-          backgroundColor: '$brand-primary-400',
-          borderColor: '$brand-primary-400'
-        }
-      },
-      secondary: {
-        backgroundColor: '$brand-secondary-300',
-        color: '$base-white-500',
-        borderColor: '$brand-secondary-300',
-        '&:hover': {
-          backgroundColor: '$brand-secondary-400',
-          borderColor: '$brand-secondary-400'
-        }
-      }
-    },
-    isFullWidth: {
-      true: {
-        width: '100%'
-      }
-    }
-  }
+  kbd: { transition: '$default' },
+  '&:hover kbd': { background: '$text-primary' }
 });

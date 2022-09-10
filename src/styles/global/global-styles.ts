@@ -25,6 +25,7 @@ export const globalStyles = globalCss({
   },
   p: {
     fontFamily: '$body',
+    margin: '$lg 0',
     color: '$text-secondary'
   },
   strong: {
