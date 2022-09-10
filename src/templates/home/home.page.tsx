@@ -22,9 +22,9 @@ const HomePage = ({ description, image, title }: HomePageProps) => {
         <meta content={`https://diegosilva.tech${image}`} property="og:image" />
       </Head>
       <Navbar />
-      <s.PageContent>
-        <s.PostWrapper>
-          <s.PostContent>
+      <s.PageContainer>
+        <s.ContentContainer>
+          <s.ContentWrapper>
             <div>
               <h1>Diego Silva</h1>
               <p>
@@ -39,9 +39,9 @@ const HomePage = ({ description, image, title }: HomePageProps) => {
               </p>
               <ShortcutHome />
             </div>
-          </s.PostContent>
-        </s.PostWrapper>
-      </s.PageContent>
+          </s.ContentWrapper>
+        </s.ContentContainer>
+      </s.PageContainer>
     </PageWrapper>
   );
 };

@@ -1,13 +1,13 @@
 import { styled } from 'styles/stitches.config';
 
-export const PageContent = styled('main', {
+export const PageContainer = styled('main', {
   alignItems: 'center',
   display: 'flex',
   margin: '0 auto',
   '@bp2': { width: 800 }
 });
 
-export const PostWrapper = styled('div', {
+export const ContentContainer = styled('div', {
   fontSize: '16px',
   lineHeight: '32px',
   color: '$text-secondary',
@@ -77,7 +77,7 @@ export const PostWrapper = styled('div', {
   }
 });
 
-export const PostContent = styled('main', {
+export const ContentWrapper = styled('main', {
   margin: '0 auto',
   maxWidth: '760px',
   padding: '0 $lg'

@@ -22,7 +22,13 @@ const AboutPage = ({ description, image, title }: AboutPageProps) => {
         <meta content={`https://diegosilva.tech${image}`} property="og:image" />
       </Head>
       <Navbar />
-      <h1>AboutPage</h1>
+      <s.PageContainer>
+        <s.ContentContainer>
+          <s.ContentWrapper>
+            <h1>AboutPage</h1>
+          </s.ContentWrapper>
+        </s.ContentContainer>
+      </s.PageContainer>
     </PageWrapper>
   );
 };
