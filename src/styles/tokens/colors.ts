@@ -63,7 +63,7 @@ const neutral = {
 };
 
 const brand = {
-  'brand-primary-01': '#1d1418',
+  'brand-primary-01': '#11090c',
   'brand-primary-02': '#27141c',
   'brand-primary-03': '#3c1827',
   'brand-primary-04': '#481a2d',

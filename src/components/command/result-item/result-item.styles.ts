@@ -8,7 +8,6 @@ export const Action = styled('div', {
   alignItems: 'center',
   fontWeight: '300',
   fontSize: '$md',
-  textTransform: 'lowercase',
   fontFamily: '$body',
   letterSpacing: '$body-small'
 });

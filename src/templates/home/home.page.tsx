@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import { Navbar, Typography } from 'components';
+import { Navbar } from 'components';
 
 import * as s from './home.page.styles';
 
@@ -26,17 +26,17 @@ const HomeTemplate = ({ description, image, title }: HomePageProps) => {
         <s.PostWrapper>
           <s.PostContent>
             <div>
-              <Typography variant="h1">Diego Silva</Typography>
-              <Typography variant="p">
-                <Typography variant="strong">
+              <h1>Diego Silva</h1>
+              <p>
+                <strong>
                   Frontend Developer Sênior no{' '}
                   <a href="https://neon.com.br/" target="blank">
                     Banco Neon
                   </a>
                   .<br />
-                </Typography>
+                </strong>
                 {description}
-              </Typography>
+              </p>
             </div>
           </s.PostContent>
         </s.PostWrapper>
