@@ -26,7 +26,7 @@ export const Search = styled(KBarSearch, {
   margin: 0,
   background: '$background-primary',
   color: '$text-primary',
-  fontFamily: '$epilogue',
+  fontFamily: '$body',
   fontWeight: '$300',
   '&::placeholder': {
     textTransform: 'lowercase',

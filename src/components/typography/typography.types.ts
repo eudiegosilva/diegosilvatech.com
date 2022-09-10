@@ -19,7 +19,7 @@ export type FontElementsTypes =
   | 'strong'
   | 'sub'
   | 'sup';
-export type FontVariantTypes = 'body' | 'heading';
+export type FontVariantTypes = 'h1' | 'h2' | 'p' | 'strong' | 'a';
 export type FontWeightTypes = keyof typeof tokens.font.weight;
 export type FontSizeTypes = keyof typeof tokens.font.size;
 export type FontLineHeightTypes = keyof typeof tokens.font.lineHeight;

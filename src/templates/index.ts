@@ -1,3 +1,1 @@
-import HomeTemplate from './home/home.template';
-
-export { HomeTemplate };
+export { default as HomePage, type HomePageProps } from './home/home.page';

@@ -1,5 +1,6 @@
 const family = {
-  epilogue: 'Epilogue, sans-serif',
+  heading: 'Epilogue, sans-serif',
+  body: 'Montserrat, sans-serif',
   code: '"Source Code Pro", monospace'
 };
 

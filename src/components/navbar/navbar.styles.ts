@@ -41,7 +41,7 @@ export const ButtonHeader = styled('div', {
 
 export const ButtonLogo = styled('div', {
   fontSize: '$md',
-  fontFamily: '$epilogue',
+  fontFamily: '$body',
   textDecoration: 'none',
   height: '100%',
   display: 'flex',
@@ -71,7 +71,7 @@ export const ItemContainer = styled(motion.span, {
   cursor: 'pointer',
   display: 'inline-block',
   fontSize: '$xs',
-  fontWeight: '$300',
+  fontWeight: '$400',
   letterSpacing: '1.2px',
   padding: '$lg',
   textDecoration: 'none',
@@ -96,7 +96,7 @@ export const ItemContainer = styled(motion.span, {
 
 export const ItemHovered = styled(motion.span, {
   position: 'absolute',
-  top: '-12px',
+  top: '-9px',
   left: '0',
   right: '0',
   background: '$brand-primary-03',

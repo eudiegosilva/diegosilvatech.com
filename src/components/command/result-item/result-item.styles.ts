@@ -9,7 +9,7 @@ export const Action = styled('div', {
   fontWeight: '300',
   fontSize: '$md',
   textTransform: 'lowercase',
-  fontFamily: '$epilogue',
+  fontFamily: '$body',
   letterSpacing: '$body-small'
 });
 
