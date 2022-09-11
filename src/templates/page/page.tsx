@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import { Navbar, PageWrapper } from 'components';
+import { Navbar } from 'components';
 
 import * as s from './page.styles';
 
@@ -20,7 +20,7 @@ const Page = ({
   tabTitle
 }: PageProps) => {
   return (
-    <PageWrapper>
+    <s.PageWrapper>
       <Head>
         <title>{tabTitle}</title>
         <meta content={tabTitle} property="og:title" />
@@ -30,15 +30,13 @@ const Page = ({
         <meta content={`https://diegosilva.tech${image}`} property="og:image" />
       </Head>
       <Navbar />
+
       <s.PageContainer>
-        <s.ContainerContent>
-          <s.ContentWrapper>
-            {/* <s.TitleGradient>Test</s.TitleGradient> */}
-            {children}
-          </s.ContentWrapper>
-        </s.ContainerContent>
+        <s.PageContent>
+          <s.ContentWrapper>{children}</s.ContentWrapper>
+        </s.PageContent>
       </s.PageContainer>
-    </PageWrapper>
+    </s.PageWrapper>
   );
 };
 

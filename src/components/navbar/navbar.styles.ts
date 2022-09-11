@@ -1,29 +1,28 @@
+import { Container } from 'components';
 import { motion } from 'framer-motion';
 
 import { styled } from 'styles/stitches.config';
 
-export const Header = styled('header', {
+export const HeaderContainer = styled('header', {
+  zIndex: 0,
+  width: '100%'
+});
+
+export const HeaderWrapper = styled(Container, {
   display: 'flex',
   alignItems: 'center',
-  fontSize: '$md',
-  minHeight: '60px',
-  width: '100%',
   flexWrap: 'wrap',
-  position: 'absolute',
-  top: 0,
-  zIndex: '$menu',
-  marginTop: '$sm',
-  padding: '0 $sm',
-  '@bp2': { marginTop: '0' }
+  minHeight: '60px'
 });
 
 export const NavbarWrapper = styled('nav', {
-  textAlign: 'center',
   flex: 1,
   order: 2,
   flexBasis: '100%',
-  '@bp2': { order: 0, flexBasis: 'initial' },
-  '@bp3': { overflowX: 'scroll', overflowY: 'hidden' }
+  overflowX: 'scroll',
+  overflowY: 'hidden',
+  textAlign: 'center',
+  '@greater-md': { order: 0, flexBasis: 'initial' }
 });
 
 export const ButtonHeader = styled('div', {
@@ -51,7 +50,6 @@ export const ButtonLogo = styled('div', {
 
 export const List = styled('ul', {
   margin: 0,
-  padding: 0,
   listStyle: 'none',
   display: 'inline-flex',
   position: 'relative',
@@ -91,7 +89,8 @@ export const ItemContainer = styled(motion.span, {
     width: '32px',
     background: '$brand-primary-high',
     opacity: 0,
-    transition: 'opacity $default'
+    transition: 'opacity $default',
+    zIndex: '$always-on-top'
   }
 });
 

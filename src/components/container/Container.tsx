@@ -1,11 +1,15 @@
-import * as s from './container.styles';
+import { styled } from 'styles/stitches.config';
 
-export type ContainerProps = {
-  children: React.ReactNode;
-};
-
-const Container = ({ children }: ContainerProps) => {
-  return <s.ContainerWrapper>{children}</s.ContainerWrapper>;
-};
+const Container = styled('div', {
+  mx: 'auto',
+  // '@greater-sm': { maxWidth: '$md', px: '20px', border: '2px solid red' },
+  // '@greater-md': { maxWidth: '$lg', px: '20px', border: '2px solid blue' },
+  // '@greater-lg': { maxWidth: '$xl', px: '20px', border: '2px solid green' },
+  // '@greater-xl': { minWidth: '$xl', px: '20px', border: '2px solid orange' }
+  '@greater-sm': { maxWidth: '$md', px: '20px' },
+  '@greater-md': { maxWidth: '$lg', px: '20px' },
+  '@greater-lg': { maxWidth: '$xl', px: '20px' },
+  '@greater-xl': { minWidth: '$xl', px: '20px' }
+});
 
 export { Container };

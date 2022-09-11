@@ -20,7 +20,7 @@ const AboutPage = ({
       tabTitle={tabTitle}
       pageTitle={pageTitle}
     >
-      <s.Container>
+      {/* <s.Container>
         <s.Section>
           <Image
             alt="diegosilvatech"
@@ -32,7 +32,7 @@ const AboutPage = ({
             priority
           />
         </s.Section>
-      </s.Container>
+      </s.Container> */}
     </Page>
   );
 };
