@@ -1,6 +1,6 @@
-import { Container } from 'components';
-
 import { styled } from 'styles/stitches.config';
+
+import { Container } from 'components/container/container.styles';
 
 export const PageWrapper = styled('div', {
   minHeight: '100vh',

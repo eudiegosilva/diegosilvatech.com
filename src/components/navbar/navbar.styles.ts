@@ -1,7 +1,8 @@
-import { Container } from 'components';
 import { motion } from 'framer-motion';
 
 import { styled } from 'styles/stitches.config';
+
+import { Container } from 'components/container/container.styles';
 
 export const HeaderContainer = styled('header', {
   zIndex: 0,
@@ -19,10 +20,11 @@ export const NavbarWrapper = styled('nav', {
   flex: 1,
   order: 2,
   flexBasis: '100%',
+  overflow: 'hidden',
   overflowX: 'scroll',
   overflowY: 'hidden',
   textAlign: 'center',
-  '@greater-md': { order: 0, flexBasis: 'initial' }
+  '@greater-md': { order: 0, flexBasis: 'initial', overflow: 'hidden' }
 });
 
 export const ButtonHeader = styled('div', {
