@@ -5,7 +5,9 @@ import {
   spacing,
   transition,
   util,
-  zIndex
+  zIndex,
+  media,
+  size
 } from '../../styles/tokens';
 
 export const defaultTheme = {
@@ -20,16 +22,11 @@ export const defaultTheme = {
     lineHeights: { ...font.lineHeight },
     radii: { ...border.radius },
     shadows: {},
-    sizes: {},
+    sizes: { ...size },
     space: { ...spacing },
     transitions: { ...transition },
     zIndices: { ...zIndex }
   },
   utils: { ...util },
-  media: {
-    bp1: '(min-width: 425px)',
-    bp2: '(min-width: 760px)',
-    bp3: '(max-width: 780px)',
-    bp4: '(max-width: 1024px)'
-  }
+  media: { ...media }
 };

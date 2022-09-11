@@ -13,7 +13,6 @@ export const Header = styled('header', {
   top: 0,
   zIndex: '$menu',
   marginTop: '$sm',
-  padding: '0 $sm',
   '@bp2': { marginTop: '0' }
 });
 
