@@ -1,4 +1,4 @@
-import { Navbar } from 'components';
+import { Navbar, Footer } from 'components';
 
 import * as s from './page-structure.styles';
 
@@ -12,7 +12,7 @@ const PageStructure = ({ children, alignment = 'top' }: PageStructureProps) => {
     <s.StructureWrapper>
       <Navbar />
       <s.ChildrenWrapper alignment={alignment}>{children}</s.ChildrenWrapper>
-      <footer>teste</footer>
+      <Footer />
     </s.StructureWrapper>
   );
 };

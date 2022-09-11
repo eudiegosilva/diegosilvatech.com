@@ -5,3 +5,4 @@ export { Command } from './command/Command';
 export { Toast } from './toast/Toast';
 export { ShortcutHome } from './shortcut-home/ShortcutHome';
 export { Container } from './container/Container';
+export { Footer } from './footer/Footer';
