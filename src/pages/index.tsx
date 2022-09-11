@@ -12,18 +12,8 @@ export async function getStaticProps() {
   };
 }
 
-export default function Home({
-  tabTitle,
-  description,
-  image,
-  pageTitle
-}: HomePageProps) {
+export default function Home({ tabTitle, description, image }: HomePageProps) {
   return (
-    <HomePage
-      pageTitle={pageTitle}
-      tabTitle={tabTitle}
-      description={description}
-      image={image}
-    />
+    <HomePage tabTitle={tabTitle} description={description} image={image} />
   );
 }

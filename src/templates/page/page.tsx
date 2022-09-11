@@ -8,7 +8,7 @@ export type PageProps = {
   children: React.ReactNode;
   description: string;
   image: string;
-  pageTitle: string;
+  pageTitle?: string;
   tabTitle: string;
 };
 
@@ -33,6 +33,7 @@ const Page = ({
 
       <s.PageContainer>
         <s.PageContent>
+          {!!pageTitle && <s.TitleGradient>{pageTitle}</s.TitleGradient>}
           <s.ContentWrapper>{children}</s.ContentWrapper>
         </s.PageContent>
       </s.PageContainer>

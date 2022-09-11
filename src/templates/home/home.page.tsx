@@ -1,21 +1,11 @@
 import { ShortcutHome } from 'components';
 import { Page, PageProps } from 'templates';
 
-export type HomePageProps = Omit<PageProps, 'children'>;
+export type HomePageProps = Omit<PageProps, 'children' | 'pageTitle'>;
 
-const HomePage = ({
-  description,
-  image,
-  tabTitle,
-  pageTitle
-}: HomePageProps) => {
+const HomePage = ({ description, image, tabTitle }: HomePageProps) => {
   return (
-    <Page
-      description={description}
-      image={image}
-      tabTitle={tabTitle}
-      pageTitle={pageTitle}
-    >
+    <Page description={description} image={image} tabTitle={tabTitle}>
       <div>
         <h1>Diego Silva</h1>
         <p>

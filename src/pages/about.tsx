@@ -12,7 +12,7 @@ export async function getStaticProps() {
   };
 }
 
-export default function Home({
+export default function About({
   tabTitle,
   pageTitle,
   description,
