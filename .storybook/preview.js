@@ -6,7 +6,7 @@ globalStyles();
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
   backgrounds: {
-    default: '$base-white',
+    default: '$brand-primary-low',
     values: [
       {
         name: '$base-white',

@@ -1,19 +1,18 @@
 import { styled } from 'styles/stitches.config';
 
 export const PageMain = styled('main', {
-  border: '2px solid red',
-  // '@bp2': { padding: '$nav-height-desktop' },
-  // padding: '$nav-height-mobile',
+  '@bp2': { padding: '$nav-height-desktop' },
+  padding: '$nav-height-mobile',
   overflow: 'hidden',
   flex: '1 1'
 });
 
-// export const PageContainer = styled(PageMain, {
-//   alignItems: 'center',
-//   display: 'flex',
-//   margin: '0 auto',
-//   '@bp2': { width: 800 }
-// });
+export const PageContainer = styled(PageMain, {
+  alignItems: 'center',
+  display: 'flex',
+  margin: '0 auto',
+  '@bp2': { width: 800 }
+});
 
 export const ContainerContent = styled('div', {
   fontSize: '$md',

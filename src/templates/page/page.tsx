@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import { Container, Navbar, PageWrapper } from 'components';
+import { Navbar, PageWrapper } from 'components';
 
 import * as s from './page.styles';
 
@@ -30,14 +30,14 @@ const Page = ({
         <meta content={`https://diegosilva.tech${image}`} property="og:image" />
       </Head>
       <Navbar />
-      <Container>
+      <s.PageContainer>
         <s.ContainerContent>
           <s.ContentWrapper>
             {/* <s.TitleGradient>Test</s.TitleGradient> */}
             {children}
           </s.ContentWrapper>
         </s.ContainerContent>
-      </Container>
+      </s.PageContainer>
     </PageWrapper>
   );
 };
