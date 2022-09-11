@@ -1,15 +1,11 @@
-import Head from 'next/head';
+import Image from 'next/image';
 
-import { Navbar, PageWrapper } from 'components';
+import diegosilvatechImage from 'assets/images/diegosilvatech.jpg';
+import { Page, PageProps } from 'templates';
 
-import * as s from './about.page.styles';
+import * as s from 'templates/page/page.styles';
 
-export type AboutPageProps = {
-  tabTitle: string;
-  pageTitle: string;
-  description: string;
-  image: string;
-};
+export type AboutPageProps = Omit<PageProps, 'children'>;
 
 const AboutPage = ({
   description,
@@ -18,24 +14,26 @@ const AboutPage = ({
   pageTitle
 }: AboutPageProps) => {
   return (
-    <PageWrapper>
-      <Head>
-        <title>{tabTitle}</title>
-        <meta content={tabTitle} property="og:title" />
-        <meta content={description} name="description" />
-        <meta content={description} property="og:description" />
-        <meta content="https://diegosilva.tech" property="og:url" />
-        <meta content={`https://diegosilva.tech${image}`} property="og:image" />
-      </Head>
-      <Navbar />
-      <s.PageContainer>
-        <s.ContentContainer>
-          <s.ContentWrapper>
-            <h1>AboutPage</h1>
-          </s.ContentWrapper>
-        </s.ContentContainer>
-      </s.PageContainer>
-    </PageWrapper>
+    <Page
+      description={description}
+      image={image}
+      tabTitle={tabTitle}
+      pageTitle={pageTitle}
+    >
+      <s.Container>
+        <s.Section>
+          <Image
+            alt="diegosilvatech"
+            src={diegosilvatechImage}
+            width="336"
+            height="336"
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAP0lEQVQImQE0AMv/AFBQUJKSkqmpqaOjowCurq7v7+/Jycm5ubkA////jIyMn5+fg4ODADAwMD09PWlpaQAAAApRGnEHblMWAAAAAElFTkSuQmCC"
+            priority
+          />
+        </s.Section>
+      </s.Container>
+    </Page>
   );
 };
 

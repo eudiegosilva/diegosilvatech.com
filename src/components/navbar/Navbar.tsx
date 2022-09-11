@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-import logo from 'assets/images/diegosilvatech.png';
+import logo from 'assets/images/diegosilvatech.jpg';
 import { Icon } from 'components';
 import { AnimateSharedLayout } from 'framer-motion';
 import { useKBar } from 'kbar';

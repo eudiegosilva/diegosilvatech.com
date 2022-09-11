@@ -37,7 +37,7 @@ export const Animator = styled(KBarAnimator, {
   maxWidth: '800px',
   width: '100%',
   color: '$text-primary',
-  borderRadius: '$md',
+  borderRadius: '$sm',
   overflow: 'hidden',
   '@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none))': {
     backgroundColor: '$transparent-white-high',

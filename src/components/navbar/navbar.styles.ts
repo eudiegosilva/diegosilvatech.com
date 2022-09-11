@@ -30,7 +30,7 @@ export const ButtonHeader = styled('div', {
   appearance: 'none',
   background: 'transparent',
   border: 'none',
-  borderRadius: '$md',
+  borderRadius: '$sm',
   color: '$text-primary',
   cursor: 'pointer',
   height: '34px',
@@ -102,7 +102,7 @@ export const ItemHovered = styled(motion.span, {
   right: '0',
   background: '$brand-primary-mid',
   padding: '$lg',
-  borderRadius: '$md',
+  borderRadius: '$sm',
   zIndex: -1
 });
 

@@ -4,6 +4,7 @@ export async function getStaticProps() {
   return {
     props: {
       tabTitle: 'diegosilvatech',
+      pageTitle: 'Diego Silva',
       description:
         'Helping to improve the development experience for developers in Brazil and around the world.',
       image: '/static/images/home-cover.jpg'
@@ -11,8 +12,18 @@ export async function getStaticProps() {
   };
 }
 
-export default function Home({ tabTitle, description, image }: HomePageProps) {
+export default function Home({
+  tabTitle,
+  description,
+  image,
+  pageTitle
+}: HomePageProps) {
   return (
-    <HomePage tabTitle={tabTitle} description={description} image={image} />
+    <HomePage
+      pageTitle={pageTitle}
+      tabTitle={tabTitle}
+      description={description}
+      image={image}
+    />
   );
 }

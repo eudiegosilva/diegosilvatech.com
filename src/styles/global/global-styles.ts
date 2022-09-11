@@ -52,5 +52,13 @@ export const globalStyles = globalCss({
     borderRadius: '$sm',
     transition: 'background $default',
     fontSize: '$sm'
+  },
+  img: {
+    borderRadius: '$sm',
+    minWidth: '100%',
+    maxWidth: '100%'
+  },
+  ul: {
+    margin: 0
   }
 });

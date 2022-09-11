@@ -14,7 +14,7 @@ const slideDownAndFade = keyframes({
 
 export const ToastWrapper = styled(ToastPrimitive.Root, {
   background: '$brand-primary-mid',
-  borderRadius: '$md',
+  borderRadius: '$sm',
   border: '1px solid $brand-primary-high',
   boxShadow: 'rgb(0 0 0 / 8%) 0px 4px 13px',
   color: '$text-primary',

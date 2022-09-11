@@ -4,7 +4,7 @@ export const ButtonWrapper = styled('button', {
   appearance: 'none',
   background: 'transparent',
   border: 0,
-  borderRadius: '$md',
+  borderRadius: '$sm',
   color: '$text-primary',
   cursor: 'pointer',
   display: 'inline-block',
