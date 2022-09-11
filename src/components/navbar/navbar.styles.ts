@@ -55,7 +55,7 @@ export const List = styled('ul', {
   listStyle: 'none',
   display: 'inline-flex',
   position: 'relative',
-  '@bp1': { justifyContent: 'space-around' }
+  '@greater-sm': { justifyContent: 'space-around' }
 });
 
 export const ListItem = styled('li', {});

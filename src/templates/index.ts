@@ -1,6 +1,5 @@
 export { HomePage, type HomePageProps } from './home/home.page';
 export { AboutPage, type AboutPageProps } from './about/about.page';
-export { Page, type PageProps } from './page/page';
 export { PageHead, type PageHeadProps } from './page-head/page-head';
 export {
   PageContent,

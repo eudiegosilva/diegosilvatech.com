@@ -1,9 +1,12 @@
 import Image from 'next/image';
 
 import diegosilvatechImage from 'assets/images/diegosilvatech.jpg';
-import { PageContent, PageHead, PageProps, PageStructure } from 'templates';
+import { GradientTitle } from 'components';
+import { PageContent, PageHead, PageHeadProps, PageStructure } from 'templates';
 
-export type AboutPageProps = Omit<PageProps, 'children'>;
+export type AboutPageProps = {
+  pageTitle: string;
+} & PageHeadProps;
 
 const AboutPage = ({
   description,
@@ -15,7 +18,9 @@ const AboutPage = ({
     <PageStructure>
       <PageHead description={description} image={image} tabTitle={tabTitle} />
       <PageContent>
+        {pageTitle && <GradientTitle>{pageTitle}</GradientTitle>}
         <Image
+          className="author-image"
           alt="diegosilvatech"
           src={diegosilvatechImage}
           width="336"

@@ -5,19 +5,8 @@ import { Example, ExampleProps } from './Example';
 export default {
   title: 'Examples/Example',
   component: Example,
-  args: {
-    children: 'Example children'
-  },
-  argTypes: {
-    children: {
-      description: 'Example label',
-      table: {
-        defaultValue: {
-          summary: 'click me'
-        }
-      }
-    }
-  },
+  args: { children: 'Example children' },
+  argTypes: { children: { description: 'Example label' } },
   parameters: {}
 } as Meta;
 
