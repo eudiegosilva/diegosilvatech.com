@@ -102,6 +102,7 @@ const palette = {
   'brand-primary-low': brand['brand-primary-01'],
   'brand-primary-mid': brand['brand-primary-03'],
   'brand-primary-high': brand['brand-primary-11'],
+  'brand-primary-scrollbar': brand['brand-primary-09'],
   'brand-secondary-high': brand['brand-secondary-11'],
   'transparent-black-low': transparent['transparent-black-02'],
   'transparent-black-high': transparent['transparent-black-03'],

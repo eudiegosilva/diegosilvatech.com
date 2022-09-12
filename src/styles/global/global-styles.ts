@@ -9,7 +9,17 @@ export const globalStyles = globalCss({
   'html, body': {
     backgroundColor: '$brand-primary-low',
     fontFamily: '$body',
-    WebkitFontSmoothing: 'antialiased'
+    WebkitFontSmoothing: 'antialiased',
+    '&::-webkit-scrollbar': {
+      backgroundColor: 'transparent',
+      width: 5
+    },
+    '&::-webkit-scrollbar-track': {
+      backgroundColor: 'transparent'
+    },
+    '&::-webkit-scrollbar-thumb': {
+      backgroundColor: '$brand-primary-scrollbar'
+    }
   },
   h1: {
     fontFamily: '$heading',

@@ -1,6 +1,8 @@
 import { ShortcutHome } from 'components';
 import { PageStructure, PageHead, PageHeadProps, PageContent } from 'templates';
 
+import * as s from './home.page.styles';
+
 export type HomePageProps = PageHeadProps;
 
 const HomePage = ({ description, image, tabTitle }: HomePageProps) => {
@@ -10,16 +12,17 @@ const HomePage = ({ description, image, tabTitle }: HomePageProps) => {
       <PageContent>
         <div>
           <h1>Diego Silva</h1>
-          <p>
+          <s.Paragraph>
             <strong>
               Senior Frontend Developer at{' '}
               <a href="https://neon.com.br/" target="blank">
                 Neon Bank
               </a>
-              .<br />
+              .
+              <br />
             </strong>
             {description}
-          </p>
+          </s.Paragraph>
           <ShortcutHome />
         </div>
       </PageContent>
