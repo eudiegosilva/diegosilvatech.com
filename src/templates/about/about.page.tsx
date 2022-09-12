@@ -1,7 +1,6 @@
 import Image from 'next/image';
 
 import diegosilvatechImage from 'assets/images/diegosilvatech.jpg';
-import { GradientTitle } from 'components';
 import { PageContent, PageHead, PageHeadProps, PageStructure } from 'templates';
 
 import * as s from './about.page.styles';
@@ -19,8 +18,7 @@ const AboutPage = ({
   return (
     <PageStructure>
       <PageHead description={description} image={image} tabTitle={tabTitle} />
-      <PageContent>
-        {pageTitle && <GradientTitle>{pageTitle}</GradientTitle>}
+      <PageContent pageTitle={pageTitle}>
         <s.ContentWrapper>
           <s.Section>
             <Image

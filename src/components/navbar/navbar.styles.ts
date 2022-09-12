@@ -13,7 +13,9 @@ export const HeaderWrapper = styled(Container, {
   display: 'flex',
   alignItems: 'center',
   flexWrap: 'wrap',
-  minHeight: '60px'
+  minHeight: '60px',
+  marginTop: '$md',
+  '@greater-lg': { marginTop: 0 }
 });
 
 export const NavbarWrapper = styled('nav', {
@@ -27,7 +29,8 @@ export const NavbarWrapper = styled('nav', {
   '@greater-lg': { order: 0, flexBasis: 'initial', overflow: 'hidden' },
   '&::-webkit-scrollbar': {
     backgroundColor: 'transparent',
-    width: 0
+    width: 0,
+    height: 0
   },
   '&::-webkit-scrollbar-track': {
     backgroundColor: 'transparent',

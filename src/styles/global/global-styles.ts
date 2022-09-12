@@ -50,8 +50,7 @@ export const globalStyles = globalCss({
     textDecoration: 'none',
     transition: '$fast',
     '&:hover, &:focus': {
-      opacity: '0.8',
-      fontWeight: '$500'
+      opacity: '0.8'
     }
   },
   kbd: {
