@@ -1,14 +1,26 @@
+import { AnchorHTMLAttributes, ButtonHTMLAttributes } from 'react';
+
 import * as s from './button.styles';
+
+type ButtonTypes =
+  | AnchorHTMLAttributes<HTMLAnchorElement>
+  | ButtonHTMLAttributes<HTMLButtonElement>;
 
 export type ButtonProps = {
   children: React.ReactNode;
   type?: 'button' | 'submit' | 'reset';
+  as?: 'a' | 'button';
   handleClick?: () => void;
-};
+} & ButtonTypes;
 
-const Button = ({ children, type = 'button', handleClick }: ButtonProps) => {
+const Button = ({
+  children,
+  as = 'button',
+  handleClick,
+  ...rest
+}: ButtonProps) => {
   return (
-    <s.ButtonWrapper type={type} onClick={handleClick}>
+    <s.ButtonWrapper as={as} onClick={handleClick} {...rest}>
       {children}
     </s.ButtonWrapper>
   );

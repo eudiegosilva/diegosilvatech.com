@@ -3,11 +3,11 @@ import { useRef, useState } from 'react';
 
 import { useRouter } from 'next/router';
 
+import * as icon from 'assets/icons';
 import { Toast } from 'components';
 import { KBarProvider, KBarPortal } from 'kbar';
 import Lottie from 'lottie-react';
 
-import * as icon from './icons';
 import { RenderResults } from './render-results/RenderResults';
 
 import * as s from './command.styles';

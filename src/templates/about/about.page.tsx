@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import diegosilvatechImage from 'assets/images/diegosilvatech.jpg';
+import { diegosilvatech } from 'assets/images';
 import { Typography } from 'components';
 import { PageContent, PageHead, PageHeadProps, PageStructure } from 'templates';
 
@@ -28,7 +28,7 @@ const AboutPage = ({
               <Image
                 className="author-image"
                 alt="diegosilvatech"
-                src={diegosilvatechImage}
+                src={diegosilvatech}
                 width="336"
                 height="336"
                 placeholder="blur"
@@ -64,7 +64,7 @@ const AboutPage = ({
             </s.Section>
           </s.SectionWrapper>
 
-          <SectionBio />
+          <SectionBio description={description} />
         </s.ContentWrapper>
       </PageContent>
     </PageStructure>

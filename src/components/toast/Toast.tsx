@@ -2,7 +2,7 @@
 import { useRef } from 'react';
 
 import * as ToastPrimitive from '@radix-ui/react-toast';
-import checkIcon from 'assets/static/icons/check.json';
+import { checkIcon } from 'assets/icons';
 import Lottie from 'lottie-react';
 
 import * as s from './toast.styles';

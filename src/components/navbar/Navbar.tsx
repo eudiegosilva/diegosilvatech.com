@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-import logo from 'assets/images/diegosilvatech.jpg';
+import { diegosilvatech } from 'assets/images';
 import { Icon } from 'components';
 import { AnimateSharedLayout } from 'framer-motion';
 import { useKBar } from 'kbar';
@@ -25,7 +25,7 @@ const Navbar = ({ disableCommand = false }: NavbarProps) => {
           <Link href="/" passHref>
             <s.ButtonLogo as="a">
               <Image
-                src={logo}
+                src={diegosilvatech}
                 alt="@diegosilvatech logo"
                 width={32}
                 height={32}
