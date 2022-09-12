@@ -1,5 +1,9 @@
+// @ts-nocheck
+import { useRef } from 'react';
+
 import * as ToastPrimitive from '@radix-ui/react-toast';
-import { Icon } from 'components';
+import checkIcon from 'assets/static/icons/check.json';
+import Lottie from 'lottie-react';
 
 import * as s from './toast.styles';
 
@@ -18,11 +22,18 @@ const Toast = ({
   showToast,
   setShowToast
 }: ToastProps) => {
+  const verifiedRef = useRef();
   return (
     <ToastPrimitive.Provider>
       <s.ToastWrapper open={showToast} onOpenChange={setShowToast}>
         <s.IconWrapper variant={variant}>
-          <Icon.MessageCheckIcon />
+          <Lottie
+            lottieRef={verifiedRef}
+            style={{ width: 20, height: 20 }}
+            animationData={checkIcon}
+            loop={true}
+            autoplay={true}
+          />
         </s.IconWrapper>
         <div>
           <s.Title>{title}</s.Title>

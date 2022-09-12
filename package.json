@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "next build",
-    "dev": "yarn open-browser && next dev",
+    "dev": "next dev",
     "open-browser": "open http://localhost:3000",
     "lint": "eslint \"src/**/*.{ts,tsx}\"",
     "start": "next start",
