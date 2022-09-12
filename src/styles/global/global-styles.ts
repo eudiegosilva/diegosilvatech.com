@@ -33,11 +33,6 @@ export const globalStyles = globalCss({
     fontSize: '$xl',
     color: '$text-primary'
   },
-  p: {
-    fontFamily: '$body',
-    margin: '$lg 0',
-    color: '$text-secondary'
-  },
   strong: {
     fontFamily: '$body',
     color: '$text-primary',
@@ -69,5 +64,12 @@ export const globalStyles = globalCss({
   },
   ul: {
     margin: 0
+  },
+  blockquote: {
+    borderLeft: '4px solid $brand-primary-high',
+    color: '$text-secondary',
+    fontStyle: 'italic',
+    margin: '0',
+    paddingLeft: '$lg'
   }
 });

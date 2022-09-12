@@ -10,11 +10,31 @@ export type PageContentProps = {
   colorSecondary?: ColorTypes;
 };
 
-const PageContent = ({ children, pageTitle }: PageContentProps) => {
+const PageContent = ({
+  children,
+  pageTitle,
+  colorPrimary = 'brand-primary-high',
+  colorSecondary = 'brand-secondary-high'
+}: PageContentProps) => {
   return (
-    <s.ContentWrapper>
+    <s.ContentWrapper
+      css={{
+        '& ::selection': {
+          background: `$${colorPrimary}`,
+          color: '#000000',
+          WebkitTextFillColor: '#000000'
+        }
+      }}
+    >
       <Container>
-        {pageTitle && <GradientTitle>{pageTitle}</GradientTitle>}
+        {pageTitle && (
+          <GradientTitle
+            colorPrimary={colorPrimary}
+            colorSecondary={colorSecondary}
+          >
+            {pageTitle}
+          </GradientTitle>
+        )}
         {children}
       </Container>
     </s.ContentWrapper>
