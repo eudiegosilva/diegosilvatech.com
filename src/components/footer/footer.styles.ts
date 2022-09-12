@@ -1,11 +1,20 @@
 import { styled } from 'styles/stitches.config';
 
+import { Container } from 'components/container/container.styles';
+
+export const FooterContainer = styled(Container, {
+  display: 'flex',
+  width: '100%',
+  '@greater-lg': { width: 'fit-content' }
+});
+
 export const FooterWrapper = styled('footer', {
   color: '$text-secondary',
-  padding: '$lg 0',
   display: 'flex',
-  justifyContent: 'space-around',
-  '@less-md': { overflowX: 'scroll', overflowY: 'hidden', padding: '$sm 0' },
+  justifyContent: 'space-between',
+  width: '100%',
+  '@greater-lg': { justifyContent: 'center' },
+
   '&::-webkit-scrollbar': {
     backgroundColor: 'transparent',
     width: 0
@@ -27,7 +36,7 @@ export const Anchor = styled('a', {
   textTransform: 'lowercase',
   transition: '$fast',
   '&:hover, &:focus': { color: '$text-primary' },
-  padding: '$sm $lg',
-  mx: '$xs',
-  border: 'none'
+  border: 'none',
+  padding: '$lg 0',
+  '@greater-lg': { mx: '$lg' }
 });

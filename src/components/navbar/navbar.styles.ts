@@ -24,7 +24,7 @@ export const NavbarWrapper = styled('nav', {
   overflowX: 'scroll',
   overflowY: 'hidden',
   textAlign: 'center',
-  '@greater-md': { order: 0, flexBasis: 'initial', overflow: 'hidden' }
+  '@greater-lg': { order: 0, flexBasis: 'initial', overflow: 'hidden' }
 });
 
 export const ButtonHeader = styled('div', {
@@ -55,7 +55,7 @@ export const List = styled('ul', {
   listStyle: 'none',
   display: 'inline-flex',
   position: 'relative',
-  '@greater-sm': { justifyContent: 'space-around' }
+  '@greater-lg': { justifyContent: 'space-around' }
 });
 
 export const ListItem = styled('li', {});

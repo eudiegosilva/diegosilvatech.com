@@ -4,7 +4,7 @@ export async function getStaticProps() {
   return {
     props: {
       tabTitle: 'sobre | diegosilvatech',
-      pageTitle: 'Code & UI',
+      pageTitle: 'Development experience.',
       description:
         'Diego Silva é Brasileiro, desenvolvedor web com foco em criação de interfaces.',
       image: '/static/images/about-cover.jpg'

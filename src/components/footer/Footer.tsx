@@ -1,7 +1,5 @@
 import Link from 'next/link';
 
-import { Container } from 'components';
-
 import { links, LinkProps } from './footer-links';
 
 import * as s from './footer.styles';
@@ -26,9 +24,9 @@ const renderAnchor = (link: LinkProps) => {
 
 const Footer = () => {
   return (
-    <s.FooterWrapper>
-      <Container>{links.map(renderAnchor)}</Container>
-    </s.FooterWrapper>
+    <s.FooterContainer>
+      <s.FooterWrapper>{links.map(renderAnchor)}</s.FooterWrapper>
+    </s.FooterContainer>
   );
 };
 

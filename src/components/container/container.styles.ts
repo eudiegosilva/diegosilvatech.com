@@ -6,10 +6,11 @@ const Container = styled('div', {
   // '@greater-md': { maxWidth: '$lg', px: '20px', border: '2px solid blue' },
   // '@greater-lg': { maxWidth: '$xl', px: '20px', border: '2px solid green' },
   // '@greater-xl': { minWidth: '$xl', px: '20px', border: '2px solid orange' }
-  '@greater-sm': { maxWidth: '$md', px: '20px' },
-  '@greater-md': { maxWidth: '$lg', px: '20px' },
-  '@greater-lg': { maxWidth: '$xl', px: '20px' },
-  '@greater-xl': { minWidth: '$xl', px: '20px' }
+  '@less-sm': { maxWidth: '$sm', px: '$md' },
+  '@greater-sm': { maxWidth: '$sm', px: '0' },
+  '@greater-md': { maxWidth: '$lg', px: 'calc($xx * 6)' },
+  '@greater-lg': { maxWidth: '$xl', px: 'calc($xx * 10)' },
+  '@greater-xl': { minWidth: '$xl', px: 'calc($xx * 10)' }
 });
 
 export { Container };
