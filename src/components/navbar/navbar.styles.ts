@@ -24,7 +24,19 @@ export const NavbarWrapper = styled('nav', {
   overflowX: 'scroll',
   overflowY: 'hidden',
   textAlign: 'center',
-  '@greater-lg': { order: 0, flexBasis: 'initial', overflow: 'hidden' }
+  '@greater-lg': { order: 0, flexBasis: 'initial', overflow: 'hidden' },
+  '&::-webkit-scrollbar': {
+    backgroundColor: 'transparent',
+    width: 0
+  },
+  '&::-webkit-scrollbar-track': {
+    backgroundColor: 'transparent',
+    borderRadius: '$sm'
+  },
+  '&::-webkit-scrollbar-thumb': {
+    backgroundColor: 'transparent',
+    borderRadius: '$sm'
+  }
 });
 
 export const ButtonHeader = styled('div', {
