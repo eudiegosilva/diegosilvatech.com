@@ -33,6 +33,11 @@ export const globalStyles = globalCss({
     fontSize: '$xl',
     color: '$text-primary'
   },
+  'h3, h3 a': {
+    color: '$text-primary',
+    fontSize: '$md',
+    margin: '$lg 0 0'
+  },
   strong: {
     fontFamily: '$body',
     color: '$text-primary',

@@ -5,6 +5,7 @@ import { Typography } from 'components';
 import { PageContent, PageHead, PageHeadProps, PageStructure } from 'templates';
 
 import { SectionBio } from './section-bio/section-bio';
+import { SectionCareer } from './section-career/section-career';
 
 import * as s from './about.page.styles';
 
@@ -65,6 +66,7 @@ const AboutPage = ({
           </s.SectionWrapper>
 
           <SectionBio description={description} />
+          <SectionCareer />
         </s.ContentWrapper>
       </PageContent>
     </PageStructure>
