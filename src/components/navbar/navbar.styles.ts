@@ -12,7 +12,6 @@ export const HeaderContainer = styled('header', {
 export const HeaderWrapper = styled(Container, {
   display: 'flex',
   alignItems: 'center',
-  flexWrap: 'wrap',
   minHeight: '60px',
   marginTop: '$md',
   '@greater-lg': { marginTop: 0 }
@@ -20,13 +19,12 @@ export const HeaderWrapper = styled(Container, {
 
 export const NavbarWrapper = styled('nav', {
   flex: 1,
-  order: 2,
   flexBasis: '100%',
   overflow: 'hidden',
   overflowX: 'scroll',
   overflowY: 'hidden',
   textAlign: 'center',
-  '@greater-lg': { order: 0, flexBasis: 'initial', overflow: 'hidden' },
+  '@greater-lg': { flexBasis: 'initial', overflow: 'hidden' },
   '&::-webkit-scrollbar': {
     backgroundColor: 'transparent',
     width: 0,
