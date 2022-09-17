@@ -1,5 +1,3 @@
-import { Text } from 'components';
-
 import { links, LinkProps } from './footer-links';
 
 import * as s from './footer.styles';
@@ -9,17 +7,13 @@ export type FooterProps = {};
 const renderAnchor = (link: LinkProps) => {
   if (link.url.startsWith('http')) {
     return (
-      <Text as="a" key={link.title} href={link.url} style={{ border: 'none' }}>
+      <s.TextAnchor as="a" key={link.title} href={link.url}>
         {link.title}
-      </Text>
+      </s.TextAnchor>
     );
   }
 
-  return (
-    <Text as="a" style={{ border: 'none' }}>
-      {link.title}
-    </Text>
-  );
+  return <s.TextAnchor as="a">{link.title}</s.TextAnchor>;
 };
 
 const Footer = () => {

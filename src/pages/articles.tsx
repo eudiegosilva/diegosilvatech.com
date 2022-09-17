@@ -5,7 +5,7 @@ import { ArticlesPage, ArticlesPageProps } from 'page-structure';
 export async function getStaticProps() {
   const allArticles = getAllArticles(['date', 'skip', 'slug', 'title']);
 
-  const description = `Here you can find all the <strong>${allArticles.length} articles</strong> I wrote. You can read about web development, software engineering, and tech career in both English and Portuguese.`;
+  const description = `Here you can find all the <strong>${allArticles.length} articles</strong> I wrote. You can read about web development, ux and ui design, design systems and developer experience.`;
 
   const featuredParams = [
     'date',
@@ -17,14 +17,8 @@ export async function getStaticProps() {
   ];
 
   const featuredArticles = [
-    getArticleBySlug(
-      '5-lessons-we-learned-adding-dark-mode-to-our-platform',
-      featuredParams
-    ),
-    getArticleBySlug(
-      '23-extensoes-indispensaveis-para-desenvolvedores-web',
-      featuredParams
-    )
+    getArticleBySlug('the-two-types-of-quality', featuredParams),
+    getArticleBySlug('what-makes-a-good-changelog', featuredParams)
   ];
 
   return {

@@ -8,3 +8,4 @@ export { Container } from './container/Container';
 export { Footer } from './footer/Footer';
 export { GradientTitle } from './gradient-title/GradientTitle';
 export { Text } from './text/Text';
+export { FeaturedArticle } from './featured-article/FeaturedArticle';

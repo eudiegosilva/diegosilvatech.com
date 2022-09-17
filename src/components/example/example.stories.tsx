@@ -10,7 +10,7 @@ export default {
   parameters: {}
 } as Meta;
 
-export const CommandExample: Story<ExampleProps> = args => {
+export const ExampleStory: Story<ExampleProps> = args => {
   const { children } = args;
   return <Example {...args}>{children}</Example>;
 };

@@ -11,6 +11,7 @@ import * as s from './text.styles';
 type AnchorProps = {
   children?: React.ReactNode;
   href: string;
+  css?: ConfigProps;
 } & AnchorHTMLAttributes<HTMLAnchorElement>;
 
 type TargetTypes = '_blank' | '_parent' | '_self' | '_top';
@@ -25,10 +26,12 @@ export type TextProps = {
 } & DOMAttributes<HTMLParagraphElement> &
   AnchorHTMLAttributes<HTMLAnchorElement>;
 
-const Anchor = ({ children, href, target }: AnchorProps) => {
+const Anchor = ({ children, href, target, css }: AnchorProps) => {
   return (
     <Link key={href} href={href} passHref>
-      <a target={target}>{children}</a>
+      <s.Anchor css={css} target={target}>
+        {children}
+      </s.Anchor>
     </Link>
   );
 };
@@ -45,7 +48,7 @@ const Text = ({
   const defaultCSS = { margin: margin ? `$${margin} 0` : '$lg 0' };
   const renderAnchor = () => {
     return (
-      <Anchor href={href} target="_blank">
+      <Anchor href={href} target="_blank" css={css}>
         {children}
       </Anchor>
     );

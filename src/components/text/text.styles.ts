@@ -27,3 +27,5 @@ export const Text = styled('p', {
     }
   }
 });
+
+export const Anchor = styled('a', {});

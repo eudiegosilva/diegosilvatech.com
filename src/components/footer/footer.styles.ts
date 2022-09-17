@@ -1,6 +1,7 @@
 import { styled } from 'styles/stitches.config';
 
 import { Container } from 'components/container/container.styles';
+import { Text } from 'components/text/text.styles';
 
 export const FooterContainer = styled(Container, {
   display: 'flex',
@@ -29,7 +30,7 @@ export const FooterWrapper = styled('footer', {
   }
 });
 
-export const Anchor = styled('a', {
+export const TextAnchor = styled(Text, {
   color: '$text-secondary',
   fontSize: '$sm',
   textDecoration: 'none',
