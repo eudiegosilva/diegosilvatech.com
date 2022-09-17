@@ -12,6 +12,7 @@ export const Text = styled('p', {
   h3: { ...element.h3 },
   blockquote: { ...element.blockquote },
   kbd: { ...element.kbd },
+  small: { ...element.small },
 
   variants: {
     variant: {
@@ -23,7 +24,8 @@ export const Text = styled('p', {
       h2: element.h2,
       h3: element.h3,
       blockquote: element.blockquote,
-      kbd: element.kbd
+      kbd: element.kbd,
+      small: element.small
     }
   }
 });

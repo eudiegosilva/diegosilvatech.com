@@ -63,7 +63,7 @@ const AboutPage = ({
               </Text>
               <Text>
                 I am currently a <strong>Senior Frontend Developer</strong> at{' '}
-                <Text as="a" href="https://neon.com.br/" target="blank">
+                <Text as="a" href="https://neon.com.br/" target="_blank">
                   Neon Bank
                 </Text>{' '}
                 focused on improving the <strong>development experience</strong>{' '}
@@ -74,7 +74,7 @@ const AboutPage = ({
                 <Text
                   as="a"
                   href="https://discord.com/invite/P5YmPENeqd"
-                  target="blank"
+                  target="_blank"
                 >
                   99juniors
                 </Text>

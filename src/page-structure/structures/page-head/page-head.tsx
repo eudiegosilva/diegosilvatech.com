@@ -6,9 +6,15 @@ export type PageHeadProps = {
   description: string;
   image: string;
   tabTitle: string;
+  canonicalUrl?: string;
 };
 
-const PageHead = ({ description, image, tabTitle }: PageHeadProps) => {
+const PageHead = ({
+  description,
+  image,
+  tabTitle,
+  canonicalUrl
+}: PageHeadProps) => {
   return (
     <s.HeadWrapper>
       <Head>
@@ -16,8 +22,13 @@ const PageHead = ({ description, image, tabTitle }: PageHeadProps) => {
         <meta content={tabTitle} property="og:title" />
         <meta content={description} name="description" />
         <meta content={description} property="og:description" />
-        <meta content="https://diegosilva.tech" property="og:url" />
-        <meta content={`https://diegosilva.tech${image}`} property="og:image" />
+        <meta content="https://diegosilvatech.com" property="og:url" />
+        <meta
+          content={`https://diegosilvatech.com${image}`}
+          property="og:image"
+        />
+
+        {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
       </Head>
     </s.HeadWrapper>
   );

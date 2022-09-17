@@ -1,4 +1,3 @@
-import { small as articleSmall } from 'styles/global/article-styles';
 import { ConfigProps } from 'styles/stitches.config';
 
 export const p: ConfigProps = {
@@ -20,7 +19,8 @@ export const span: ConfigProps = {
 };
 
 export const small: ConfigProps = {
-  ...articleSmall
+  color: '$text-secondary',
+  fontSize: '$xs'
 };
 
 export const a: ConfigProps = {
@@ -78,4 +78,27 @@ export const kbd: ConfigProps = {
   fontSize: '$sm',
   transition: '$default',
   '&:hover kbd': { background: '$text-primary' }
+};
+
+export const ul: ConfigProps = {
+  margin: 0
+};
+
+export const li: ConfigProps = {
+  color: '$text-secondary'
+};
+
+export const articleStyles = {
+  p: { ...p },
+  strong: { ...strong },
+  span: { ...span },
+  a: { ...a },
+  h1: { ...h1 },
+  h2: { ...h2 },
+  h3: { ...h3 },
+  blockquote: { ...blockquote },
+  kbd: { ...kbd },
+  ul: { ...ul },
+  li: { ...li },
+  small: { ...small }
 };

@@ -1,5 +1,7 @@
 import { globalCss } from '../stitches.config';
 
+import { articleStyles } from './article-styles';
+
 export const globalStyles = globalCss({
   '*': {
     margin: 0,
@@ -21,16 +23,7 @@ export const globalStyles = globalCss({
       backgroundColor: '$brand-primary-scrollbar'
     }
   },
-  a: {
-    // fontFamily: '$body',
-    // color: '$text-primary',
-    // borderBottom: '0.5px solid $text-secondary',
-    // textDecoration: 'none',
-    // transition: '$fast',
-    // '&:hover, &:focus': {
-    //   opacity: '0.8'
-    // }
-  },
+  ...articleStyles,
   img: {
     borderRadius: '$sm',
     minWidth: '100%',

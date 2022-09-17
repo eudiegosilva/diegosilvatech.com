@@ -4,6 +4,10 @@ export {
   ArticlesPage,
   type ArticlesPageProps
 } from './pages/articles/articles.page';
+export {
+  ArticlePage,
+  type ArticlePageProps
+} from './pages/article/article.page';
 export { PageHead, type PageHeadProps } from './structures/page-head/page-head';
 export {
   PageContent,

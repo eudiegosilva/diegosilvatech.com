@@ -19,7 +19,7 @@ Understanding the difference between them is the key to building products that u
 It's a **purely functional requirement** and is satisfied when the product completes the job that it was designed to create. For example, an IKEA chair meets the *atarimae hinshitsu* quality expectation because it's made to sustain and fit a person of average height and weight. Being **reliable and robust** is a significant component of quality, and there is elegance in things working according to their function.
 
 <figure>
-  <img src="/static/img/posts/quality-ikea.jpg" class="post-image-full" alt="IKEA Chair">
+  <img src="/assets/images/articles/quality-ikea.jpg" class="article-image-full" alt="IKEA Chair">
 </figure>
 
 ## miryokuteki hinshitsu (魅力的品質)
@@ -29,7 +29,7 @@ It's a **purely functional requirement** and is satisfied when the product compl
 It's basically the **kind of quality that fascinates you**. This could include things like visual appearance, sound, or anything that gives personality to a product. For example, a Herman Miller chair could be considered *miryokuteki hinshitsu* because it goes **beyond its functional requirements**. There's a distinct touch, smell, texture, and design that makes it unique; it's a “special refuge from the strains of modern living," as they say. These aspects bring added value to the product and make it desirable.
 
 <figure>
-  <img src="/static/img/posts/quality-herman.jpg" class="post-image-full" alt="Herman Miller Chair">
+  <img src="/assets/images/articles/quality-herman.jpg" class="article-image-full" alt="Herman Miller Chair">
 </figure>
 
 ## quality applied to software
@@ -42,13 +42,13 @@ Developers may disagree on many things, but there's one thing that almost everyb
 
 This doesn't mean that Jira is a failure. In fact, Jira is a *massive* success from a sales perspective. It's a software that serves the needs of middle management, or, at least, the needs middle management thinks it has. What are those needs? Metrics. Being able to make charts, graphs, and reports for the next-higher level of management, so they can say that their team is productive and isn't falling behind. Jira is focused on *atarimae hinshitsu* and nothing else.
 
-<div class="side-by-side">
+<div class="side-by-side-wrapper">
   <figure>
-    <img alt="Jira" src="/static/img/posts/quality-jira.png"  class="side-by-side-img">
+    <img alt="Jira" src="/assets/images/articles/quality-jira.png"  class="side-by-side-image">
     <figcaption class="side-by-side-caption">Jira</figcaption>
   </figure>
   <figure>
-    <img alt="Linear" src="/static/img/posts/quality-linear.png" class="side-by-side-img">
+    <img alt="Linear" src="/assets/images/articles/quality-linear.png" class="side-by-side-image">
     <figcaption class="side-by-side-caption">Linear</figcaption>
   </figure>
 </div>
@@ -63,13 +63,13 @@ It's common for companies to change their go-to-market strategy from bottom-up t
 
 This approach can definitely work if you're targeting executive leaders at specific company sizes. Still, one thing is sure — developers don't want to enter your *"marketing funnel,"* they don't want to be considered a *"qualified lead,"* and they don't want to be *"converted."* All they want is to try a product without having to speak to a salesperson first.
 
-<div class="side-by-side">
+<div class="side-by-side-wrapper">
   <figure>
-    <img alt="Braintree" src="/static/img/posts/quality-braintree.png"  class="side-by-side-img">
+    <img alt="Braintree" src="/assets/images/articles/quality-braintree.png"  class="side-by-side-image">
     <figcaption class="side-by-side-caption">Braintree</figcaption>
   </figure>
   <figure>
-    <img alt="Stripe" src="/static/img/posts/quality-stripe.png" class="side-by-side-img">
+    <img alt="Stripe" src="/assets/images/articles/quality-stripe.png" class="side-by-side-image">
     <figcaption class="side-by-side-caption">Stripe</figcaption>
   </figure>
 </div>
@@ -84,13 +84,13 @@ They also know that developers will not download a gated PDF e-book, so they pub
 
 Every big corporation like [PayPal](https://paypal.com) has the exact same Jobs page. You see a list of open positions, filter by a department or specific region, and then read an uninspiring job description. When you finally decide to apply for a role, you receive a soulless, automated message in your email inbox. After weeks of silence, you may get a chance to speak with a recruiter. If you don't get lucky, you may get another template message saying you're not a good fit for the role.
 
-<div class="side-by-side">
+<div class="side-by-side-wrapper">
   <figure>
-    <img alt="PayPal" src="/static/img/posts/quality-paypal.png"  class="side-by-side-img">
+    <img alt="PayPal" src="/assets/images/articles/quality-paypal.png"  class="side-by-side-image">
     <figcaption class="side-by-side-caption">PayPal</figcaption>
   </figure>
   <figure>
-    <img alt="Plaid" src="/static/img/posts/quality-plaid.png"  class="side-by-side-img">
+    <img alt="Plaid" src="/assets/images/articles/quality-plaid.png"  class="side-by-side-image">
     <figcaption class="side-by-side-caption">Plaid</figcaption>
   </figure>
 </div>
@@ -103,13 +103,13 @@ Talented developers tend to gravitate towards others based on what they build. T
 
 When you look at what products like [Alfred](https://alfredapp.com) are doing to communicate changes, you'll notice the same monotonous and repetitive format. There's a version, there's a date, and there are a bunch of bullet points. This format works, and the information is there, but it's not engaging and doesn't evoke any special feeling.
 
-<div class="side-by-side">
+<div class="side-by-side-wrapper">
   <figure>
-    <img alt="Alfred" src="/static/img/posts/quality-alfred.png"  class="side-by-side-img">
+    <img alt="Alfred" src="/assets/images/articles/quality-alfred.png"  class="side-by-side-image">
     <figcaption class="side-by-side-caption">Alfred</figcaption>
   </figure>
   <figure>
-    <img alt="Raycast" src="/static/img/posts/quality-raycast.png" class="side-by-side-img">
+    <img alt="Raycast" src="/assets/images/articles/quality-raycast.png" class="side-by-side-image">
     <figcaption class="side-by-side-caption">Raycast</figcaption>
   </figure>
 </div>
@@ -129,5 +129,5 @@ For more on this topic, I recommend watching [Jiro Dreams of Sushi](https://en.w
 *Special thanks to [Briza Bueno](https://twitter.com/brizabueno), [Bu Kinoshita](https://twitter.com/bukinoshita), [Carol Moreschi](https://github.com/carolmoreschi), [Jonni Lundy](https://twitter.com/jonnilundy), [Michael Grinich](https://twitter.com/grinich), [Shawn Wang](https://twitter.com/swyx), [TK](https://twitter.com/wordsofteekay), [Vitor Fernandes](https://twitter.com/vitorviesi), [Ygor Costa](https://twitter.com/ygorhiroshi), and [Zeh Fernandes](https://twitter.com/zehf) for reviewing this article before it was published.*
 
 <figure>
-  <img src="/static/img/posts/quality-end.jpg" class="post-image-full" alt="Man cooking sushi">
+  <img src="/assets/images/articles/quality-end.jpg" class="article-image-full" alt="Man cooking sushi">
 </figure>
