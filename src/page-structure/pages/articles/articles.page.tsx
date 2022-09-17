@@ -1,5 +1,8 @@
+import { useState } from 'react';
+
 import { Text, FeaturedArticle } from 'components';
 import { AnimateSharedLayout } from 'framer-motion';
+import { ArticleDate } from 'globals/helpers/blog/article-date';
 import { removeHtmlFrontString } from 'globals/helpers/blog/remove-html-from-string';
 import {
   PageContent,
@@ -16,9 +19,21 @@ type GradiendColorsProps = Pick<
   'colorPrimary' | 'colorSecondary'
 >;
 
+type ArticleProps = {
+  date: string;
+  slug: string;
+  title: string;
+  skip?: boolean;
+};
+
+type AnimationProps = {
+  children: React.ReactNode;
+  index: any;
+};
+
 export type ArticlesPageProps = {
   pageTitle: string;
-  allArticles: any;
+  allArticles: ArticleProps[];
   featuredArticles: any;
 } & PageHeadProps &
   GradiendColorsProps;
@@ -50,6 +65,49 @@ const ArticlesPage = ({
       );
     });
   };
+
+  // console.log('allArticles', allArticles);
+  const renderArticlesList = () => {
+    return allArticles.map((article, index) => {
+      if (!article.skip) {
+        return (
+          <s.ArticleItem key={article.title}>
+            <s.TextAnchor as="a" href={`/${article.slug}/`}>
+              <Animation index={index}>
+                <s.TextTitle as="span">{article.title}</s.TextTitle>
+                <s.TextDate as="span">
+                  <ArticleDate dateString={article.date} />
+                </s.TextDate>
+              </Animation>
+            </s.TextAnchor>
+          </s.ArticleItem>
+        );
+      }
+    });
+  };
+
+  const Animation = ({ children, index }: AnimationProps) => {
+    const [hovered, setHovered] = useState('');
+    const isHovered = hovered === index;
+
+    return (
+      <s.AnimationWrapper
+        onHoverStart={() => setHovered(index)}
+        onHoverEnd={() => setHovered('')}
+      >
+        {isHovered && (
+          <s.AnimationHovered
+            layoutId="listItem"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          />
+        )}
+        {children}
+      </s.AnimationWrapper>
+    );
+  };
+
   return (
     <PageContainer>
       <PageHead
@@ -70,7 +128,7 @@ const ArticlesPage = ({
           </s.FeaturedArticlesGroup>
 
           <Text as="h2">All Articles</Text>
-          <s.AllArticlesList></s.AllArticlesList>
+          <s.AllArticlesList>{renderArticlesList()}</s.AllArticlesList>
         </AnimateSharedLayout>
       </PageContent>
     </PageContainer>

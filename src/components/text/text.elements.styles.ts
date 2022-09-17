@@ -14,7 +14,9 @@ export const strong: ConfigProps = {
   fontWeight: '$500'
 };
 
-export const span: ConfigProps = {};
+export const span: ConfigProps = {
+  color: '$text-secondary'
+};
 
 export const a: ConfigProps = {
   fontFamily: '$body',
