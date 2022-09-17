@@ -13,17 +13,19 @@ type AnchorProps = {
   href: string;
 } & AnchorHTMLAttributes<HTMLAnchorElement>;
 
-type TextProps = {
+type TargetTypes = '_blank' | '_parent' | '_self' | '_top';
+
+export type TextProps = {
   children?: React.ReactNode;
   margin?: TextSpacingsTypes;
   as?: TextElementTypes;
   href?: string;
-  target?: string;
+  target?: TargetTypes;
   css?: ConfigProps;
 } & DOMAttributes<HTMLParagraphElement> &
   AnchorHTMLAttributes<HTMLAnchorElement>;
 
-const Anchor = ({ children, href, target, css }: AnchorProps) => {
+const Anchor = ({ children, href, target }: AnchorProps) => {
   return (
     <Link key={href} href={href} passHref>
       <a target={target}>{children}</a>
