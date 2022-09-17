@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { Typography } from 'components';
+import { Text } from 'components';
 import { careerItems } from 'data/section-career.data';
 import { formatDate, getDurationDate } from 'globals/helpers/date/formatDate';
 
@@ -8,25 +8,25 @@ import * as s from './section-career.styles';
 const SectionCareer = () => {
   return (
     <s.CareerWrapper>
-      <h2>Career</h2>
+      <Text as="h2">Career</Text>
 
       {careerItems.map(job => {
         return (
           <s.JobWrapper key={job.id}>
-            <s.JobTitle>{job.title}</s.JobTitle>
-            <Typography.Paragraph margin="sm">
+            <Text as="h3">{job.title}</Text>
+            <Text margin="sm">
               <a href={job.companyUrl} target="_blank" rel="noreferrer">
                 {job.company}
               </a>
               <span>・{job.location}</span>
-            </Typography.Paragraph>
-            <Typography.Paragraph margin="sm">
+            </Text>
+            <Text margin="sm">
               <span>{formatDate(job.startDate)}</span>
               <span> – </span>
               <span>{job.endDate ? formatDate(job.endDate) : 'Present'}</span>
               <span>・</span>
               <span>{getDurationDate(job.startDate, job.endDate)}</span>
-            </Typography.Paragraph>
+            </Text>
           </s.JobWrapper>
         );
       })}

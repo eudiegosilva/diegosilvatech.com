@@ -135,7 +135,7 @@ const Command = ({ children }: CommandProps) => {
         <Lottie
           lottieRef={articlesRef}
           style={iconSize}
-          animationData={icon.postIcon}
+          animationData={icon.articleIcon}
           loop={false}
           autoplay={false}
         />

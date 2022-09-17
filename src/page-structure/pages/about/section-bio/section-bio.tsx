@@ -2,7 +2,7 @@
 import { useRef, useState } from 'react';
 
 import { chatIcon, avatarIcon } from 'assets/icons';
-import { Typography, Button, Toast } from 'components';
+import { Text, Button, Toast } from 'components';
 import Lottie from 'lottie-react';
 
 import * as s from './section-bio.styles';
@@ -37,15 +37,15 @@ const SectionBio = ({ description }: SectionBioProps) => {
 
   return (
     <s.BioWrapper>
-      <h2>Bio</h2>
+      <Text as="h2">Bio</Text>
 
       <div>
-        <Typography.Paragraph>
+        <Text>
           This content was made for organizers of events, interviews and talks.
           Just copy-and-paste.
-        </Typography.Paragraph>
+        </Text>
         <blockquote>
-          <Typography.Paragraph>{description}</Typography.Paragraph>
+          <Text>{description}</Text>
         </blockquote>
 
         <s.ButtonsWrapper>

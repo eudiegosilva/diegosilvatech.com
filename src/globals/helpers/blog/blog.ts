@@ -12,7 +12,7 @@ function getArticlesSlugs() {
   return fs.readdirSync(articlesDirectory);
 }
 
-function getPostBySlug(slug, fields) {
+function getArticleBySlug(slug, fields) {
   const realSlug = slug.replace(/\.md$/, '');
   const fullPath = join(articlesDirectory, `${realSlug}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
@@ -40,8 +40,8 @@ function getPostBySlug(slug, fields) {
 function getAllArticles(fields = []) {
   const slugs = getArticlesSlugs();
   const articles = slugs
-    .map(slug => getPostBySlug(slug, fields))
-    .sort((post1, post2) => (post1.date > post2.date ? '-1' : '1'));
+    .map(slug => getArticleBySlug(slug, fields))
+    .sort((article1, article2) => (article1.date > article2.date ? '-1' : '1'));
 
   return articles;
 }
@@ -54,4 +54,4 @@ export async function convertMarkdownToHtml(markdown) {
   return result.toString();
 }
 
-export { getArticlesSlugs, getPostBySlug, getAllArticles };
+export { getArticlesSlugs, getArticleBySlug, getAllArticles };

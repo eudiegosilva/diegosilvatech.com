@@ -7,4 +7,4 @@ export { ShortcutHome } from './shortcut-home/ShortcutHome';
 export { Container } from './container/Container';
 export { Footer } from './footer/Footer';
 export { GradientTitle } from './gradient-title/GradientTitle';
-export { Typography } from './typography/Typography';
+export { Text } from './text/Text';

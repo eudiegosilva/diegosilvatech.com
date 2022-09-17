@@ -21,28 +21,6 @@ export const globalStyles = globalCss({
       backgroundColor: '$brand-primary-scrollbar'
     }
   },
-  h1: {
-    fontFamily: '$heading',
-    fontSize: '$4x',
-    lineHeight: '$115',
-    margin: '0 0 $lg',
-    color: '$text-primary'
-  },
-  h2: {
-    fontFamily: '$heading',
-    fontSize: '$xl',
-    color: '$text-primary'
-  },
-  'h3, h3 a': {
-    color: '$text-primary',
-    fontSize: '$md',
-    margin: '$lg 0 0'
-  },
-  strong: {
-    fontFamily: '$body',
-    color: '$text-primary',
-    fontWeight: '$500'
-  },
   a: {
     fontFamily: '$body',
     color: '$text-primary',

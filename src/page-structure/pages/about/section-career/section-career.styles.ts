@@ -5,5 +5,3 @@ export const CareerWrapper = styled('section', {
 });
 
 export const JobWrapper = styled('div', {});
-
-export const JobTitle = styled('h3', {});

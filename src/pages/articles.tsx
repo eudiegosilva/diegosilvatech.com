@@ -1,6 +1,5 @@
 import { getAllArticles } from 'globals/helpers/blog/blog';
-import { getPostBySlug } from 'globals/helpers/blog/blog';
-import { convertStringToHTML } from 'globals/helpers/blog/convert-string-to-html';
+import { getArticleBySlug } from 'globals/helpers/blog/blog';
 import { ArticlesPage, ArticlesPageProps } from 'page-structure';
 
 export async function getStaticProps() {
@@ -18,11 +17,11 @@ export async function getStaticProps() {
   ];
 
   const featuredArticles = [
-    getPostBySlug(
+    getArticleBySlug(
       '5-lessons-we-learned-adding-dark-mode-to-our-platform',
       featuredParams
     ),
-    getPostBySlug(
+    getArticleBySlug(
       '23-extensoes-indispensaveis-para-desenvolvedores-web',
       featuredParams
     )
@@ -32,7 +31,7 @@ export async function getStaticProps() {
     props: {
       tabTitle: 'Articles | diegosilvatech',
       pageTitle: 'Sharing small learnings.',
-      description: convertStringToHTML(description),
+      description: description,
       image: '/static/images/articles-cover.jpg',
       colorPrimary: 'brand-secondary-high',
       colorSecondary: 'brand-secondary-high',

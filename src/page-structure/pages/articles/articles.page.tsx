@@ -1,5 +1,6 @@
-import { Typography } from 'components';
+import { Text } from 'components';
 import { AnimateSharedLayout } from 'framer-motion';
+import { removeHtmlFrontString } from 'globals/helpers/blog/remove-html-from-string';
 import {
   PageContent,
   PageHead,
@@ -34,17 +35,18 @@ const ArticlesPage = ({
 }: ArticlesPageProps) => {
   return (
     <PageContainer>
-      <PageHead description={description} image={image} tabTitle={tabTitle} />
+      <PageHead
+        description={removeHtmlFrontString(description)}
+        image={image}
+        tabTitle={tabTitle}
+      />
       <PageContent
         pageTitle={pageTitle}
         colorPrimary={colorPrimary}
         colorSecondary={colorSecondary}
       >
         <AnimateSharedLayout>
-          <Typography.Paragraph
-            dangerouslySetInnerHTML={{ __html: description }}
-          />
-          <strong>text</strong>
+          <Text dangerouslySetInnerHTML={{ __html: description }} />
         </AnimateSharedLayout>
       </PageContent>
     </PageContainer>

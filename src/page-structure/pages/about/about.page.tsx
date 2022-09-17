@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 import { diegosilvatech } from 'assets/images';
-import { Typography } from 'components';
+import { Text } from 'components';
 import {
   PageContent,
   PageHead,
@@ -56,30 +56,30 @@ const AboutPage = ({
               />
             </s.Section>
             <s.Section>
-              <Typography.Paragraph>
+              <Text>
                 <strong>Hey, I'm Diego Silva</strong> I started working with
                 technology in 2017, as a UX / UI intern and that's where my
                 passion for the frontend started.
-              </Typography.Paragraph>
-              <Typography.Paragraph>
+              </Text>
+              <Text>
                 I am currently a <strong>Senior Frontend Developer</strong> at{' '}
                 <a href="https://neon.com.br/" target="blank">
                   Neon Bank
                 </a>{' '}
                 focused on improving the <strong>development experience</strong>{' '}
                 of our developers.
-              </Typography.Paragraph>
-              <Typography.Paragraph>
+              </Text>
+              <Text>
                 I'm also a <strong>Community Manager</strong> for{' '}
                 <a href="https://discord.com/invite/P5YmPENeqd" target="blank">
                   99juniors
                 </a>
                 , an amazing community for budding developers.
-              </Typography.Paragraph>
-              <Typography.Paragraph>
+              </Text>
+              <Text>
                 I currently live in <strong>São Paulo</strong>, Brazil with my
                 beloved wife.
-              </Typography.Paragraph>
+              </Text>
             </s.Section>
           </s.SectionWrapper>
 
