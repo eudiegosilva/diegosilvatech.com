@@ -6,6 +6,7 @@ import {
   PageContent,
   PageHead,
   PageHeadProps,
+  PageContentProps,
   PageContainer
 } from 'page-structure';
 
@@ -14,20 +15,32 @@ import { SectionCareer } from './section-career/section-career';
 
 import * as s from './about.page.styles';
 
+type GradiendColorsProps = Pick<
+  PageContentProps,
+  'colorPrimary' | 'colorSecondary'
+>;
+
 export type AboutPageProps = {
   pageTitle: string;
-} & PageHeadProps;
+} & PageHeadProps &
+  GradiendColorsProps;
 
 const AboutPage = ({
   description,
   image,
   tabTitle,
-  pageTitle
+  pageTitle,
+  colorPrimary,
+  colorSecondary
 }: AboutPageProps) => {
   return (
     <PageContainer>
       <PageHead description={description} image={image} tabTitle={tabTitle} />
-      <PageContent pageTitle={pageTitle}>
+      <PageContent
+        pageTitle={pageTitle}
+        colorPrimary={colorPrimary}
+        colorSecondary={colorSecondary}
+      >
         <s.ContentWrapper>
           <s.SectionWrapper>
             <s.Section>

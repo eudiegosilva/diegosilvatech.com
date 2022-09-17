@@ -1,5 +1,5 @@
 import aboutIcon from '../../../public/assets/icons/avatar.json';
-import articlesIcon from '../../../public/assets/icons/article.json';
+import postIcon from '../../../public/assets/icons/article.json';
 import avatarIcon from '../../../public/assets/icons/avatar.json';
 import chatIcon from '../../../public/assets/icons/chat.json';
 import checkIcon from '../../../public/assets/icons/check.json';
@@ -15,7 +15,7 @@ import verifiedIcon from '../../../public/assets/icons/verified.json';
 
 export {
   aboutIcon,
-  articlesIcon,
+  postIcon,
   avatarIcon,
   chatIcon,
   checkIcon,

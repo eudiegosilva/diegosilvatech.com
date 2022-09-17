@@ -22,7 +22,7 @@ const Command = ({ children }: CommandProps) => {
   const sourceRef = useRef();
   const homeRef = useRef();
   const aboutRef = useRef();
-  const articlesRef = useRef();
+  const postsRef = useRef();
   const projectsRef = useRef();
   const talksRef = useRef();
   const podcastsRef = useRef();
@@ -133,9 +133,9 @@ const Command = ({ children }: CommandProps) => {
       perform: () => router.push('/posts'),
       icon: (
         <Lottie
-          lottieRef={articlesRef}
+          lottieRef={postsRef}
           style={iconSize}
-          animationData={icon.articlesIcon}
+          animationData={icon.postIcon}
           loop={false}
           autoplay={false}
         />

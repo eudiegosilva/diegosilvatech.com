@@ -13,8 +13,8 @@ export type PageContentProps = {
 const PageContent = ({
   children,
   pageTitle,
-  colorPrimary = 'brand-primary-high',
-  colorSecondary = 'brand-secondary-high'
+  colorPrimary,
+  colorSecondary
 }: PageContentProps) => {
   return (
     <s.ContentWrapper
