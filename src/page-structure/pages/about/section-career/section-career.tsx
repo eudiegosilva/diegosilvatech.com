@@ -15,9 +15,14 @@ const SectionCareer = () => {
           <s.JobWrapper key={job.id}>
             <Text as="h3">{job.title}</Text>
             <Text margin="sm">
-              <a href={job.companyUrl} target="_blank" rel="noreferrer">
+              <Text
+                as="a"
+                href={job.companyUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
                 {job.company}
-              </a>
+              </Text>
               <Text as="span">・{job.location}</Text>
             </Text>
             <Text margin="sm">

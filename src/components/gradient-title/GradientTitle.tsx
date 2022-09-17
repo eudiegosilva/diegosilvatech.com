@@ -1,6 +1,6 @@
-import { ColorTypes } from './gradient-title.types';
+import { Text } from 'components';
 
-import * as s from './gradient-title.styles';
+import { ColorTypes } from './gradient-title.types';
 
 export type GradientTitleProps = {
   children: React.ReactNode;
@@ -14,8 +14,16 @@ const GradientTitle = ({
   colorSecondary = 'brand-secondary-high'
 }: GradientTitleProps) => {
   return (
-    <s.GradientTitleWrapper
+    <Text
+      as="h1"
       css={{
+        backgroundSize: '100%',
+        backgroundClip: 'text',
+        WebkitBackgroundClip: 'text',
+        MozBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+        MozTextFillColor: 'transparent',
+        WebkitBoxDecorationBreak: 'clone',
         backgroundImage: `linear-gradient(135deg, $${colorPrimary} 0%, $${colorSecondary} 100%)`,
         '&::selection': {
           background: `$${colorPrimary}`,
@@ -25,7 +33,7 @@ const GradientTitle = ({
       }}
     >
       {children}
-    </s.GradientTitleWrapper>
+    </Text>
   );
 };
 

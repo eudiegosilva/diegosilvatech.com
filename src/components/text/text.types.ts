@@ -8,6 +8,7 @@ export type TextElementTypes =
   | 'h5'
   | 'h6'
   | 'p'
+  | 'a'
   | 'strong'
   | 'span'
   | 'blockquote'

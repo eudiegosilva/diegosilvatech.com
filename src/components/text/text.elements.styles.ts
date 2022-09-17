@@ -16,6 +16,18 @@ export const strong: ConfigProps = {
 
 export const span: ConfigProps = {};
 
+export const a: ConfigProps = {
+  fontFamily: '$body',
+  color: '$text-primary',
+  borderBottom: '0.5px solid $text-secondary',
+  textDecoration: 'none',
+  transition: '$fast',
+  '&:hover, &:focus': {
+    opacity: '0.8',
+    cursor: 'pointer'
+  }
+};
+
 export const h1: ConfigProps = {
   fontFamily: '$heading',
   fontSize: '$4x',

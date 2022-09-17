@@ -22,14 +22,14 @@ export const globalStyles = globalCss({
     }
   },
   a: {
-    fontFamily: '$body',
-    color: '$text-primary',
-    borderBottom: '0.5px solid $text-secondary',
-    textDecoration: 'none',
-    transition: '$fast',
-    '&:hover, &:focus': {
-      opacity: '0.8'
-    }
+    // fontFamily: '$body',
+    // color: '$text-primary',
+    // borderBottom: '0.5px solid $text-secondary',
+    // textDecoration: 'none',
+    // transition: '$fast',
+    // '&:hover, &:focus': {
+    //   opacity: '0.8'
+    // }
   },
   img: {
     borderRadius: '$sm',

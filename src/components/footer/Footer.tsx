@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Text } from 'components';
 
 import { links, LinkProps } from './footer-links';
 
@@ -9,16 +9,16 @@ export type FooterProps = {};
 const renderAnchor = (link: LinkProps) => {
   if (link.url.startsWith('http')) {
     return (
-      <s.Anchor key={link.title} href={link.url} target="_blank">
+      <Text as="a" key={link.title} href={link.url} style={{ border: 'none' }}>
         {link.title}
-      </s.Anchor>
+      </Text>
     );
   }
 
   return (
-    <Link key={link.title} href={link.url} passHref>
-      <s.Anchor>{link.title}</s.Anchor>
-    </Link>
+    <Text as="a" style={{ border: 'none' }}>
+      {link.title}
+    </Text>
   );
 };
 

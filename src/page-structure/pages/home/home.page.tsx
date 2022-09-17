@@ -19,9 +19,9 @@ const HomePage = ({ description, image, tabTitle }: HomePageProps) => {
           <Text>
             <strong>
               Senior Frontend Developer at{' '}
-              <a href="https://neon.com.br/" target="blank">
+              <Text as="a" href="https://neon.com.br/" target="blank">
                 Neon Bank
-              </a>
+              </Text>
               .
               <br />
             </strong>
