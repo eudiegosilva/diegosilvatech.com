@@ -18,14 +18,18 @@ const SectionCareer = () => {
               <a href={job.companyUrl} target="_blank" rel="noreferrer">
                 {job.company}
               </a>
-              <span>・{job.location}</span>
+              <Text as="span">・{job.location}</Text>
             </Text>
             <Text margin="sm">
-              <span>{formatDate(job.startDate)}</span>
-              <span> – </span>
-              <span>{job.endDate ? formatDate(job.endDate) : 'Present'}</span>
-              <span>・</span>
-              <span>{getDurationDate(job.startDate, job.endDate)}</span>
+              <Text as="span">{formatDate(job.startDate)}</Text>
+              <Text as="span"> – </Text>
+              <Text as="span">
+                {job.endDate ? formatDate(job.endDate) : 'Present'}
+              </Text>
+              <Text as="span">・</Text>
+              <Text as="span">
+                {getDurationDate(job.startDate, job.endDate)}
+              </Text>
             </Text>
           </s.JobWrapper>
         );

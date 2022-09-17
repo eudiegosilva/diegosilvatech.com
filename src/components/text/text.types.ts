@@ -9,5 +9,8 @@ export type TextElementTypes =
   | 'h6'
   | 'p'
   | 'strong'
-  | 'span';
+  | 'span'
+  | 'blockquote'
+  | 'kbd';
+
 export type TextSpacingsTypes = keyof typeof tokens.spacing;

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 
 import { Button } from 'components';
+import { Text } from 'components';
 import { useKBar } from 'kbar';
 
 export type ShortcutHomeProps = { disableCommand?: boolean };
@@ -26,14 +27,14 @@ const ShortcutHome = ({ disableCommand }: ShortcutHomeProps) => {
     } else if (isMac) {
       return (
         <Button handleClick={disableCommand ? () => null : query.toggle}>
-          Press <kbd>⌘</kbd> <kbd>K</kbd> to start →
+          Press <Text as="kbd">⌘</Text> <Text as="kbd">K</Text> to start →
         </Button>
       );
     }
   }
   return (
     <Button handleClick={disableCommand ? () => null : query.toggle}>
-      Press <kbd>ctrl</kbd> <kbd>K</kbd> to start →
+      Press <Text as="kbd">ctrl</Text> <Text as="kbd">K</Text> to start →
     </Button>
   );
 };

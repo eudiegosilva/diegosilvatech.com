@@ -9,25 +9,28 @@ export const Action = styled('div', {
   fontWeight: '300',
   fontSize: '$md',
   fontFamily: '$body',
-  letterSpacing: '$body-small'
+  letterSpacing: '$body-small',
+
+  width: '100%'
 });
 
 export const ActionRow = styled('div', {
   display: 'flex',
-  flexDirection: 'column',
-  fontSize: '$sm'
+  fontSize: '$sm',
+  width: '100%'
 });
 
 export const Shortcut = styled('div', {
-  display: 'grid',
-  gridAutoFlow: 'column',
-  gap: '$xs'
-});
+  display: 'flex',
+  alignItems: 'center',
+  gap: '$xs',
 
-export const Kbd = styled('kbd', {
-  background: '$transparent-white-high',
-  color: '$text-primary',
-  padding: '$xs $sm',
-  borderRadius: '$sm',
-  textTransform: 'uppercase'
+  kbd: {
+    display: 'flex',
+    background: '$transparent-white-high',
+    color: '$text-primary',
+    padding: '$xs $sm',
+    borderRadius: '$sm',
+    textTransform: 'uppercase'
+  }
 });

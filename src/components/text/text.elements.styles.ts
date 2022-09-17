@@ -14,6 +14,8 @@ export const strong: ConfigProps = {
   fontWeight: '$500'
 };
 
+export const span: ConfigProps = {};
+
 export const h1: ConfigProps = {
   fontFamily: '$heading',
   fontSize: '$4x',
@@ -38,4 +40,23 @@ export const h3: ConfigProps = {
     fontSize: '$md',
     margin: '$lg 0 0'
   }
+};
+
+export const blockquote: ConfigProps = {
+  borderLeft: '4px solid $brand-primary-high',
+  color: '$text-secondary',
+  fontStyle: 'italic',
+  margin: '0',
+  paddingLeft: '$lg'
+};
+
+export const kbd: ConfigProps = {
+  fontFamily: '$body',
+  color: '$base-black',
+  background: '$text-secondary',
+  padding: '1px 5px',
+  borderRadius: '$sm',
+  fontSize: '$sm',
+  transition: '$default',
+  '&:hover kbd': { background: '$text-primary' }
 };

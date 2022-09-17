@@ -1,6 +1,8 @@
 // @ts-nocheck
 import { forwardRef } from 'react';
 
+import { Text } from 'components';
+
 import * as s from './result-item.styles';
 
 const getResultStyle = active => {
@@ -29,17 +31,20 @@ const ResultItem = forwardRef(({ action, active }, ref) => {
       css={getResultStyle(active)}
       onMouseEnter={() => action.icon.props.lottieRef.current?.play()}
       onMouseLeave={() => action.icon.props.lottieRef.current?.stop()}
+      className="command-box"
     >
       <s.Action>
         {action.icon && action.icon}
         <s.ActionRow>
-          <span>{action.name}</span>
+          <Text as="span">{action.name}</Text>
         </s.ActionRow>
       </s.Action>
       {action.shortcut?.length ? (
         <s.Shortcut aria-hidden>
           {action.shortcut.map(shortcut => (
-            <s.Kbd key={shortcut}>{shortcut}</s.Kbd>
+            <Text as="kbd" key={shortcut}>
+              {shortcut}
+            </Text>
           ))}
         </s.Shortcut>
       ) : null}

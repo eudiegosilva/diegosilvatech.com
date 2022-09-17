@@ -28,9 +28,7 @@ export const Search = styled(KBarSearch, {
   color: '$text-primary',
   fontFamily: '$body',
   fontWeight: '$400',
-  '&::placeholder': {
-    color: '$text-secondary'
-  }
+  '&::placeholder': { color: '$text-secondary' }
 });
 
 export const Animator = styled(KBarAnimator, {
@@ -39,6 +37,8 @@ export const Animator = styled(KBarAnimator, {
   color: '$text-primary',
   borderRadius: '$sm',
   overflow: 'hidden',
+  span: { margin: 0 },
+  '& .command-box': { padding: '0 $lg' },
   '@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none))': {
     backgroundColor: '$transparent-white-high',
     WebkitBackdropFilter: 'saturate(300%) blur(25px)',

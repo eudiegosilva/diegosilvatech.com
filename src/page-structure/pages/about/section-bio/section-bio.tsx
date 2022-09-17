@@ -44,9 +44,9 @@ const SectionBio = ({ description }: SectionBioProps) => {
           This content was made for organizers of events, interviews and talks.
           Just copy-and-paste.
         </Text>
-        <blockquote>
+        <Text as="blockquote">
           <Text>{description}</Text>
-        </blockquote>
+        </Text>
 
         <s.ButtonsWrapper>
           <Button

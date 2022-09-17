@@ -31,15 +31,6 @@ export const globalStyles = globalCss({
       opacity: '0.8'
     }
   },
-  kbd: {
-    fontFamily: '$body',
-    color: '$base-black',
-    background: '$text-secondary',
-    padding: '1px 5px',
-    borderRadius: '$sm',
-    transition: 'background $default',
-    fontSize: '$sm'
-  },
   img: {
     borderRadius: '$sm',
     minWidth: '100%',
@@ -47,12 +38,5 @@ export const globalStyles = globalCss({
   },
   ul: {
     margin: 0
-  },
-  blockquote: {
-    borderLeft: '4px solid $brand-primary-high',
-    color: '$text-secondary',
-    fontStyle: 'italic',
-    margin: '0',
-    paddingLeft: '$lg'
   }
 });

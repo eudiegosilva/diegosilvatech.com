@@ -20,7 +20,5 @@ export const ButtonWrapper = styled('button', {
     background: '$brand-primary-mid',
     color: '$text-primary',
     opacity: 1
-  },
-  kbd: { transition: '$default' },
-  '&:hover kbd': { background: '$text-primary' }
+  }
 });

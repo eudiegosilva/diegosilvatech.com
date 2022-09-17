@@ -3,6 +3,7 @@ import { useRef } from 'react';
 
 import * as ToastPrimitive from '@radix-ui/react-toast';
 import { checkIcon } from 'assets/icons';
+import { Text } from 'components';
 import Lottie from 'lottie-react';
 
 import * as s from './toast.styles';
@@ -40,7 +41,9 @@ const Toast = ({
           <s.Description>{description}</s.Description>
         </div>
         <s.Close aria-label="Close">
-          <span aria-hidden>×</span>
+          <Text as="span" aria-hidden>
+            ×
+          </Text>
         </s.Close>
       </s.ToastWrapper>
       <s.Viewport />
