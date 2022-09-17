@@ -1,11 +1,11 @@
-import { getAllPosts } from 'globals/helpers/blog/blog';
+import { getAllArticles } from 'globals/helpers/blog/blog';
 import { getPostBySlug } from 'globals/helpers/blog/blog';
-import { PostsPage, PostsPageProps } from 'page-structure';
+import { ArticlesPage, ArticlesPageProps } from 'page-structure';
 
 export async function getStaticProps() {
-  const allPosts = getAllPosts(['date', 'skip', 'slug', 'title']);
+  const allArticles = getAllArticles(['date', 'skip', 'slug', 'title']);
 
-  const description = `Here you can find all the <strong>99 posts</strong> I wrote. You can read about web development, software engineering, and tech career in both English and Portuguese.`;
+  const description = `Here you can find all the <strong>99 articles</strong> I wrote. You can read about web development, software engineering, and tech career in both English and Portuguese.`;
 
   const featuredParams = [
     'date',
@@ -16,7 +16,7 @@ export async function getStaticProps() {
     'description'
   ];
 
-  const featuredPosts = [
+  const featuredArticles = [
     getPostBySlug(
       '5-lessons-we-learned-adding-dark-mode-to-our-platform',
       featuredParams
@@ -29,36 +29,36 @@ export async function getStaticProps() {
 
   return {
     props: {
-      tabTitle: 'Posts | diegosilvatech',
+      tabTitle: 'Articles | diegosilvatech',
       pageTitle: 'Sharing small learnings.',
       description: description,
-      image: '/static/images/posts-cover.jpg',
+      image: '/static/images/articles-cover.jpg',
       colorPrimary: 'brand-secondary-high',
       colorSecondary: 'brand-secondary-high',
-      allPosts,
-      featuredPosts
+      allArticles,
+      featuredArticles
     }
   };
 }
 
-export default function Posts({
+export default function Articles({
   tabTitle,
   pageTitle,
   description,
   image,
-  allPosts,
-  featuredPosts,
+  allArticles,
+  featuredArticles,
   colorPrimary,
   colorSecondary
-}: PostsPageProps) {
+}: ArticlesPageProps) {
   return (
-    <PostsPage
+    <ArticlesPage
       tabTitle={tabTitle}
       pageTitle={pageTitle}
       description={description}
       image={image}
-      allPosts={allPosts}
-      featuredPosts={featuredPosts}
+      allArticles={allArticles}
+      featuredArticles={featuredArticles}
       colorPrimary={colorPrimary}
       colorSecondary={colorSecondary}
     />

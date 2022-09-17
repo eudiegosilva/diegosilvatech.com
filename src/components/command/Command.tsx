@@ -22,7 +22,7 @@ const Command = ({ children }: CommandProps) => {
   const sourceRef = useRef();
   const homeRef = useRef();
   const aboutRef = useRef();
-  const postsRef = useRef();
+  const articlesRef = useRef();
   const projectsRef = useRef();
   const talksRef = useRef();
   const podcastsRef = useRef();
@@ -125,15 +125,15 @@ const Command = ({ children }: CommandProps) => {
       )
     },
     {
-      id: 'posts',
-      name: 'Posts',
-      shortcut: ['g', 'p'],
-      keywords: 'go-posts',
+      id: 'articles',
+      name: 'Articles',
+      shortcut: ['g', 'a'],
+      keywords: 'go-articles',
       section: 'Go To',
-      perform: () => router.push('/posts'),
+      perform: () => router.push('/articles'),
       icon: (
         <Lottie
-          lottieRef={postsRef}
+          lottieRef={articlesRef}
           style={iconSize}
           animationData={icon.postIcon}
           loop={false}

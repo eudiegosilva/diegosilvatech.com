@@ -6,15 +6,15 @@ import { remark } from 'remark';
 import html from 'remark-html';
 import prism from 'remark-prism';
 
-const postsDirectory = join(process.cwd(), 'posts');
+const articlesDirectory = join(process.cwd(), 'articles');
 
-function getPostSlugs() {
-  return fs.readdirSync(postsDirectory);
+function getArticlesSlugs() {
+  return fs.readdirSync(articlesDirectory);
 }
 
 function getPostBySlug(slug, fields) {
   const realSlug = slug.replace(/\.md$/, '');
-  const fullPath = join(postsDirectory, `${realSlug}.md`);
+  const fullPath = join(articlesDirectory, `${realSlug}.md`);
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const { data, content } = matter(fileContents);
 
@@ -37,13 +37,13 @@ function getPostBySlug(slug, fields) {
   return items;
 }
 
-function getAllPosts(fields = []) {
-  const slugs = getPostSlugs();
-  const posts = slugs
+function getAllArticles(fields = []) {
+  const slugs = getArticlesSlugs();
+  const articles = slugs
     .map(slug => getPostBySlug(slug, fields))
     .sort((post1, post2) => (post1.date > post2.date ? '-1' : '1'));
 
-  return posts;
+  return articles;
 }
 
 export async function convertMarkdownToHtml(markdown) {
@@ -54,4 +54,4 @@ export async function convertMarkdownToHtml(markdown) {
   return result.toString();
 }
 
-export { getPostSlugs, getPostBySlug, getAllPosts };
+export { getArticlesSlugs, getPostBySlug, getAllArticles };

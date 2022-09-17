@@ -6,31 +6,31 @@ import {
   PageContainer
 } from 'page-structure';
 
-import * as s from './posts.page.styles';
+import * as s from './articles.page.styles';
 
 type GradiendColorsProps = Pick<
   PageContentProps,
   'colorPrimary' | 'colorSecondary'
 >;
 
-export type PostsPageProps = {
+export type ArticlesPageProps = {
   pageTitle: string;
-  allPosts: any;
-  featuredPosts: any;
+  allArticles: any;
+  featuredArticles: any;
 } & PageHeadProps &
   GradiendColorsProps;
 
-const PostsPage = ({
+const ArticlesPage = ({
   description,
   image,
   tabTitle,
   pageTitle,
-  allPosts,
-  featuredPosts,
+  allArticles,
+  featuredArticles,
   colorPrimary,
   colorSecondary
-}: PostsPageProps) => {
-  console.log(featuredPosts);
+}: ArticlesPageProps) => {
+  console.log(featuredArticles);
   return (
     <PageContainer>
       <PageHead description={description} image={image} tabTitle={tabTitle} />
@@ -39,10 +39,10 @@ const PostsPage = ({
         colorPrimary={colorPrimary}
         colorSecondary={colorSecondary}
       >
-        <h2>posts</h2>
+        <h2>articles</h2>
       </PageContent>
     </PageContainer>
   );
 };
 
-export { PostsPage };
+export { ArticlesPage };
