@@ -1,3 +1,5 @@
+import { Typography } from 'components';
+import { AnimateSharedLayout } from 'framer-motion';
 import {
   PageContent,
   PageHead,
@@ -30,7 +32,6 @@ const ArticlesPage = ({
   colorPrimary,
   colorSecondary
 }: ArticlesPageProps) => {
-  console.log(featuredArticles);
   return (
     <PageContainer>
       <PageHead description={description} image={image} tabTitle={tabTitle} />
@@ -39,7 +40,12 @@ const ArticlesPage = ({
         colorPrimary={colorPrimary}
         colorSecondary={colorSecondary}
       >
-        <h2>articles</h2>
+        <AnimateSharedLayout>
+          <Typography.Paragraph
+            dangerouslySetInnerHTML={{ __html: description }}
+          />
+          <strong>text</strong>
+        </AnimateSharedLayout>
       </PageContent>
     </PageContainer>
   );
