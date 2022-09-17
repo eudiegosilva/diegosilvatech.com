@@ -1,4 +1,4 @@
-import { HomePage, HomePageProps } from 'templates';
+import { HomePage, HomePageProps } from 'page-structure';
 
 export async function getStaticProps() {
   return {

@@ -1,12 +1,17 @@
 import { ShortcutHome } from 'components';
 import { Typography } from 'components';
-import { PageStructure, PageHead, PageHeadProps, PageContent } from 'templates';
+import {
+  PageContainer,
+  PageHead,
+  PageHeadProps,
+  PageContent
+} from 'page-structure';
 
 export type HomePageProps = PageHeadProps;
 
 const HomePage = ({ description, image, tabTitle }: HomePageProps) => {
   return (
-    <PageStructure alignment="center">
+    <PageContainer alignment="center">
       <PageHead description={description} image={image} tabTitle={tabTitle} />
       <PageContent>
         <div>
@@ -25,7 +30,7 @@ const HomePage = ({ description, image, tabTitle }: HomePageProps) => {
           <ShortcutHome />
         </div>
       </PageContent>
-    </PageStructure>
+    </PageContainer>
   );
 };
 

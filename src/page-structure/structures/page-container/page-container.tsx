@@ -1,13 +1,13 @@
 import { Navbar, Footer } from 'components';
 
-import * as s from './page-structure.styles';
+import * as s from './page-container.styles';
 
-export type PageStructureProps = {
+export type PageContainerProps = {
   children: React.ReactNode;
   alignment?: 'center' | 'top';
 };
 
-const PageStructure = ({ children, alignment = 'top' }: PageStructureProps) => {
+const PageContainer = ({ children, alignment = 'top' }: PageContainerProps) => {
   return (
     <s.StructureWrapper>
       <Navbar />
@@ -17,4 +17,4 @@ const PageStructure = ({ children, alignment = 'top' }: PageStructureProps) => {
   );
 };
 
-export { PageStructure };
+export { PageContainer };

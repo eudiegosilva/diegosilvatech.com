@@ -2,7 +2,12 @@ import Image from 'next/image';
 
 import { diegosilvatech } from 'assets/images';
 import { Typography } from 'components';
-import { PageContent, PageHead, PageHeadProps, PageStructure } from 'templates';
+import {
+  PageContent,
+  PageHead,
+  PageHeadProps,
+  PageContainer
+} from 'page-structure';
 
 import { SectionBio } from './section-bio/section-bio';
 import { SectionCareer } from './section-career/section-career';
@@ -20,7 +25,7 @@ const AboutPage = ({
   pageTitle
 }: AboutPageProps) => {
   return (
-    <PageStructure>
+    <PageContainer>
       <PageHead description={description} image={image} tabTitle={tabTitle} />
       <PageContent pageTitle={pageTitle}>
         <s.ContentWrapper>
@@ -69,7 +74,7 @@ const AboutPage = ({
           <SectionCareer />
         </s.ContentWrapper>
       </PageContent>
-    </PageStructure>
+    </PageContainer>
   );
 };
 

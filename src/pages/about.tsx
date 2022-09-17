@@ -1,4 +1,4 @@
-import { AboutPage, AboutPageProps } from 'templates';
+import { AboutPage, AboutPageProps } from 'page-structure';
 
 export async function getStaticProps() {
   return {
