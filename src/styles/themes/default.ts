@@ -8,13 +8,13 @@ import {
   zIndex,
   media,
   size
-} from '../../styles/tokens';
+} from '../tokens';
 
 export const defaultTheme = {
   theme: {
     borderStyles: {},
     borderWidths: {},
-    colors: { ...color.palette },
+    colors: { ...color.crimsonPalette },
     fonts: { ...font.family },
     fontSizes: { ...font.size },
     fontWeights: { ...font.weight },

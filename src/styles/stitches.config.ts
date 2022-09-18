@@ -1,7 +1,7 @@
 import { createStitches } from '@stitches/react';
 import type * as Stitches from '@stitches/react';
 
-import { defaultTheme } from './themes';
+import { crimson, violet, defaultTheme } from './themes';
 
 export type ConfigProps = Stitches.CSS<typeof config>;
 
@@ -18,4 +18,12 @@ export const {
   theme: { ...defaultTheme.theme },
   utils: { ...defaultTheme.utils },
   media: { ...defaultTheme.media }
+});
+
+export const crimsonTheme = createTheme({
+  colors: crimson.theme.colors
+});
+
+export const violetTheme = createTheme({
+  colors: violet.theme.colors
 });

@@ -1,3 +1,5 @@
-import { defaultTheme } from './defaultTheme';
+import { crimson } from './crimson';
+import { defaultTheme } from './default';
+import { violet } from './violet';
 
-export { defaultTheme };
+export { crimson, violet, defaultTheme };
