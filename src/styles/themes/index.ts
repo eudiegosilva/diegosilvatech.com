@@ -1,5 +1,5 @@
-import { crimson } from './crimson';
+import { dark } from './dark';
 import { defaultTheme } from './default';
-import { violet } from './violet';
+import { light } from './light';
 
-export { crimson, violet, defaultTheme };
+export { dark, defaultTheme, light };

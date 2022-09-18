@@ -25,7 +25,7 @@ export const globalStyles = globalCss({
   },
   ...articleStyles,
   img: {
-    borderRadius: '$sm',
+    borderRadius: '$xs',
     minWidth: '100%',
     maxWidth: '100%'
   },

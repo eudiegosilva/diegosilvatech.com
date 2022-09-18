@@ -11,3 +11,4 @@ export { Text } from './text/Text';
 export { FeaturedArticle } from './featured-article/FeaturedArticle';
 export { ErrorMessage } from './error-message/ErrorMessage';
 export { ShortcutError } from './shortcut-error/ShortcutError';
+export { ThemeToggle } from './theme-toggle/ThemeToggle';

@@ -57,20 +57,21 @@ const AboutPage = ({
             </s.Section>
             <s.Section>
               <Text>
-                <strong>Hey, I'm Diego Silva</strong> I started working with
-                technology in 2017, as a UX / UI intern and that's where my
-                passion for the frontend started.
+                <strong>Olá, Eu sou o Diego Silva</strong> Eu comecei a
+                trabalhar com tecnologia em 2017, como estagiário de UX / UI,
+                onde minha paixão pela área Frontend começou.
               </Text>
               <Text>
-                I am currently a <strong>Senior Frontend Developer</strong> at{' '}
+                Atualmente sou <strong>Desenvolvedor Frontend Senior</strong> no{' '}
                 <Text as="a" href="https://neon.com.br/" target="_blank">
-                  Neon Bank
+                  Banco Neon
                 </Text>{' '}
-                focused on improving the <strong>development experience</strong>{' '}
-                of our developers.
+                com foco na melhoria da{' '}
+                <strong>Experiência de Desenvolvimento</strong> de nossos
+                desenvolvedores.
               </Text>
               <Text>
-                I'm also a <strong>Community Manager</strong> for{' '}
+                Também sou <strong>Community Manager</strong> da{' '}
                 <Text
                   as="a"
                   href="https://discord.com/invite/P5YmPENeqd"
@@ -78,11 +79,11 @@ const AboutPage = ({
                 >
                   99juniors
                 </Text>
-                , an amazing community for budding developers.
+                , uma comunidade incrível para desenvolvedores iniciantes.
               </Text>
               <Text>
-                I currently live in <strong>São Paulo</strong>, Brazil with my
-                beloved wife.
+                Moro atualmente em <strong>São Paulo</strong>, Brasil com minha
+                amada esposa.
               </Text>
             </s.Section>
           </s.SectionWrapper>

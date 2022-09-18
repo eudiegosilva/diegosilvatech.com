@@ -31,26 +31,11 @@ export const NavbarWrapper = styled('nav', {
     height: 0
   },
   '&::-webkit-scrollbar-track': {
-    backgroundColor: 'transparent',
-    borderRadius: '$sm'
+    backgroundColor: 'transparent'
   },
   '&::-webkit-scrollbar-thumb': {
-    backgroundColor: 'transparent',
-    borderRadius: '$sm'
+    backgroundColor: 'transparent'
   }
-});
-
-export const ButtonHeader = styled('div', {
-  appearance: 'none',
-  background: 'transparent',
-  border: 'none',
-  borderRadius: '$sm',
-  color: '$text-contrast-high',
-  cursor: 'pointer',
-  height: '34px',
-  padding: '0 $sm',
-  transition: '$default',
-  '&:hover': { backgroundColor: '$brand-primary-03' }
 });
 
 export const ButtonLogo = styled('div', {
@@ -59,7 +44,7 @@ export const ButtonLogo = styled('div', {
   textDecoration: 'none',
   height: '100%',
   display: 'flex',
-  borderRadius: '$sm',
+  borderRadius: '$xs',
   overflow: 'hidden'
 });
 
@@ -111,12 +96,12 @@ export const ItemContainer = styled(motion.span, {
 
 export const ItemHovered = styled(motion.span, {
   position: 'absolute',
-  top: '-9px',
+  top: '-6px',
   left: '0',
   right: '0',
-  background: '$brand-primary-03',
+  background: '$brand-primary-04',
   padding: '$lg',
-  borderRadius: '$sm',
+  borderRadius: '$xs',
   zIndex: '$behind'
 });
 

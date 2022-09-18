@@ -1,5 +1,3 @@
-// import { useTheme } from 'next-themes';
-
 import { ShortcutHome } from 'components';
 import { Text } from 'components';
 import {
@@ -12,13 +10,11 @@ import {
 export type HomePageProps = PageHeadProps;
 
 const HomePage = ({ description, image, tabTitle }: HomePageProps) => {
-  // const { theme = 'default', setTheme } = useTheme();
   return (
     <PageContainer alignment="center">
       <PageHead description={description} image={image} tabTitle={tabTitle} />
       <PageContent colorPrimary="brand-primary-09">
         <div>
-          {/* <button onClick={() => setTheme('default')}>change theme</button> */}
           <Text as={'h1'}>Diego Silva</Text>
           <Text>
             <strong>

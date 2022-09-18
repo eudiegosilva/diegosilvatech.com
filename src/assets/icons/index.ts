@@ -1,6 +1,8 @@
 import aboutIcon from '../../../public/assets/icons/avatar.json';
 import articleIcon from '../../../public/assets/icons/article.json';
 import avatarIcon from '../../../public/assets/icons/avatar.json';
+import boltOutlineIcon from '../../../public/assets/icons/bolt-outline.json';
+import boltSolidIcon from '../../../public/assets/icons/bolt-solid.json';
 import chatIcon from '../../../public/assets/icons/chat.json';
 import checkIcon from '../../../public/assets/icons/check.json';
 import copyLinkIcon from '../../../public/assets/icons/link.json';
@@ -17,6 +19,8 @@ export {
   aboutIcon,
   articleIcon,
   avatarIcon,
+  boltOutlineIcon,
+  boltSolidIcon,
   chatIcon,
   checkIcon,
   copyLinkIcon,

@@ -3,10 +3,10 @@ import { AboutPage, AboutPageProps } from 'page-structure';
 export async function getStaticProps() {
   return {
     props: {
-      tabTitle: 'About | diegosilvatech',
-      pageTitle: 'Development experience.',
+      tabTitle: 'Sobre | Diego Silva',
+      pageTitle: 'Aprender & Compartilhar',
       description:
-        'Diego Silva is a Brazilian Frontend Developer. He currently lives in São Paulo and works with Developer Experience at Neon Bank. He is passionate about beautiful and smart user interfaces. He has extensive experience with selection processes and resume building. He is the founder and Community Manager of 99juniors.',
+        'Diego Silva é um Desenvolvedor Frontend Brasileiro. Ele vive atualmente em São Paulo e trabalhar com Developer Experience no Banco Neon. Ele é apaixonado por UI e UX. Possui grande experiência com processos seletivos e mentoria de carreira. É fundador e Community Manager da 99juniorsHe.',
       image: '/static/images/about-cover.jpg',
       colorPrimary: 'accent-sky',
       colorSecondary: 'accent-violet'

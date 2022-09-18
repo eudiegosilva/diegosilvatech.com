@@ -5,7 +5,7 @@ import { ArticlesPage, ArticlesPageProps } from 'page-structure';
 export async function getStaticProps() {
   const allArticles = getAllArticles(['date', 'skip', 'slug', 'title']);
 
-  const description = `Here you can find all the <strong>${allArticles.length} articles</strong> I wrote. You can read about web development, ux and ui design, design systems and developer experience.`;
+  const description = `Aqui você vai encontrar quase todos os <strong>${allArticles.length} artigos</strong> que escrevi. Você pode ler sobre desenvolvimento web, ux e ui design, design systems e developer experience.`;
 
   const featuredParams = [
     'date',
@@ -17,14 +17,14 @@ export async function getStaticProps() {
   ];
 
   const featuredArticles = [
-    getArticleBySlug('the-two-types-of-quality', featuredParams),
-    getArticleBySlug('what-makes-a-good-changelog', featuredParams)
+    getArticleBySlug('hierarquia-de-importacoes', featuredParams),
+    getArticleBySlug('styled-components-e-seus-beneficios', featuredParams)
   ];
 
   return {
     props: {
-      tabTitle: 'Articles | diegosilvatech',
-      pageTitle: 'Sharing small learnings.',
+      tabTitle: 'artigos | diegosilvatech',
+      pageTitle: 'Compartilhar & Aprender',
       description: description,
       image: '/static/images/articles-cover.jpg',
       colorPrimary: 'accent-sky',

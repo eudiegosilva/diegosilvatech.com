@@ -5,19 +5,15 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 import { diegosilvatech } from 'assets/images';
-import { Icon } from 'components';
+import { ThemeToggle } from 'components';
 import { AnimateSharedLayout } from 'framer-motion';
-import { useKBar } from 'kbar';
 
 import * as s from './navbar.styles';
 
-type NavbarProps = { disableCommand?: boolean };
-
-const Navbar = ({ disableCommand = false }: NavbarProps) => {
+const Navbar = () => {
   const [hoveredItem, setHoveredItem] = useState('');
-  const pages = ['About', 'Articles'];
+  const pages = ['Sobre', 'Artigos'];
   const router = useRouter();
-  const { query } = useKBar();
   return (
     <s.HeaderContainer>
       <s.HeaderWrapper>
@@ -26,10 +22,9 @@ const Navbar = ({ disableCommand = false }: NavbarProps) => {
             <s.ButtonLogo as="a">
               <Image
                 src={diegosilvatech}
-                alt="@diegosilvatech logo"
+                alt="diegosilvatech logo"
                 width={32}
                 height={32}
-                className="image-teste"
               />
             </s.ButtonLogo>
           </Link>
@@ -75,14 +70,7 @@ const Navbar = ({ disableCommand = false }: NavbarProps) => {
           </s.NavbarWrapper>
 
           <s.CommandButtonWrapper>
-            <s.ButtonHeader
-              as="button"
-              type="button"
-              aria-label="Command"
-              onClick={disableCommand ? () => null : query.toggle}
-            >
-              <Icon.CommandIcon />
-            </s.ButtonHeader>
+            <ThemeToggle />
           </s.CommandButtonWrapper>
         </AnimateSharedLayout>
       </s.HeaderWrapper>

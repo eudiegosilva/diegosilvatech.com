@@ -71,11 +71,14 @@ export const blockquote: ConfigProps = {
 
 export const kbd: ConfigProps = {
   fontFamily: '$body',
-  color: '$text-black',
-  background: '$text-contrast-low',
+  color: '$brand-primary-09',
+  background: '$brand-primary-03',
   padding: '1px 5px',
-  borderRadius: '$sm',
+  borderRadius: '$xs',
   fontSize: '$sm',
   transition: '$default',
-  '&:hover kbd': { background: '$text-contrast-high' }
+  '&:hover': {
+    color: '$text-white',
+    background: '$brand-primary-09'
+  }
 };
