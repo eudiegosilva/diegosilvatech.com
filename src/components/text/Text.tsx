@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { DOMAttributes, AnchorHTMLAttributes } from 'react';
 
 import Link from 'next/link';

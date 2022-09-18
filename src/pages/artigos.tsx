@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { getAllArticles } from 'globals/helpers/blog/blog';
 import { getArticleBySlug } from 'globals/helpers/blog/blog';
 import { ArticlesPage, ArticlesPageProps } from 'page-structure';

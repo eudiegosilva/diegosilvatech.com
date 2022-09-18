@@ -11,6 +11,5 @@ export default {
 } as Meta;
 
 export const ExampleFeaturedArticle: Story<FeaturedArticleProps> = args => {
-  const { children } = args;
-  return <FeaturedArticle {...args}>{children}</FeaturedArticle>;
+  return <FeaturedArticle {...args} />;
 };

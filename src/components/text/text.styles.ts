@@ -6,26 +6,26 @@ export const Text = styled('p', {
   p: { ...element.p },
   span: { ...element.span },
   strong: { ...element.strong },
+  small: { ...element.small },
   a: { ...element.a },
   h1: { ...element.h1 },
   h2: { ...element.h2 },
   h3: { ...element.h3 },
   blockquote: { ...element.blockquote },
   kbd: { ...element.kbd },
-  small: { ...element.small },
 
   variants: {
     variant: {
       p: element.p,
       span: element.span,
       strong: element.strong,
+      small: element.small,
       a: element.a,
       h1: element.h1,
       h2: element.h2,
       h3: element.h3,
       blockquote: element.blockquote,
-      kbd: element.kbd,
-      small: element.small
+      kbd: element.kbd
     }
   }
 });

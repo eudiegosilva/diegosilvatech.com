@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Text } from 'components';
 
 import { ColorTypes } from './gradient-title.types';

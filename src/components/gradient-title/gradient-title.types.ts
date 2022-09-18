@@ -1,3 +1,3 @@
 import { tokens } from 'styles';
 
-export type ColorTypes = keyof typeof tokens.color.crimsonPalette;
+export type ColorTypes = keyof typeof tokens.color.darkPalette;

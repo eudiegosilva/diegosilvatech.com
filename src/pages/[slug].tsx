@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ErrorMessage } from 'components';
 import {
   getArticleBySlug,

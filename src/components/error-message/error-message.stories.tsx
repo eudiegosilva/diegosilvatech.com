@@ -11,6 +11,5 @@ export default {
 } as Meta;
 
 export const ErrorMessageExample: Story<ErrorMessageProps> = args => {
-  const { children } = args;
-  return <ErrorMessage {...args}>{children}</ErrorMessage>;
+  return <ErrorMessage {...args} />;
 };
