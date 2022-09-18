@@ -10,7 +10,7 @@ export const FooterContainer = styled(Container, {
 });
 
 export const FooterWrapper = styled('footer', {
-  color: '$text-secondary',
+  color: '$text-contrast-low',
   display: 'flex',
   justifyContent: 'space-between',
   width: '100%',
@@ -31,12 +31,12 @@ export const FooterWrapper = styled('footer', {
 });
 
 export const TextAnchor = styled(Text, {
-  color: '$text-secondary',
+  color: '$text-contrast-low',
   fontSize: '$sm',
   textDecoration: 'none',
   textTransform: 'lowercase',
   transition: '$fast',
-  '&:hover, &:focus': { color: '$text-primary' },
+  '&:hover, &:focus': { color: '$text-contrast-high' },
   border: 'none',
   padding: '$lg 0',
   '@greater-lg': { mx: '$lg' }

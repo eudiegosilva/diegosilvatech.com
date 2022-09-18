@@ -17,12 +17,12 @@ export const parameters = {
         value: tokens.color.palette['brand-primary-low']
       },
       {
-        name: '$brand-primary-mid',
-        value: tokens.color.palette['brand-primary-mid']
+        name: '$brand-primary-03',
+        value: tokens.color.palette['brand-primary-03']
       },
       {
-        name: '$brand-primary-high',
-        value: tokens.color.palette['brand-primary-high']
+        name: '$brand-primary-11',
+        value: tokens.color.palette['brand-primary-11']
       },
     ]
   },

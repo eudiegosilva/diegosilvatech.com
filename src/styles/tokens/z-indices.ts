@@ -1,4 +1,5 @@
 const zIndex = {
+  behind: -1,
   root: 0,
   base: 10,
   menu: 20,

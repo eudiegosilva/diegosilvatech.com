@@ -10,8 +10,8 @@ export type GradientTitleProps = {
 
 const GradientTitle = ({
   children,
-  colorPrimary = 'brand-primary-high',
-  colorSecondary = 'brand-secondary-high'
+  colorPrimary = 'brand-primary-11',
+  colorSecondary = 'accent-violet'
 }: GradientTitleProps) => {
   return (
     <Text

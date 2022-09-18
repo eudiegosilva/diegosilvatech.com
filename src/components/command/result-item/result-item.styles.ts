@@ -28,7 +28,7 @@ export const Shortcut = styled('div', {
   kbd: {
     display: 'flex',
     background: '$transparent-white-high',
-    color: '$text-primary',
+    color: '$text-contrast-high',
     padding: '$xs $sm',
     borderRadius: '$sm',
     textTransform: 'uppercase'

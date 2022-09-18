@@ -5,7 +5,7 @@ import { styled } from 'styles/stitches.config';
 import { Container } from 'components/container/container.styles';
 
 export const HeaderContainer = styled('header', {
-  zIndex: 0,
+  zIndex: '$root',
   width: '100%'
 });
 
@@ -45,12 +45,12 @@ export const ButtonHeader = styled('div', {
   background: 'transparent',
   border: 'none',
   borderRadius: '$sm',
-  color: '$text-primary',
+  color: '$text-contrast-high',
   cursor: 'pointer',
   height: '34px',
   padding: '0 $sm',
   transition: '$default',
-  '&:hover': { backgroundColor: '$brand-primary-mid' }
+  '&:hover': { backgroundColor: '$brand-primary-03' }
 });
 
 export const ButtonLogo = styled('div', {
@@ -81,7 +81,7 @@ export const ItemLink = styled('a', {
 });
 
 export const ItemContainer = styled(motion.span, {
-  color: '$text-secondary',
+  color: '$text-contrast-low',
   cursor: 'pointer',
   display: 'inline-block',
   fontSize: '$xs',
@@ -91,7 +91,7 @@ export const ItemContainer = styled(motion.span, {
   textDecoration: 'none',
   textTransform: 'uppercase',
   transition: 'color $default',
-  '&:hover': { color: '$text-primary' },
+  '&:hover': { color: '$text-contrast-high' },
 
   '&::after': {
     content: '""',
@@ -102,7 +102,7 @@ export const ItemContainer = styled(motion.span, {
     right: '0px',
     height: '1px',
     width: '32px',
-    background: '$brand-primary-high',
+    background: '$brand-primary-11',
     opacity: 0,
     transition: 'opacity $default',
     zIndex: '$always-on-top'
@@ -114,15 +114,15 @@ export const ItemHovered = styled(motion.span, {
   top: '-9px',
   left: '0',
   right: '0',
-  background: '$brand-primary-mid',
+  background: '$brand-primary-03',
   padding: '$lg',
   borderRadius: '$sm',
-  zIndex: -1
+  zIndex: '$behind'
 });
 
 export const CommandButtonWrapper = styled('div', {
   display: 'flex',
   alignItems: 'center',
-  color: '$text-primary',
+  color: '$text-contrast-high',
   marginLeft: 'auto'
 });

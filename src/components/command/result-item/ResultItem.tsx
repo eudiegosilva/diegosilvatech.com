@@ -8,13 +8,13 @@ import * as s from './result-item.styles';
 const getResultStyle = active => {
   return {
     padding: '$sm $md',
-    background: active ? '$transparent-white-high' : '$transparent-white-low',
+    background: active ? '$transparent-white-03' : '$transparent-white-01',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
     margin: 0,
     cursor: 'pointer',
-    color: active ? '$text-primary' : '$text-secondary'
+    color: active ? '$text-contrast-high' : '$text-contrast-low'
   };
 };
 

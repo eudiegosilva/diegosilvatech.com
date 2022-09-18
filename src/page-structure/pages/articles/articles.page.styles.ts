@@ -19,7 +19,7 @@ export const AllArticlesList = styled('ul', {
 });
 
 export const ListItem = styled('li', {
-  borderBottom: '1px solid $brand-primary-mid',
+  borderBottom: '1px solid $brand-primary-03',
   '&:last-child': { border: 0 },
   display: 'flex',
   transition: '$fast',
@@ -28,7 +28,7 @@ export const ListItem = styled('li', {
 
 export const TextAnchor = styled(Text, {
   textDecoration: 'none',
-  color: '$text-primary',
+  color: '$text-contrast-high',
   display: 'flex',
   flexDirection: 'column',
   width: '100%',
@@ -49,7 +49,7 @@ export const TextTitle = styled(Text, {
 });
 
 export const TextDate = styled(Text, {
-  color: '$text-secondary',
+  color: '$text-contrast-low',
   display: 'flex',
   alignItems: 'center',
   fontWeight: 500,
@@ -61,7 +61,7 @@ export const TextDate = styled(Text, {
 
 export const AnimationWrapper = styled(motion.span, {
   border: '0',
-  color: '$text-secondary',
+  color: '$text-contrast-low',
   cursor: 'pointer',
   display: 'flex',
   justifyContent: 'space-between',
@@ -71,7 +71,7 @@ export const AnimationWrapper = styled(motion.span, {
   transition: '$fast',
   textDecoration: 'none',
   position: 'relative',
-  '&:hover': { span: { color: '$text-primary' } },
+  '&:hover': { span: { color: '$text-contrast-high' } },
   zIndex: '$base'
 });
 
@@ -81,9 +81,9 @@ export const AnimationHovered = styled(motion.span, {
   left: '-$lg',
   right: '-$lg',
   bottom: '-1px',
-  background: '$brand-primary-mid',
+  background: '$brand-primary-03',
   borderRadius: '$md',
-  zIndex: -1
+  zIndex: '$behind'
 });
 
 export const ArticleItem = styled(ListItem, {

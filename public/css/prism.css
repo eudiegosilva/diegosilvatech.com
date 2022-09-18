@@ -2,7 +2,7 @@
   --background: #151417;
   --comment: #6272a4;
   --foreground: #f8f8f2;
-  --selection: #44475a;
+  --selection: #FF80BF;
   --hover: #212024;
 
   --cyan: #80ffea;
@@ -21,7 +21,7 @@
   --background-30: #282a3633;
   --comment-30: #6272a433;
   --foreground-30: #f8f8f233;
-  --selection-30: #44475a33;
+  --selection-30: #FF80BF33;
 
   --cyan-30: #80ffea33;
   --green-30: #8aff80;
@@ -35,7 +35,7 @@
   --background-40: #282a3666;
   --comment-40: #6272a466;
   --foreground-40: #f8f8f266;
-  --selection-40: #44475a66;
+  --selection-40: #FF80BF66;
 
   --cyan-40: #80ffea66;
   --green-40: #8aff80;

@@ -12,7 +12,7 @@ export const Positioner = styled(KBarPositioner, {
   width: '100%',
   inset: 0,
   padding: '14vh $md $md',
-  background: '$transparent-black-low',
+  background: '$transparent-black-12',
   boxSizing: 'border-box',
   zIndex: '$modal'
 });
@@ -26,16 +26,16 @@ export const Search = styled(KBarSearch, {
   border: 'none',
   margin: 0,
   background: '$transparent-white-high',
-  color: '$text-primary',
+  color: '$text-contrast-high',
   fontFamily: '$body',
   fontWeight: '$400',
-  '&::placeholder': { color: '$text-secondary' }
+  '&::placeholder': { color: '$text-contrast-low' }
 });
 
 export const Animator = styled(KBarAnimator, {
   maxWidth: '800px',
   width: '100%',
-  color: '$text-primary',
+  color: '$text-contrast-high',
   borderRadius: '$sm',
   overflow: 'hidden',
   span: { margin: 0 },

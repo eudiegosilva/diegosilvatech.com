@@ -73,7 +73,7 @@ const FeaturedArticle = ({
             <Text
               css={{
                 margin: '5px 0 0',
-                color: '$text-primary',
+                color: '$text-contrast-high',
                 textTransform: 'uppercase',
                 display: 'inline-block',
                 fontWeight: 500,
