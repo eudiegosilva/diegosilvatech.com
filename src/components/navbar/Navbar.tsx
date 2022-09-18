@@ -15,7 +15,7 @@ type NavbarProps = { disableCommand?: boolean };
 
 const Navbar = ({ disableCommand = false }: NavbarProps) => {
   const [hoveredItem, setHoveredItem] = useState('');
-  const pages = ['About', 'Articles', 'Projects', 'Talks', 'Podcasts', 'Setup'];
+  const pages = ['About', 'Articles'];
   const router = useRouter();
   const { query } = useKBar();
   return (
