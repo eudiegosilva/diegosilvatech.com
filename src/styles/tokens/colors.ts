@@ -96,6 +96,13 @@ const text = {
   'text-highlight': brand['brand-primary-11']
 };
 
+const gradient = {
+  'gradient-yellow': '#f5d90a',
+  'gradient-mint': '#70e1c8',
+  'gradient-sky': '#68ddfd',
+  'gradient-orange': '#f76808'
+};
+
 const palette = {
   'base-white': '#ffffff',
   'base-black': '#000000',
@@ -108,6 +115,8 @@ const palette = {
   'transparent-black-high': transparent['transparent-black-03'],
   'transparent-white-low': transparent['transparent-white-01'],
   'transparent-white-high': transparent['transparent-white-03'],
+
+  ...gradient,
   ...text
 };
 

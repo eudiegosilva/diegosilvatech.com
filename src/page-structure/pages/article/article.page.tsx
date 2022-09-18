@@ -46,7 +46,11 @@ const ArticlePage = ({
         description={description}
       />
 
-      <PageContent pageTitle={articleTitle}>
+      <PageContent
+        pageTitle={articleTitle}
+        colorPrimary="gradient-sky"
+        colorSecondary="gradient-sky"
+      >
         <s.ArticleDate>
           <ArticleDate dateString={date} />
         </s.ArticleDate>

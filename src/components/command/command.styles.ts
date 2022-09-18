@@ -12,8 +12,9 @@ export const Positioner = styled(KBarPositioner, {
   width: '100%',
   inset: 0,
   padding: '14vh $md $md',
-  background: '$transparent-black-high',
-  boxSizing: 'border-box'
+  background: '$transparent-black-low',
+  boxSizing: 'border-box',
+  zIndex: '$modal'
 });
 
 export const Search = styled(KBarSearch, {

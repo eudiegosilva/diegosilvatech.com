@@ -1,3 +1,4 @@
+import { ErrorMessage } from 'components';
 import {
   getArticleBySlug,
   getAllArticles,
@@ -25,7 +26,7 @@ const Article = ({
   content
 }: ArticleProps) => {
   if (errorCode) {
-    // return <ErrorMessage code={errorCode} />;
+    return <ErrorMessage code={errorCode} />;
   }
 
   const tabTitle = `${title} | diegosilvatech`;
