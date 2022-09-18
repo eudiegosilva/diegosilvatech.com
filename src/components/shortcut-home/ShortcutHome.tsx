@@ -21,20 +21,22 @@ const ShortcutHome = ({ disableCommand }: ShortcutHomeProps) => {
     if (isMobile) {
       return (
         <Button handleClick={disableCommand ? () => null : query.toggle}>
-          Tap to start →
+          Toque para iniciar →
         </Button>
       );
     } else if (isMac) {
       return (
         <Button handleClick={disableCommand ? () => null : query.toggle}>
-          Press <Text as="kbd">⌘</Text> <Text as="kbd">K</Text> to start →
+          Pressione <Text as="kbd">⌘</Text> <Text as="kbd">K</Text> para iniciar
+          →
         </Button>
       );
     }
   }
   return (
     <Button handleClick={disableCommand ? () => null : query.toggle}>
-      Press <Text as="kbd">ctrl</Text> <Text as="kbd">K</Text> to start →
+      Pressione <Text as="kbd">ctrl</Text> <Text as="kbd">K</Text> para iniciar
+      →
     </Button>
   );
 };
