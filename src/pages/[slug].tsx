@@ -67,18 +67,6 @@ export async function getStaticProps({ params }) {
 
     const content = await convertMarkdownToHtml(article.content || 'empty');
 
-    const isProd = process.env.NODE_ENV === 'production';
-    const base = isProd
-      ? 'https://diegosilvatech.com'
-      : 'http://localhost:3000';
-
-    if (isProd) {
-      const viewsReq = await fetch(`${base}/api/views/${params.slug}`);
-      const viewsRes = await viewsReq.json();
-
-      article.views = new Intl.NumberFormat().format(viewsRes.views || 0);
-    }
-
     return {
       props: {
         ...article,
