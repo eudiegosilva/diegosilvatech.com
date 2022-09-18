@@ -24,7 +24,7 @@ export const AnimationHovered = styled(motion.div, {
   left: '0',
   right: '0',
   bottom: '0',
-  background: '$brand-primary-mid',
+  background: '$brand-primary-03',
   borderRadius: '$md',
   zIndex: '$behind',
   width: '100%'

@@ -50,7 +50,7 @@ const Navbar = ({ disableCommand = false }: NavbarProps) => {
                           css={
                             router.pathname == pagePath
                               ? {
-                                  color: '$text-primary',
+                                  color: '$text-contrast-high',
                                   '&::after': { opacity: 1 }
                                 }
                               : {}

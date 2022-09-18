@@ -8,8 +8,8 @@ export async function getStaticProps() {
       description:
         'Diego Silva is a Brazilian Frontend Developer. He currently lives in São Paulo and works with Developer Experience at Neon Bank. He is passionate about beautiful and smart user interfaces. He has extensive experience with selection processes and resume building. He is the founder and Community Manager of 99juniors.',
       image: '/static/images/about-cover.jpg',
-      colorPrimary: 'brand-primary-high',
-      colorSecondary: 'brand-secondary-high'
+      colorPrimary: 'accent-sky',
+      colorSecondary: 'accent-violet'
     }
   };
 }

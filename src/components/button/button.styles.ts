@@ -5,7 +5,7 @@ export const ButtonWrapper = styled('button', {
   background: 'transparent',
   border: 0,
   borderRadius: '$sm',
-  color: '$text-primary',
+  color: '$text-contrast-high',
   cursor: 'pointer',
   display: 'inline-block',
   fontSize: '$md',
@@ -17,8 +17,8 @@ export const ButtonWrapper = styled('button', {
   textDecoration: 'none',
   transition: '$default',
   '&:hover': {
-    background: '$brand-primary-mid',
-    color: '$text-primary',
+    background: '$brand-primary-03',
+    color: '$text-contrast-high',
     opacity: 1
   }
 });

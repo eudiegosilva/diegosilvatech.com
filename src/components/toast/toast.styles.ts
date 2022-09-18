@@ -13,11 +13,11 @@ const slideDownAndFade = keyframes({
 });
 
 export const ToastWrapper = styled(ToastPrimitive.Root, {
-  background: '$brand-primary-mid',
+  background: '$brand-primary-03',
   borderRadius: '$sm',
-  border: '1px solid $brand-primary-high',
+  border: '1px solid $brand-primary-11',
   boxShadow: 'rgb(0 0 0 / 8%) 0px 4px 13px',
-  color: '$text-primary',
+  color: '$text-contrast-high',
   fontSize: '$xs',
   overflow: 'hidden',
   margin: 0,
@@ -40,23 +40,23 @@ export const IconWrapper = styled('div', {
   variants: {
     variant: {
       success: {
-        color: '$brand-primary-high'
+        color: '$brand-primary-11'
       },
       error: {
-        color: '$brand-secondary-11'
+        color: '$accent-violet'
       }
     }
   }
 });
 
 export const Title = styled(ToastPrimitive.Title, {
-  color: '$text-primary',
+  color: '$text-contrast-high',
   fontSize: '$sm',
   lineHeight: '$150'
 });
 
 export const Description = styled(ToastPrimitive.Description, {
-  color: '$text-secondary',
+  color: '$text-contrast-low',
   fontSize: '$xs'
 });
 
@@ -69,9 +69,9 @@ export const Close = styled(ToastPrimitive.Close, {
   background: 'transparent',
   border: '0',
   fontSize: '$sm',
-  color: '$text-secondary',
+  color: '$text-contrast-low',
   transition: 'color $default',
-  '&:hover': { color: '$text-primary' }
+  '&:hover': { color: '$text-contrast-high' }
 });
 
 export const Viewport = styled(ToastPrimitive.Viewport, {

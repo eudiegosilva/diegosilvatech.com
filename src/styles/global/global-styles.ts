@@ -9,7 +9,7 @@ export const globalStyles = globalCss({
     boxSizing: 'border-box'
   },
   'html, body': {
-    backgroundColor: '$brand-primary-low',
+    backgroundColor: '$brand-primary-01',
     fontFamily: '$body',
     WebkitFontSmoothing: 'antialiased',
     '&::-webkit-scrollbar': {
@@ -20,7 +20,7 @@ export const globalStyles = globalCss({
       backgroundColor: 'transparent'
     },
     '&::-webkit-scrollbar-thumb': {
-      backgroundColor: '$brand-primary-scrollbar'
+      backgroundColor: '$brand-primary-09'
     }
   },
   ...articleStyles,

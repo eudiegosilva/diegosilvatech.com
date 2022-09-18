@@ -8,13 +8,13 @@ export const ArticleDate = styled(Text, {
 
 export const Divider = styled('hr', {
   color: 'red',
-  border: '0.5px solid $brand-primary-mid'
+  border: '0.5px solid $brand-primary-03'
 });
 
 export const ArticleContent = styled('div', {
   fontSize: '16px',
   lineHeight: '32px',
-  color: '$text-secondary',
+  color: '$text-contrast-low',
   position: 'relative',
   zIndex: '$base',
   height: '100%',
@@ -43,7 +43,7 @@ export const ArticleContent = styled('div', {
     '@greater-lg': { minWidth: '100%' }
   },
   '& .side-by-side-caption': {
-    color: '$text-secondary',
+    color: '$text-contrast-low',
     textAlign: 'center',
     fontStyle: 'italic',
     fontSize: '14px',

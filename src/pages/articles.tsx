@@ -27,8 +27,8 @@ export async function getStaticProps() {
       pageTitle: 'Sharing small learnings.',
       description: description,
       image: '/static/images/articles-cover.jpg',
-      colorPrimary: 'brand-secondary-high',
-      colorSecondary: 'brand-secondary-high',
+      colorPrimary: 'accent-sky',
+      colorSecondary: 'accent-violet',
       allArticles,
       featuredArticles
     }
