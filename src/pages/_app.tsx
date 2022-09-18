@@ -5,18 +5,17 @@ import '../../public/css/prism.css';
 import { Command } from 'components';
 
 import { globalStyles } from 'styles';
-import { crimsonTheme, violetTheme } from 'styles/stitches.config';
+import { darkTheme, lightTheme } from 'styles/stitches.config';
 
 export default function App({ Component, pageProps }: AppProps) {
   globalStyles();
   return (
     <ThemeProvider
       attribute="class"
-      defaultTheme="default"
+      defaultTheme="dark"
       value={{
-        default: 'default',
-        crimson: crimsonTheme.className,
-        violet: violetTheme.className
+        dark: darkTheme.className,
+        light: lightTheme.className
       }}
     >
       <Command>

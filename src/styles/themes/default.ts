@@ -14,7 +14,7 @@ export const defaultTheme = {
   theme: {
     borderStyles: {},
     borderWidths: {},
-    colors: { ...color.crimsonPalette },
+    colors: { ...color.darkPalette },
     fonts: { ...font.family },
     fontSizes: { ...font.size },
     fontWeights: { ...font.weight },

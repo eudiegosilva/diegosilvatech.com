@@ -1,32 +1,31 @@
 import {
-  greenDark,
-  violetDark,
+  violet,
   blackA,
   whiteA,
-  grayDark,
-  sageDark,
-  yellowDark,
-  skyDark
+  gray,
+  mauve,
+  yellow,
+  sky
 } from '@radix-ui/colors';
 
 const brand = {
-  'brand-primary-01': greenDark.green1,
-  'brand-primary-03': greenDark.green3,
-  'brand-primary-09': greenDark.green9,
-  'brand-primary-11': greenDark.green11
+  'brand-primary-01': violet.violet1,
+  'brand-primary-03': violet.violet3,
+  'brand-primary-09': violet.violet9,
+  'brand-primary-11': violet.violet11
 };
 
 const text = {
-  'text-contrast-high': sageDark.sage12,
-  'text-contrast-low': grayDark.gray11,
+  'text-contrast-high': mauve.mauve12,
+  'text-contrast-low': gray.gray11,
   'text-black': blackA.blackA12,
   'text-white': whiteA.whiteA12
 };
 
 const accent = {
-  'accent-yellow': yellowDark.yellow9,
-  'accent-sky': skyDark.sky9,
-  'accent-violet': violetDark.violet9
+  'accent-yellow': yellow.yellow9,
+  'accent-sky': sky.sky9,
+  'accent-violet': violet.violet9
 };
 
 const transparent = {

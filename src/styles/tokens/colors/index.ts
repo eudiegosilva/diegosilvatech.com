@@ -1,5 +1,4 @@
-import { palette as crimsonPalette } from './crimson';
-import { palette as greenPalette } from './green';
-import { palette as violetPalette } from './violet';
+import { palette as darkPalette } from './dark';
+import { palette as lightPalette } from './light';
 
-export { crimsonPalette, violetPalette, greenPalette };
+export { darkPalette, lightPalette };
