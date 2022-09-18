@@ -4,10 +4,10 @@ export type LinkProps = {
 };
 
 const links: LinkProps[] = [
-  {
-    title: 'email',
-    url: '/contact'
-  },
+  // {
+  //   title: 'email',
+  //   url: '/contact'
+  // },
   {
     title: 'twitter',
     url: 'https://twitter.com/diegosilvatech'

@@ -1,7 +1,7 @@
 ---
 title: Styled Components e seus benefícios
 description: As principais vantagens de utilizar CSS no JavaScript
-image: /assets/images/articles/styled-components-e-seus-beneficios.png
+image: /assets/images/articles/styled-components-e-seus-beneficios.jpg
 date: "2020-08-17"
 ---
 

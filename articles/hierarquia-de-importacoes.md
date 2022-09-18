@@ -1,7 +1,7 @@
 ---
 title: Hierarquia de importações
 description: Deixando os seus imports mais elegantes e organizados | Parte II
-image: /assets/images/articles/hierarquia-de-importacoes.png
+image: /assets/images/articles/hierarquia-de-importacoes.jpg
 date: "2020-08-23"
 ---
 

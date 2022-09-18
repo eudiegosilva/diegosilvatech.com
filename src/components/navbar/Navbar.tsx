@@ -10,11 +10,9 @@ import { AnimateSharedLayout } from 'framer-motion';
 
 import * as s from './navbar.styles';
 
-type NavbarProps = { disableCommand?: boolean };
-
-const Navbar = ({ disableCommand = false }: NavbarProps) => {
+const Navbar = () => {
   const [hoveredItem, setHoveredItem] = useState('');
-  const pages = ['About', 'Articles'];
+  const pages = ['Sobre', 'Artigos'];
   const router = useRouter();
   return (
     <s.HeaderContainer>

@@ -119,12 +119,12 @@ const ArticlesPage = ({
       >
         <AnimateSharedLayout>
           <Text dangerouslySetInnerHTML={{ __html: description }} />
-          <Text as="h2">Featured Articles</Text>
+          <Text as="h2">Artigos em Destaque</Text>
           <s.FeaturedArticlesGroup>
             {renderFeaturedArticles()}
           </s.FeaturedArticlesGroup>
 
-          <Text as="h2">All Articles</Text>
+          <Text as="h2">Todos os Artigos</Text>
           <s.AllArticlesList>{renderArticlesList()}</s.AllArticlesList>
         </AnimateSharedLayout>
       </PageContent>

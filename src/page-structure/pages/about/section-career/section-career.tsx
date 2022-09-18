@@ -8,7 +8,7 @@ import * as s from './section-career.styles';
 const SectionCareer = () => {
   return (
     <s.CareerWrapper>
-      <Text as="h2">Career</Text>
+      <Text as="h2">Carreira</Text>
 
       {careerItems.map(job => {
         return (

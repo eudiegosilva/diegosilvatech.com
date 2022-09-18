@@ -24,25 +24,27 @@ const SectionBio = ({ description }: SectionBioProps) => {
     e.preventDefault();
     navigator.clipboard.writeText(description);
 
-    setToastTitle('Copied :D');
-    setToastDescription('You can now paste it anywhere.');
+    setToastTitle('Copiado :D');
+    setToastDescription('Você pode enviar o link para qualquer pessoa!');
     setShowToast(true);
   };
 
   const downloadPhoto = () => {
-    setToastTitle('Downloading...');
-    setToastDescription('You can now add this photo to your fancy site.');
+    setToastTitle('Baixando...');
+    setToastDescription(
+      'Você pode utilizar essa foto em qualquer material relacionado.'
+    );
     setShowToast(true);
   };
 
   return (
     <s.BioWrapper>
-      <Text as="h2">Bio</Text>
+      <Text as="h2">Biografia</Text>
 
       <div>
         <Text>
-          This content was made for organizers of events, interviews and talks.
-          Just copy-and-paste.
+          Esse conteúdo foi criado para organizadores de eventos, entrevistas e
+          palestras. É só copiar e colar.
         </Text>
         <Text as="blockquote">
           <Text>{description}</Text>
@@ -66,7 +68,7 @@ const SectionBio = ({ description }: SectionBioProps) => {
               loop={false}
               autoplay={false}
             />
-            Copy Bio
+            Copiar Bio
           </Button>
           <Button
             as="a"
@@ -89,7 +91,7 @@ const SectionBio = ({ description }: SectionBioProps) => {
               loop={false}
               autoplay={false}
             />
-            Download photo
+            Baixar Foto
           </Button>
         </s.ButtonsWrapper>
       </div>

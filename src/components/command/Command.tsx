@@ -34,10 +34,10 @@ const Command = ({ children }: CommandProps) => {
   const actions = [
     {
       id: 'copy',
-      name: 'Copy Link',
+      name: 'Copiar Link',
       shortcut: ['l'],
       keywords: 'copy-link',
-      section: 'General',
+      section: 'Geral',
       perform: copyLink,
       icon: (
         <Lottie
@@ -54,7 +54,7 @@ const Command = ({ children }: CommandProps) => {
       name: 'Home',
       shortcut: ['g', 'h'],
       keywords: 'go-home',
-      section: 'Go To',
+      section: 'Vá Para',
       perform: () => router.push('/'),
       icon: (
         <Lottie
@@ -68,11 +68,11 @@ const Command = ({ children }: CommandProps) => {
     },
     {
       id: 'about',
-      name: 'About',
-      shortcut: ['g', 'a'],
-      keywords: 'go-about',
-      section: 'Go To',
-      perform: () => router.push('/about'),
+      name: 'Sobre',
+      shortcut: ['g', 's'],
+      keywords: 'go-sobre',
+      section: 'Vá Para',
+      perform: () => router.push('/sobre'),
       icon: (
         <Lottie
           lottieRef={aboutRef}
@@ -85,11 +85,11 @@ const Command = ({ children }: CommandProps) => {
     },
     {
       id: 'articles',
-      name: 'Articles',
+      name: 'Artigos',
       shortcut: ['g', 'a'],
       keywords: 'go-articles',
       section: 'Go To',
-      perform: () => router.push('/articles'),
+      perform: () => router.push('/artigos'),
       icon: (
         <Lottie
           lottieRef={articlesRef}
