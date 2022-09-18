@@ -5,9 +5,8 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 import { diegosilvatech } from 'assets/images';
-import { Icon, ThemeToggle } from 'components';
+import { ThemeToggle } from 'components';
 import { AnimateSharedLayout } from 'framer-motion';
-import { useKBar } from 'kbar';
 
 import * as s from './navbar.styles';
 
@@ -17,7 +16,6 @@ const Navbar = ({ disableCommand = false }: NavbarProps) => {
   const [hoveredItem, setHoveredItem] = useState('');
   const pages = ['About', 'Articles'];
   const router = useRouter();
-  const { query } = useKBar();
   return (
     <s.HeaderContainer>
       <s.HeaderWrapper>
@@ -26,10 +24,9 @@ const Navbar = ({ disableCommand = false }: NavbarProps) => {
             <s.ButtonLogo as="a">
               <Image
                 src={diegosilvatech}
-                alt="@diegosilvatech logo"
+                alt="diegosilvatech logo"
                 width={32}
                 height={32}
-                className="image-teste"
               />
             </s.ButtonLogo>
           </Link>
@@ -76,14 +73,6 @@ const Navbar = ({ disableCommand = false }: NavbarProps) => {
 
           <s.CommandButtonWrapper>
             <ThemeToggle />
-            {/* <s.ButtonHeader
-              as="button"
-              type="button"
-              aria-label="Command"
-              onClick={disableCommand ? () => null : query.toggle}
-            >
-              <Icon.CommandIcon />
-            </s.ButtonHeader> */}
           </s.CommandButtonWrapper>
         </AnimateSharedLayout>
       </s.HeaderWrapper>

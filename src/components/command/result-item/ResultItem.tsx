@@ -8,13 +8,17 @@ import * as s from './result-item.styles';
 const getResultStyle = active => {
   return {
     padding: '$sm $md',
-    background: active ? '$transparent-white-03' : '$transparent-white-01',
+    background: active ? '$transparent-black-07' : '$transparent-black-03',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
     margin: 0,
     cursor: 'pointer',
-    color: active ? '$text-contrast-high' : '$text-contrast-low'
+    color: active ? '$text-contrast-high' : '$text-contrast-low',
+    kbd: {
+      color: active ? '$text-white' : '$brand-primary-09',
+      backgroundColor: active ? '$brand-primary-09' : '$brand-primary-03'
+    }
   };
 };
 

@@ -11,12 +11,10 @@ import * as s from './theme-toggle.styles';
 export type ThemeToggleProps = {};
 
 const ThemeToggle = () => {
-  const [darkTheme, setDarkTheme] = useState(true);
+  const { theme, setTheme } = useTheme();
+  const [darkTheme, setDarkTheme] = useState(theme === 'dark');
   const boltOutlineRef = useRef();
   const boltSolidRef = useRef();
-  const { setTheme } = useTheme();
-
-  console.log('darkTheme', darkTheme);
 
   const iconSize = { width: 20, height: 20 };
 

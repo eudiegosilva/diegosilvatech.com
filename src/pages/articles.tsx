@@ -17,8 +17,8 @@ export async function getStaticProps() {
   ];
 
   const featuredArticles = [
-    getArticleBySlug('the-two-types-of-quality', featuredParams),
-    getArticleBySlug('what-makes-a-good-changelog', featuredParams)
+    getArticleBySlug('hierarquia-de-importacoes', featuredParams),
+    getArticleBySlug('styled-components-e-seus-beneficios', featuredParams)
   ];
 
   return {

@@ -23,14 +23,11 @@ export const ActionRow = styled('div', {
 export const Shortcut = styled('div', {
   display: 'flex',
   alignItems: 'center',
-  gap: '$xs',
+  gap: '$sm',
 
   kbd: {
-    display: 'flex',
-    background: '$transparent-white-high',
-    color: '$text-contrast-high',
     padding: '$xs $sm',
-    borderRadius: '$sm',
+    borderRadius: '$xs',
     textTransform: 'uppercase'
   }
 });

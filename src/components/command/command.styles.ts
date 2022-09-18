@@ -12,7 +12,7 @@ export const Positioner = styled(KBarPositioner, {
   width: '100%',
   inset: 0,
   padding: '14vh $md $md',
-  background: '$transparent-black-12',
+  backgroundColor: '$transparent-black-12',
   boxSizing: 'border-box',
   zIndex: '$modal'
 });
@@ -25,7 +25,7 @@ export const Search = styled(KBarSearch, {
   outline: 'none',
   border: 'none',
   margin: 0,
-  background: '$transparent-white-high',
+  background: '$transparent-black-01',
   color: '$text-contrast-high',
   fontFamily: '$body',
   fontWeight: '$400',
@@ -41,7 +41,7 @@ export const Animator = styled(KBarAnimator, {
   span: { margin: 0 },
   '& .command-box': { padding: '0 $lg' },
   '@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none))': {
-    backgroundColor: '$transparent-white-high',
+    backgroundColor: '$transparent-black-09',
     WebkitBackdropFilter: 'saturate(300%) blur(25px)',
     backdropFilter: 'saturate(300%) blur(25px)'
   },
