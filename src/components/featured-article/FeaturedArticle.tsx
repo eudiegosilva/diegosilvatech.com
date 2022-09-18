@@ -6,7 +6,6 @@ import readingTime from 'reading-time';
 import * as s from './featured-article.styles';
 
 export type FeaturedArticleProps = {
-  children: React.ReactNode;
   href: string;
   index: any;
   title: string;
@@ -20,8 +19,30 @@ type AnimationProps = {
   index: any;
 };
 
+const Animation = ({ children, index }: AnimationProps) => {
+  const [hovered, setHovered] = useState('');
+  const isHovered = hovered === index;
+
+  return (
+    <s.AnimationWrapper
+      onHoverStart={() => setHovered(index)}
+      onHoverEnd={() => setHovered('')}
+      className="featured-article-animation"
+    >
+      {isHovered && (
+        <s.AnimationHovered
+          layoutId="featured-articles"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        />
+      )}
+      {children}
+    </s.AnimationWrapper>
+  );
+};
+
 const FeaturedArticle = ({
-  children,
   href,
   index,
   image,
@@ -30,28 +51,6 @@ const FeaturedArticle = ({
   content
 }: FeaturedArticleProps) => {
   const articleStats = readingTime(content);
-  const Animation = ({ children, index }: AnimationProps) => {
-    const [hovered, setHovered] = useState('');
-    const isHovered = hovered === index;
-
-    return (
-      <s.AnimationWrapper
-        onHoverStart={() => setHovered(index)}
-        onHoverEnd={() => setHovered('')}
-        className="featured-article-animation"
-      >
-        {isHovered && (
-          <s.AnimationHovered
-            layoutId="featured-articles"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          />
-        )}
-        {children}
-      </s.AnimationWrapper>
-    );
-  };
 
   return (
     <s.FeaturedArticleWrapper href={href}>

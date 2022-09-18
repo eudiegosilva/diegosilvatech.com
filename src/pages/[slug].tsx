@@ -3,9 +3,7 @@ import {
   getAllArticles,
   convertMarkdownToHtml
 } from 'globals/helpers/blog/blog';
-import { ArticlePage, ArticlePageProps } from 'page-structure';
-
-import diegosilvatech from '../../public/assets/images/diegosilvatech.jpg';
+import { ArticlePage } from 'page-structure';
 
 type ArticleProps = {
   errorCode: number;

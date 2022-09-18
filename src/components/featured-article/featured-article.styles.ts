@@ -4,7 +4,7 @@ import { styled } from 'styles/stitches.config';
 
 export const FeaturedArticleWrapper = styled('a', {
   border: '0',
-  width: '370px',
+  width: '100%',
   marginLeft: '$lg',
   textDecoration: 'none',
   '&:hover': { opacity: 1 },
@@ -26,17 +26,19 @@ export const AnimationHovered = styled(motion.div, {
   bottom: '0',
   background: '$brand-primary-mid',
   borderRadius: '$md',
-  zIndex: -1
+  zIndex: -1,
+  width: '100%'
 });
 
 export const ArticleContainer = styled('div', {
   display: 'flex',
-  flexDirection: 'column'
+  flexDirection: 'column',
+  width: '100%'
 });
 
 export const ImageContainer = styled('div', {
   borderRadius: '8px',
-  width: '370px',
+  width: '100%',
   height: '180px',
   marginBottom: '$lg',
   backgroundSize: 'cover',
@@ -44,11 +46,12 @@ export const ImageContainer = styled('div', {
   backgroundPosition: 'center center',
   filter: 'grayscale(1)',
   transition: '$fast',
-  '&:hover': { filter: 'grayscale(0)' }
+  '&:hover': { filter: 'grayscale(0)' },
+  '@greater-lg': { width: '100%' }
 });
 
 export const ArticleContent = styled('div', {
-  maxWidth: '450px',
+  width: '100%',
   marginRight: '$lg',
-  '@greater-lg': { maxWidth: '100%', marginRight: 0 }
+  '@greater-lg': { width: '100%', marginRight: 0 }
 });

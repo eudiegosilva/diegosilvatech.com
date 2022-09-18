@@ -59,14 +59,11 @@ const ArticlesPage = ({
           description={article.description}
           image={article.image}
           content={article.content}
-        >
-          {article.title}
-        </FeaturedArticle>
+        />
       );
     });
   };
 
-  // console.log('allArticles', allArticles);
   const renderArticlesList = () => {
     return allArticles.map((article, index) => {
       if (!article.skip) {

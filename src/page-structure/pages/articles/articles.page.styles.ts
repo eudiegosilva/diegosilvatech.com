@@ -6,7 +6,10 @@ import { Text } from 'components/text/text.styles';
 
 export const FeaturedArticlesGroup = styled('div', {
   margin: '$sm 0 0 -$lg',
-  '@greater-lg': { display: 'flex', justifyContent: 'space-between' }
+  '@greater-lg': {
+    display: 'flex',
+    justifyContent: 'space-between'
+  }
 });
 
 export const AllArticlesList = styled('ul', {
@@ -68,7 +71,7 @@ export const AnimationWrapper = styled(motion.span, {
   transition: '$fast',
   textDecoration: 'none',
   position: 'relative',
-  '&:hover': { color: '$text-primary' },
+  '&:hover': { span: { color: '$text-primary' } },
   zIndex: '$base'
 });
 

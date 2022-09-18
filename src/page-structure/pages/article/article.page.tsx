@@ -1,6 +1,5 @@
 import { ArticleJsonLd } from 'next-seo';
 
-import { Text } from 'components';
 import { ArticleDate } from 'globals/helpers/blog/article-date';
 import {
   PageContent,
