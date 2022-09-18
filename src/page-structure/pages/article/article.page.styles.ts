@@ -16,7 +16,7 @@ export const ArticleContent = styled('div', {
   lineHeight: '32px',
   color: '$text-secondary',
   position: 'relative',
-  zIndex: 1,
+  zIndex: '$base',
   height: '100%',
   padding: '0',
   '& .article-image-full': {

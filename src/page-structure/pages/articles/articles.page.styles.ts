@@ -83,7 +83,7 @@ export const AnimationHovered = styled(motion.span, {
   bottom: '-1px',
   background: '$brand-primary-mid',
   borderRadius: '$md',
-  zIndex: -1
+  zIndex: '$behind'
 });
 
 export const ArticleItem = styled(ListItem, {

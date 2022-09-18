@@ -26,7 +26,7 @@ export const AnimationHovered = styled(motion.div, {
   bottom: '0',
   background: '$brand-primary-mid',
   borderRadius: '$md',
-  zIndex: -1,
+  zIndex: '$behind',
   width: '100%'
 });
 

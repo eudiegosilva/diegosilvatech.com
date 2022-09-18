@@ -5,7 +5,7 @@ import { styled } from 'styles/stitches.config';
 import { Container } from 'components/container/container.styles';
 
 export const HeaderContainer = styled('header', {
-  zIndex: 0,
+  zIndex: '$root',
   width: '100%'
 });
 
@@ -117,7 +117,7 @@ export const ItemHovered = styled(motion.span, {
   background: '$brand-primary-mid',
   padding: '$lg',
   borderRadius: '$sm',
-  zIndex: -1
+  zIndex: '$behind'
 });
 
 export const CommandButtonWrapper = styled('div', {
