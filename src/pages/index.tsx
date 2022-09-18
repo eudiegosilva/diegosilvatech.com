@@ -5,8 +5,7 @@ export async function getStaticProps() {
     props: {
       tabTitle: 'diegosilvatech',
       pageTitle: 'Diego Silva',
-      description:
-        'Helping to improve the development experience for developers in Brazil and around the world.',
+      description: 'Developer Experience, UI & UX',
       image: '/static/images/home-cover.jpg'
     }
   };
