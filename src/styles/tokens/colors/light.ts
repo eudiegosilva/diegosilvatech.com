@@ -10,9 +10,17 @@ import {
 
 const brand = {
   'brand-primary-01': violet.violet1,
+  'brand-primary-02': violet.violet2,
   'brand-primary-03': violet.violet3,
+  'brand-primary-04': violet.violet4,
+  'brand-primary-05': violet.violet5,
+  'brand-primary-06': violet.violet6,
+  'brand-primary-07': violet.violet7,
+  'brand-primary-08': violet.violet8,
   'brand-primary-09': violet.violet9,
-  'brand-primary-11': violet.violet11
+  'brand-primary-10': violet.violet10,
+  'brand-primary-11': violet.violet11,
+  'brand-primary-12': violet.violet12
 };
 
 const text = {

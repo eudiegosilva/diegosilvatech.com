@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 import { diegosilvatech } from 'assets/images';
-import { Icon } from 'components';
+import { Icon, ThemeToggle } from 'components';
 import { AnimateSharedLayout } from 'framer-motion';
 import { useKBar } from 'kbar';
 
@@ -75,14 +75,15 @@ const Navbar = ({ disableCommand = false }: NavbarProps) => {
           </s.NavbarWrapper>
 
           <s.CommandButtonWrapper>
-            <s.ButtonHeader
+            <ThemeToggle />
+            {/* <s.ButtonHeader
               as="button"
               type="button"
               aria-label="Command"
               onClick={disableCommand ? () => null : query.toggle}
             >
               <Icon.CommandIcon />
-            </s.ButtonHeader>
+            </s.ButtonHeader> */}
           </s.CommandButtonWrapper>
         </AnimateSharedLayout>
       </s.HeaderWrapper>
