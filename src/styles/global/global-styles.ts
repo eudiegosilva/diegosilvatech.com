@@ -23,13 +23,11 @@ export const globalStyles = globalCss({
       backgroundColor: '$brand-primary-09'
     }
   },
-  ...articleStyles,
   img: {
     borderRadius: '$xs',
     minWidth: '100%',
     maxWidth: '100%'
   },
-  ul: {
-    margin: 0
-  }
+
+  ...articleStyles
 });

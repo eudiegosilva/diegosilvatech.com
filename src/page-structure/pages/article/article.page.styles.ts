@@ -19,6 +19,22 @@ export const ArticleContent = styled('div', {
   zIndex: '$base',
   height: '100%',
   padding: '0',
+  '& .iframe-wrap': {
+    height: '0',
+    marginBottom: '$lg',
+    overflow: 'hidden',
+    paddingBottom: '56.25%',
+    paddingTop: '30px',
+    position: 'relative'
+  },
+  '& .iframe-wrap iframe': {
+    border: '0',
+    height: '100%',
+    left: '0',
+    position: 'absolute',
+    top: '0',
+    width: '100%'
+  },
   '& .article-image-full': {
     margin: '$lg 0 0',
     maxWidth: 'initial',

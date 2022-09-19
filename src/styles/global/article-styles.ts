@@ -88,7 +88,8 @@ export const ul: ConfigProps = {
 };
 
 export const li: ConfigProps = {
-  color: '$text-contrast-low'
+  color: '$text-contrast-low',
+  marginLeft: '$xx'
 };
 
 export const articleStyles = {

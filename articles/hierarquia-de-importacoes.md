@@ -30,13 +30,13 @@ import Routes from '~/routes';
 function ExampleComponent() { ...
 ```
 
-Olhando para o código acima você pode se questionar: "Não vejo nenhum problema nesse código".
+Olhando para o código acima você pode se questionar: "**Não vejo nenhum problema nesse código**".
 
-E de fato, não há. As dependências necessárias foram importadas e estão prontas para serem utilizadas.
+E de fato, não há. As dependências necessárias foram importadas e estão prontas para serem utilizadas. Mas...
 
-> Mas, se podemos deixar mais organizado, **por quê não?**
+> **se podemos deixar mais organizado, por quê não?**
 
-Abaixo eu mostro o **mesmo exemplo**, só que mais **organizado**:
+Abaixo eu mostro o mesmo exemplo, só que mais organizado:
 
 ```jsx
 import React, { useState, useEffect } from 'react';
@@ -60,11 +60,11 @@ function ExampleComponent() { ...
 
 No exemplo acima, eu ordenei as importações da seguinte forma:
 
-- em primeiro lugar: todas as dependências que eu considero as mais **importantes** da minha aplicação. Por exemplo, todas as que iniciam com 'react' e 'redux'
-- em seguida, todas as outras bibliotecas e **módulos instalados no package.json**. Por exemplo, Prop Types, Storybook, Unform, entre outros
-- depois, todos os arquivos internos, que iniciam com o alias `~/` ou `@`. Por exemplo, `~/components`, `~/pages`, `~/styles`, `@controllers`, `@models`, entre outros. No post [Import paths personalizados e como isso pode te ajudar](https://coderamos.vercel.app/import-paths-personalizados-como-isso-pode-te-ajudar/) eu mostro como podemos criar e configurar import paths personalizados para facilitar as importações da nossa aplicação
-- então, as **rotas** da minha aplicação
-- e por último, os meus **estilos**. Nesse caso, arquivos com o nome `.styled.js`
+- **Em primeiro lugar**: todas as dependências que eu considero as mais **importantes** da minha aplicação. Por exemplo, todas as que iniciam com 'react' e 'redux'
+- **Em seguida**, todas as outras bibliotecas e **módulos instalados no package.json**. Por exemplo, Prop Types, Storybook, Unform, entre outros
+- **Depois**, todos os arquivos internos, que iniciam com o alias `~/` ou `@`. Por exemplo, `~/components`, `~/pages`, `~/styles`, `@controllers`, `@models`, entre outros. No post [Import paths personalizados e como isso pode te ajudar](https://coderamos.vercel.app/import-paths-personalizados-como-isso-pode-te-ajudar/) eu mostro como podemos criar e configurar import paths personalizados para facilitar as importações da nossa aplicação
+- **Então**, as **rotas** da minha aplicação
+- **E por último**, os meus **estilos**. Nesse caso, arquivos com o nome `.styled.js`
 
 ```jsx
 // primeiro, tudo que começa com 'react' e 'redux'
@@ -110,13 +110,14 @@ O **eslint-plugin-import-helpers** trás (até a data desse post) apenas o plugi
 
 Antes de tudo, você precisará ter no seu projeto o **ESLint** e o **Prettier** configurados. Se por acaso você ainda não configurou, sugiro que siga esse turorial:
 
-<div align="center">
-  <iframe width="200" height="400" src="https://www.youtube.com/embed/TI4v4Y8yRjw" frameborder="0" allowfullscreen></iframe>
+<div class="iframe-wrap">
+  <iframe src="https://www.youtube.com/embed/TI4v4Y8yRjw" frameborder="0" allowfullscreen="true">
+  </iframe>
 </div>
 
 Após a instalação e configuração do ESLint e Prettier, podemos seguir com os próximos passos.
 
-#### Instalando e configurando o `eslint-plugin-import-helpers`
+### Instalando e configurando o `eslint-plugin-import-helpers`
 
 Na raíz do nosso projeto **react**, vamos instalar o puglin:
 
@@ -151,14 +152,12 @@ rules: {
 }
 ```
 
-Tudo pronto!
+**Tudo pronto!**
 
-Se você configou o prettier para corrigir automaticamente sugestões de melhorias do ESLint, sempre que essa hierarquia não for respeitada, o VSCODE irá reoganizar os imports automaticamente assim que o arquivo for salvo.
+Se você configurou o prettier para corrigir automaticamente sugestões de melhorias do ESLint, sempre que essa hierarquia não for respeitada, o VSCode irá reoganizar os imports automaticamente assim que o arquivo for salvo.
 
 ---
 
-Se quiser ver esse exemplo na prática, você pode dar uma olhadinha no template que eu criei para projetos React clicando [aqui](https://github.com/coderamos/template-reactjs).
+Se quiser ver esse exemplo na prática, você pode dar uma olhadinha no template que eu criei para projetos React clicando [aqui](https://github.com/diegosilvatech/template--next-ts).
 
 Lá eu já configurei o ESLint, Prettier e outras coisas para facilitar a estrutura inicial do seu projeto.
-
-Comenta ai o que achou :)
