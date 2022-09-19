@@ -24,7 +24,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      tabTitle: 'artigos | diegosilvatech',
+      tabTitle: 'Artigos | diegosilvatech',
       pageTitle: 'Compartilhar & Aprender',
       description: description,
       image: '/static/images/articles-cover.jpg',
