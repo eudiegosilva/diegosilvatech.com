@@ -7,9 +7,10 @@ import {
   yellowDark,
   skyDark
 } from '@radix-ui/colors';
+import { darken } from 'polished';
 
 const brand = {
-  'brand-primary-01': violetDark.violet1,
+  'brand-primary-01': darken(0.05, violetDark.violet1),
   'brand-primary-02': violetDark.violet2,
   'brand-primary-03': violetDark.violet3,
   'brand-primary-04': violetDark.violet4,

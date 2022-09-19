@@ -88,7 +88,7 @@ const Command = ({ children }: CommandProps) => {
       name: 'Artigos',
       shortcut: ['g', 'a'],
       keywords: 'go-articles',
-      section: 'Go To',
+      section: 'Vá Para',
       perform: () => router.push('/artigos'),
       icon: (
         <Lottie

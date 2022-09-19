@@ -19,7 +19,8 @@ export const AllArticlesList = styled('ul', {
 });
 
 export const ListItem = styled('li', {
-  borderBottom: '1px solid $brand-primary-03',
+  a: { borderColor: '$brand-primary-03' },
+  marginLeft: 0,
   '&:last-child': { border: 0 },
   display: 'flex',
   transition: '$fast',
