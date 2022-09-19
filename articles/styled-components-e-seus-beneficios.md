@@ -5,9 +5,10 @@ image: /assets/images/articles/styled-components-e-seus-beneficios.jpg
 date: "2020-08-17"
 ---
 
+
 ## CSS, o cara legal
 
-> CSS é muito difícil. Se te dizem o contrário, é porque só querem te deixar feliz
+> **CSS é muito difícil. Se te dizem o contrário, é porque só querem te deixar feliz**
 
 Eu me lembro de quando vi essa frase em um dos cursos do [Willian Justen](https://twitter.com/Willian_justen). Devo ter parado por cinco minutos enquanto refletia sobre o quão verdadeira ela é.
 
@@ -15,7 +16,7 @@ Não me leve a mal. É bem legal trabalhar com CSS e muitas vezes temos muito pr
 
 Se não nos preocuparmos em minimizar os problemas de CSS e não fizermos o trabalho de prevenção contra más práticas no nosso código, a media que a aplicação cresce, os problemas e as más práticas crescem junto.
 
-> Manter padrões é chato, demorado e custa caro, mas só se você fizer da forma errada
+> **Manter padrões é chato, demorado e custa caro, mas só se você fizer da forma errada**
 
 É muito difícil que um único programador conheça todos os componentes de uma aplicação, principalmente quando esses sofrem atualizações constantes. Agora imagine um repositório que é mantido por cinco equipes, cada equipe pelo menos quatro desenvolvedores, cada desenvolvedor com práticas e senioridades diferentes.
 
@@ -35,19 +36,19 @@ O CSS, está evoluindo. Já temos funcionalidades bem legais, como por exemplo a
 
 Alguns dos principais problemas de CSS são:
 
-- **COLISÃO DE ESTILOS**
+### Colisão de estilos
 
 Como o CSS não é definido por componente ou por página, ele é carregado para o nosso site e o estilo é aplicado sobre todo o HTML visível. Quando precisamos importar alguma biblioteca, pode acontecer que essa biblioteca possua as mesmas classes ou possua uma especificidade maior que acaba colidindo com o nosso código, gerando alguns problemas no estilo da nossa aplicação.
 
-- **CÓDIGO NÃO UTILIZADO**
+### Código não utilizado
 
 Muitas vezes escrevemos o CSS pensando em várias formas de representar um componente, como por exemplo, botões de diferentes formas. Precisamos carregar o CSS de todos os estilos, mas não necessariamente precisamos utilizar todos os estilos em na mesma página. Com isso, acabamos carregando todos os estilos de botões que não serão utilizados ali. Isso trás mais problemas para o _client_ que acaba gastando mais banda sem necessidade.
 
-- **DIFICULDADE NA MANUTENÇÃO**
+### Dificuldade na manutenção
 
 Muitas vezes quando precisamos atualizar um estilo, acabamos quebrando outro estilo em outra parte do código que não tem nada a ver com o primeiro estilo. Isso faz com que a manutenção seja muito mais custosa do que deveria ser e precisamos ficar "cavando" muito código para não corremos o risco de quebrar algo que não deveria ser quebrado.
 
-> Less, Sass, Stylus. Como vivem? O que comem?
+> **Less, Sass, Stylus. Como vivem? O que comem?**
 
 Os pré-processadores estão aí e ajudam muito, principalmente com a possibilidade de utilizar variáveis no CSS (recurso que antes não existia no css, mas agora existe) e com a facilidade em trabalhar com aninhamento de estilos (cascatas), mas continuaram com os problemas clássicos, além de abrir margem para **péssimas práticas**, como por exemplo o aninhamento excessivo:
 
@@ -76,35 +77,35 @@ Esse aninhamento não é uma boa prática, porque você acaba criando uma especi
 
 ![!important is wrong](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQEre0SNjz-tMDNBR7PeGEeqc2B6htOB6-MKA&usqp=CAU)
 
-## STYLED-COMPONENTS, seu amiguinho
+## Styled Components, seu amiguinho
 
 Styled Components é uma biblioteca que, através de um conjunto de práticas, resolve problemas complexos do CSS.
 
 As principais vantagens na utilização do **styled-components** são:
 
-- **CRITICAL CSS AUTOMÁTICO**
+## Critical CSS automático
 
 O styled-components monitora quais componentes são renderizados em uma página e só injeta os estilos desses componentes, de forma totalmente automática. Isso significa que o _client_ carrega a menor quantidade de código necessária para a renderização.
 
-- **SEM BUGS COM NOMES DE CLASSES**
+## Sem bugs com nomes de classes
 
 O styled-components gera nome de classes únicas para cada estilo. Mesmo que elementos possuam a mesma classe, não sofrerão coesão de estilos. Por exemplo:
 
 ```jsx
-  // button/index.js
-  <Button className="primary" />
+// button/index.js
+<Button className="primary" />
 
-  // public/index.html
-  <button class="sc-fznLPX jckqBg primary" />
+// public/index.html
+<button class="sc-fznLPX jckqBg primary" />
 ```
 
-- **REMOÇÃO DE CSS NÃO UTILIZADO**
+## Remoção de CSS não utilizado
 
 É responsabilidade do componente criar ou importar o seu estilo do arquivo de estilos. Se o componente não for utilizado, nada do seu CSS será carregado na página.
 
 Todo o componente deletado da página também terá o seu CSS deletado.
 
-- **ESTILOS DINÂMICOS**
+## Estilos dinâmicos
 
 É possível alterar o estilo dos componentes através das `propriedades` e `temas` recebidos.
 
@@ -131,7 +132,7 @@ Como podemos observar, estou verificando se o componente Button possui a proprie
 
 Ainda vou escrever como configurar um tema utilizando styled-components e colocaquei o link aqui.
 
-- **VENDOR PREFIXING AUTOMÁTICO**
+## *Vendor prefixing* automático
 
 Propriedades como `-webkit`, `-moz-`, `-ms` e `-o-` não precisam ser mais inseridas, pois o `styled-components` faz esse trabalho de forma automática.
 
@@ -155,14 +156,6 @@ export const Container = styled.section`
 
 ![wonderful](https://media.giphy.com/media/dycoeyAvTEkaKgvcWT/giphy.gif)
 
-- **MANUTENÇÃO SIMPLIFICADA E SEM DOR**
+## Manutenção simplificada e sem dor
 
 O estilo que está sendo alterado corresponde somente ao componente que o importa.
-
----
-
-Styled Components é incrível, não é mesmo?
-
-[Nesse repositório](https://github.com/coderamos/template-reactjs) você pode observar como eu utilizei `styled-components` de forma bem simples.
-
-Comenta aí se você já utiliza `styled-components`.

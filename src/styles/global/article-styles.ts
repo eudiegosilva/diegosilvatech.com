@@ -46,7 +46,8 @@ export const h1: ConfigProps = {
 export const h2: ConfigProps = {
   fontFamily: '$heading',
   fontSize: '$xl',
-  color: '$text-contrast-high'
+  color: '$text-contrast-high',
+  margin: '$lg 0'
 };
 
 export const h3: ConfigProps = {
